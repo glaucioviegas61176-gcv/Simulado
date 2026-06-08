@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Simulados Inteligente</title>
+    
+    <!-- Fontes modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js para os gráficos e Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- OVERLAY E EFEITOS DE FUNDO -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="app-container">
+
+        <!-- TELA 1: CONFIGURAÇÃO INICIAL -->
+        <section id="tela-configuracao" class="tela ativa glass-panel">
+            <h1 class="logo-title">Neuro<span>Test</span></h1>
+            <p class="subtitle">Plataforma de Simulados Inteligente</p>
+
+            <div class="config-grid">
+                <!-- Painel do Usuário -->
+                <div class="config-card">
+                    <h2>Identificação</h2>
+                    <div class="input-group">
+                        <label for="input-nome">Seu Nome</label>
+                        <input type="text" id="input-nome" placeholder="Ex: João Silva" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="input-materia">Matéria Desejada</label>
+                        <input type="text" id="input-materia" placeholder="Ex: Matemática" required>
+                    </div>
+                </div>
+
+                <!-- Painel do Banco -->
+                <div class="config-card">
+                    <h2>Banco de Questões</h2>
+                    <div class="file-upload">
+                        <label for="input-json" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            Carregar JSON
+                        </label>
+                        <input type="file" id="input-json" accept=".json">
+                    </div>
+                    
+                    <div id="status-banco" class="status-banco hidden">
+                        <p class="stats-total">Total: <span id="total-questoes">0</span> questões</p>
+                        <div class="dificuldade-stats">
+                            <span class="badge facil">Fácil: <span id="qtd-facil">0</span></span>
+                            <span class="badge medio">Médio: <span id="qtd-medio">0</span></span>
+                            <span class="badge dificil">Difícil: <span id="qtd-dificil">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Painel da Prova -->
+                <div class="config-card full-width">
+                    <h2>Configuração da Prova</h2>
+                    
+                    <div class="config-options">
+                        <div class="input-group">
+                            <label for="select-quantidade">Quantidade</label>
+                            <select id="select-quantidade">
+                                <option value="5">5 questões</option>
+                                <option value="10">10 questões</option>
+                                <option value="20">20 questões</option>
+                                <option value="30">30 questões</option>
+                                <option value="50">50 questões</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="select-nivel">Nível da Prova</label>
+                            <select id="select-nivel">
+                                <option value="facil">Fácil (50% F, 25% M, 25% D)</option>
+                                <option value="medio">Médio (25% F, 50% M, 25% D)</option>
+                                <option value="dificil">Difícil (25% F, 25% M, 50% D)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="btn-iniciar" class="btn btn-primary btn-large disabled">Iniciar Simulado</button>
+                    
+                    <div class="extra-actions">
+                         <button id="btn-abrir-painel" class="btn btn-text">Ver Meu Painel de Evolução</button>
+                         <button id="btn-modo-revisao" class="btn btn-text" style="display:none;">📚 Modo Revisão (Erros)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TELA 2: DURANTE A PROVA -->
+        <section id="tela-prova" class="tela glass-panel hidden">
+            <div class="prova-header">
+                <div class="info-prova">
+                    <span id="prova-materia" class="badge">Matéria</span>
+                    <span id="prova-nivel" class="badge outline">Nível</span>
+                </div>
+                <div class="timer">⏱ <span id="tempo-decorrido">00:00</span></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-text">Questão <span id="questao-atual-num">1</span> de <span id="questao-total-num">10</span> (<span id="questao-percentual">10%</span>)</div>
+                <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+            </div>
+
+            <div class="questao-container">
+                <div class="questao-meta">
+                    <span id="questao-assunto" class="assunto">Assunto</span>
+                    <span id="questao-dificuldade" class="badge">Fácil</span>
+                </div>
+                
+                <h2 id="enunciado">Carregando enunciado...</h2>
+                
+                <div id="alternativas-container" class="alternativas">
+                    <!-- Alternativas injetadas via JS -->
+                </div>
+            </div>
+
+            <div class="prova-footer">
+                <button id="btn-responder" class="btn btn-primary disabled">Confirmar Resposta</button>
+            </div>
+        </section>
+
+
+        <!-- TELA 3: FEEDBACK IMEDIATO (Sobreposta) -->
+        <div id="modal-feedback" class="modal-overlay hidden">
+            <div class="modal-content feedback-box" id="feedback-box">
+                <div id="feedback-icon" class="feedback-icon"></div>
+                <h2 id="feedback-title">Título</h2>
+                <p id="feedback-message" class="motivational-msg">Mensagem</p>
+                
+                <div class="feedback-details">
+                    <div id="feedback-correct-answer" class="correct-answer hidden">
+                        <strong>Correta:</strong> <span id="texto-correta"></span>
+                    </div>
+                    <div class="comment-box">
+                        <p id="feedback-comment">Comentário aqui.</p>
+                    </div>
+                </div>
+                
+                <button id="btn-proxima-questao" class="btn btn-primary">Próxima Questão ➔</button>
+            </div>
+        </div>
+
+
+        <!-- TELA 4: RESULTADO -->
+        <section id="tela-resultado" class="tela glass-panel hidden">
+            <h1 class="logo-title">Resultado</h1>
+            
+            <div class="resultado-header">
+                <div id="medalha-container" class="medal-container">
+                    <!-- Medalha injetada via JS -->
+                </div>
+                <h2 id="resultado-percentual" class="percentual-destaque">0%</h2>
+                <p id="resultado-mensagem" class="resultado-msg">Mensagem de resultado</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="label">Acertos</span>
+                    <span class="value success" id="res-acertos">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Erros</span>
+                    <span class="value danger" id="res-erros">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Tempo</span>
+                    <span class="value" id="res-tempo">00:00</span>
+                </div>
+            </div>
+
+            <div id="novo-trofeu-alert" class="trofeu-alert hidden">
+                🏆 TROFÉU DESBLOQUEADO: Mestre da Matéria!
+            </div>
+
+            <div class="resultado-actions">
+                <button id="btn-ver-painel-res" class="btn btn-primary">Ver Painel de Evolução</button>
+                <button id="btn-voltar-inicio" class="btn btn-outline">Novo Simulado</button>
+            </div>
+        </section>
+
+        <!-- TELA 5: PAINEL DE EVOLUÇÃO -->
+        <section id="tela-painel" class="tela glass-panel hidden">
+            <div class="painel-header">
+                <h1>Painel de Evolução</h1>
+                <button id="btn-fechar-painel" class="btn btn-outline small">Voltar</button>
+            </div>
+
+            <div class="perfil-info">
+                <h2>Olá, <span id="perfil-nome">Aluno</span>!</h2>
+                <div class="conquistas-bar">
+                    <div class="trofeus">
+                        <span class="icon">🏆</span> <span id="perfil-trofeus">0</span> Mestres
+                    </div>
+                    <div class="medalhas">
+                        🥇 <span id="perfil-ouros">0</span>
+                        🥈 <span id="perfil-pratas">0</span>
+                        🥉 <span id="perfil-bronzes">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-dashboard">
+                <div class="stat-card">
+                    <div class="label">Tentativas</div>
+                    <div class="value" id="dash-tentativas">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Melhor Nota</div>
+                    <div class="value" id="dash-melhor-nota">0%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Média Geral</div>
+                    <div class="value" id="dash-media">0%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Sequência Atual</div>
+                    <div class="value" id="dash-sequencia">0 🔥</div>
+                </div>
+            </div>
+
+            <div class="graficos-container">
+                <div class="grafico-box">
+                    <h3>Evolução das Notas</h3>
+                    <canvas id="chart-evolucao"></canvas>
+                </div>
+            </div>
+
+            <div class="adaptive-learning-box">
+                <h3>🧠 Foco de Revisão</h3>
+                <p>Baseado nos seus erros, recomendamos revisar:</p>
+                <ul id="lista-assuntos-fracos" class="assuntos-fracos">
+                    <!-- Preenchido via JS -->
+                </ul>
+            </div>
+            
+            <div id="trofeu-progresso" class="trofeu-progresso-box">
+                <h3>Progresso para Mestre (100%)</h3>
+                <div class="estrelas" id="estrelas-mestre">
+                    <!-- ⭐⭐⭐ -->
+                </div>
+                <p id="texto-progresso-mestre">0 de 3 perfeições alcançadas</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
