@@ -46,24 +46,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function carregarBancosPadrao() {
-    const arquivosPadrao = ['modelo_banco_questoes.json', 'portuguesN2.json'];
+    // Tenta várias variações para garantir que o nome do arquivo seja encontrado
+    const arquivosPadrao = ['modelo_banco_questoes.json', 'portuguesN2.json', 'portugues.json', 'PortuguesN2.json'];
     let teveMudanca = false;
     
     for (const arquivo of arquivosPadrao) {
         let nomeMateria = arquivo.replace('.json', '');
         nomeMateria = nomeMateria.charAt(0).toUpperCase() + nomeMateria.slice(1);
         
-        // Se a matéria já não existir no estado, ele tenta buscar do servidor (ex: GitHub Pages)
         if (!appState.bancosDisponiveis[nomeMateria]) {
             try {
-                const res = await fetch(arquivo);
+                const res = await fetch(arquivo, { cache: 'no-cache' });
                 if (res.ok) {
                     const data = await res.json();
                     appState.bancosDisponiveis[nomeMateria] = data;
                     teveMudanca = true;
                 }
             } catch (e) {
-                console.log(`Banco padrão ${arquivo} não encontrado no servidor.`);
+                // Silencioso, pois vai tentar outras variações
+                console.log("Erro ao baixar:", arquivo, e);
             }
         }
     }
