@@ -83,14 +83,18 @@ function salvarDadosLocais() {
 function carregarDadosLocais() {
     const saved = localStorage.getItem('papai2026_profile');
     if (saved) {
-        const data = JSON.parse(saved);
-        appState.historico = data.historico || [];
-        appState.trofeus = data.trofeus || 0;
-        appState.medalhas = data.medalhas || { ouro: 0, prata: 0, bronze: 0, mestre: 0 };
-        appState.bancosDisponiveis = data.bancosDisponiveis || {};
-        appState.melhorSequenciaGlobal = data.melhorSequenciaGlobal || 0;
-        
-        if(data.ultimoNome) document.getElementById('input-nome').value = data.ultimoNome;
+        try {
+            const data = JSON.parse(saved);
+            appState.historico = data.historico || [];
+            appState.trofeus = data.trofeus || 0;
+            appState.medalhas = data.medalhas || { ouro: 0, prata: 0, bronze: 0, mestre: 0 };
+            appState.bancosDisponiveis = data.bancosDisponiveis || {};
+            appState.melhorSequenciaGlobal = data.melhorSequenciaGlobal || 0;
+            
+            if(data.ultimoNome) document.getElementById('input-nome').value = data.ultimoNome;
+        } catch (e) {
+            console.error("Erro ao carregar dados do localStorage:", e);
+        }
     }
 }
 
@@ -131,15 +135,19 @@ function atualizarDropdownMaterias() {
     const select = document.getElementById('select-materia');
     const materias = Object.keys(appState.bancosDisponiveis);
     
-    // Limpar exceto o primeiro
-    select.innerHTML = '<option value="">Selecione uma matéria</option>';
+    select.innerHTML = '';
     
-    materias.forEach(mat => {
-        const opt = document.createElement('option');
-        opt.value = mat;
-        opt.innerText = mat;
-        select.appendChild(opt);
-    });
+    if (materias.length === 0) {
+        select.innerHTML = '<option value="">Nenhum banco carregado. Envie um arquivo JSON acima ☝️</option>';
+    } else {
+        select.innerHTML = '<option value="">Selecione uma matéria</option>';
+        materias.forEach(mat => {
+            const opt = document.createElement('option');
+            opt.value = mat;
+            opt.innerText = mat;
+            select.appendChild(opt);
+        });
+    }
 }
 
 function validarFormularioInicial() {
