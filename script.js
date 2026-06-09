@@ -2,19 +2,20 @@
 let appState = {
     usuario: {
         nome: '',
-        materia: ''
+        materiaAtual: ''
     },
-    bancoOriginal: [], // Todas as questões carregadas
-    provaAtual: [],    // Questões selecionadas para a prova
+    bancosDisponiveis: {}, // { "Matematica": [questoes], "Historia": [questoes] }
+    provaAtual: [],
     indiceQuestaoAtual: 0,
-    respostas: [],     // Guarda se acertou ou errou cada questão
+    respostas: [], // { questao: {}, escolhida: "A", acertou: true }
     inicioProva: null,
+    isModoRevisao: false, // Flag se é mini-simulado de erros
     
-    // Dados de Gamificação e Evolução persistidos
+    // Dados de Gamificação e Evolução
     historico: [], 
     trofeus: 0,
     medalhas: { ouro: 0, prata: 0, bronze: 0, mestre: 0 },
-    errosPorAssunto: {} // Para o aprendizado adaptativo { "Matemática - Frações": 5 }
+    melhorSequenciaGlobal: 0
 };
 
 // Configurações Globais
@@ -39,93 +40,85 @@ const msgsMotivacionaisErro = [
 document.addEventListener('DOMContentLoaded', () => {
     carregarDadosLocais();
     configurarEventListeners();
-    atualizarUIInicial();
+    atualizarDropdownMaterias();
+    validarFormularioInicial();
 });
 
 function configurarEventListeners() {
-    // Tela Inicial
+    // Configuração
     document.getElementById('input-json').addEventListener('change', handleUploadJSON);
-    document.getElementById('btn-iniciar').addEventListener('click', iniciarSimulado);
-    document.getElementById('btn-abrir-painel').addEventListener('click', mostrarPainelEvolucao);
-    document.getElementById('btn-modo-revisao').addEventListener('click', iniciarModoRevisao);
+    document.getElementById('btn-iniciar').addEventListener('click', iniciarSimuladoPadrao);
+    document.getElementById('select-materia').addEventListener('change', validarFormularioInicial);
+    document.getElementById('input-nome').addEventListener('input', validarFormularioInicial);
     
-    // Tela Prova
+    // Prova e Feedback
     document.getElementById('btn-responder').addEventListener('click', confirmarResposta);
-    
-    // Modal Feedback
     document.getElementById('btn-proxima-questao').addEventListener('click', proximaQuestaoOuResultado);
     
-    // Tela Resultados
-    document.getElementById('btn-ver-painel-res').addEventListener('click', mostrarPainelEvolucao);
-    document.getElementById('btn-voltar-inicio').addEventListener('click', voltarInicio);
-    
-    // Tela Painel
+    // Telas Adicionais
+    document.getElementById('btn-abrir-painel').addEventListener('click', mostrarPainelEvolucao);
+    document.getElementById('btn-abrir-conquistas').addEventListener('click', mostrarConquistas);
     document.getElementById('btn-fechar-painel').addEventListener('click', voltarInicio);
-
-    // Inputs validação
-    document.getElementById('input-nome').addEventListener('input', validarFormularioInicial);
-    document.getElementById('input-materia').addEventListener('input', validarFormularioInicial);
+    document.getElementById('btn-fechar-conquistas').addEventListener('click', voltarInicio);
+    document.getElementById('btn-fechar-revisao').addEventListener('click', voltarParaResultados);
+    
+    // Resultado Actions
+    document.getElementById('btn-voltar-inicio').addEventListener('click', voltarInicio);
+    document.getElementById('btn-revisar-erradas').addEventListener('click', mostrarRevisaoErradas);
+    document.getElementById('btn-refazer-erradas').addEventListener('click', iniciarModoRevisao);
 }
 
 // ===== PERSISTÊNCIA =====
 function salvarDadosLocais() {
-    localStorage.setItem('neuroTestProfile', JSON.stringify({
+    localStorage.setItem('papai2026_profile', JSON.stringify({
         historico: appState.historico,
         trofeus: appState.trofeus,
         medalhas: appState.medalhas,
-        errosPorAssunto: appState.errosPorAssunto,
+        bancosDisponiveis: appState.bancosDisponiveis,
         ultimoNome: appState.usuario.nome,
-        ultimaMateria: appState.usuario.materia
+        melhorSequenciaGlobal: appState.melhorSequenciaGlobal
     }));
 }
 
 function carregarDadosLocais() {
-    const saved = localStorage.getItem('neuroTestProfile');
+    const saved = localStorage.getItem('papai2026_profile');
     if (saved) {
         const data = JSON.parse(saved);
         appState.historico = data.historico || [];
         appState.trofeus = data.trofeus || 0;
         appState.medalhas = data.medalhas || { ouro: 0, prata: 0, bronze: 0, mestre: 0 };
-        appState.errosPorAssunto = data.errosPorAssunto || {};
+        appState.bancosDisponiveis = data.bancosDisponiveis || {};
+        appState.melhorSequenciaGlobal = data.melhorSequenciaGlobal || 0;
         
         if(data.ultimoNome) document.getElementById('input-nome').value = data.ultimoNome;
-        if(data.ultimaMateria) document.getElementById('input-materia').value = data.ultimaMateria;
     }
 }
 
-function atualizarUIInicial() {
-    // Se tiver erros registrados, habilita botão de revisão
-    const temErros = Object.values(appState.errosPorAssunto).reduce((a, b) => a + b, 0) > 0;
-    if (temErros && appState.bancoOriginal.length > 0) {
-        document.getElementById('btn-modo-revisao').style.display = 'inline-flex';
-    }
-}
-
-// ===== CARREGAMENTO DE ARQUIVOS =====
+// ===== GERENCIAMENTO DE BANCOS =====
 function handleUploadJSON(e) {
     const file = e.target.files[0];
     if (!file) return;
+
+    let nomeMateria = file.name.replace('.json', '');
+    nomeMateria = nomeMateria.charAt(0).toUpperCase() + nomeMateria.slice(1);
 
     const reader = new FileReader();
     reader.onload = function(event) {
         try {
             const data = JSON.parse(event.target.result);
-            appState.bancoOriginal = data;
+            appState.bancosDisponiveis[nomeMateria] = data;
+            salvarDadosLocais();
             
             // Atualizar UI
+            atualizarDropdownMaterias();
+            document.getElementById('select-materia').value = nomeMateria;
+            
             document.getElementById('status-banco').classList.remove('hidden');
+            document.getElementById('nome-materia-carregada').innerText = nomeMateria;
             document.getElementById('total-questoes').innerText = data.length;
             
-            const qtdFacil = data.filter(q => q.nivel === 'facil').length;
-            const qtdMedio = data.filter(q => q.nivel === 'medio').length;
-            const qtdDificil = data.filter(q => q.nivel === 'dificil').length;
-            
-            document.getElementById('qtd-facil').innerText = qtdFacil;
-            document.getElementById('qtd-medio').innerText = qtdMedio;
-            document.getElementById('qtd-dificil').innerText = qtdDificil;
-            
             validarFormularioInicial();
-            atualizarUIInicial();
+            alert(`Banco de ${nomeMateria} carregado com sucesso!`);
         } catch (err) {
             alert("Erro ao ler o arquivo JSON. Verifique a formatação.");
             console.error(err);
@@ -134,67 +127,58 @@ function handleUploadJSON(e) {
     reader.readAsText(file);
 }
 
+function atualizarDropdownMaterias() {
+    const select = document.getElementById('select-materia');
+    const materias = Object.keys(appState.bancosDisponiveis);
+    
+    // Limpar exceto o primeiro
+    select.innerHTML = '<option value="">Selecione uma matéria</option>';
+    
+    materias.forEach(mat => {
+        const opt = document.createElement('option');
+        opt.value = mat;
+        opt.innerText = mat;
+        select.appendChild(opt);
+    });
+}
+
 function validarFormularioInicial() {
     const nome = document.getElementById('input-nome').value.trim();
-    const materia = document.getElementById('input-materia').value.trim();
-    const temBanco = appState.bancoOriginal.length > 0;
+    const materia = document.getElementById('select-materia').value;
     const btn = document.getElementById('btn-iniciar');
     
-    if (nome && materia && temBanco) {
+    if (nome && materia && appState.bancosDisponiveis[materia]) {
         btn.classList.remove('disabled');
+        // Mostrar total de questões da matéria selecionada
+        document.getElementById('status-banco').classList.remove('hidden');
+        document.getElementById('nome-materia-carregada').innerText = materia;
+        document.getElementById('total-questoes').innerText = appState.bancosDisponiveis[materia].length;
     } else {
         btn.classList.add('disabled');
+        document.getElementById('status-banco').classList.add('hidden');
     }
 }
 
 // ===== GERAÇÃO DA PROVA =====
 function embaralhar(array) {
-    let atual = array.length, temp, aleatorio;
-    while (atual !== 0) {
-        aleatorio = Math.floor(Math.random() * atual);
-        atual -= 1;
-        temp = array[atual];
-        array[atual] = array[aleatorio];
-        array[aleatorio] = temp;
+    let clone = [...array];
+    for (let i = clone.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [clone[i], clone[j]] = [clone[j], clone[i]];
     }
-    return array;
+    return clone;
 }
 
-function selecionarQuestoes(qtdDesejada, proporcoes) {
-    const faceis = embaralhar(appState.bancoOriginal.filter(q => q.nivel === 'facil'));
-    const medias = embaralhar(appState.bancoOriginal.filter(q => q.nivel === 'medio'));
-    const dificeis = embaralhar(appState.bancoOriginal.filter(q => q.nivel === 'dificil'));
-
-    let qtdFacil = Math.floor(qtdDesejada * proporcoes.f);
-    let qtdMedio = Math.floor(qtdDesejada * proporcoes.m);
-    let qtdDificil = Math.floor(qtdDesejada * proporcoes.d);
-
-    // Ajuste fino para sobras devido ao arredondamento
-    let selecionadas = [];
-    selecionadas.push(...faceis.slice(0, qtdFacil));
-    selecionadas.push(...medias.slice(0, qtdMedio));
-    selecionadas.push(...dificeis.slice(0, qtdDificil));
-
-    // Completar com aleatórias caso falte por causa de limite de banco
-    let restantes = appState.bancoOriginal.filter(q => !selecionadas.includes(q));
-    restantes = embaralhar(restantes);
-    
-    while (selecionadas.length < qtdDesejada && restantes.length > 0) {
-        selecionadas.push(restantes.pop());
-    }
-
-    return embaralhar(selecionadas).slice(0, qtdDesejada); // Garante o limite e embaralha a prova final
-}
-
-function iniciarSimulado() {
+function iniciarSimuladoPadrao() {
     const btn = document.getElementById('btn-iniciar');
     if (btn.classList.contains('disabled')) return;
 
     appState.usuario.nome = document.getElementById('input-nome').value.trim();
-    appState.usuario.materia = document.getElementById('input-materia').value.trim();
+    appState.usuario.materiaAtual = document.getElementById('select-materia').value;
     
+    const banco = appState.bancosDisponiveis[appState.usuario.materiaAtual];
     const qtdStr = document.getElementById('select-quantidade').value;
-    const qtd = qtdStr === 'todas' ? appState.bancoOriginal.length : parseInt(qtdStr);
+    const qtd = parseInt(qtdStr);
     const nivel = document.getElementById('select-nivel').value;
 
     let proporcoes = { f: 0.33, m: 0.33, d: 0.33 };
@@ -202,54 +186,68 @@ function iniciarSimulado() {
     if (nivel === 'medio') proporcoes = { f: 0.25, m: 0.50, d: 0.25 };
     if (nivel === 'dificil') proporcoes = { f: 0.25, m: 0.25, d: 0.50 };
 
-    appState.provaAtual = selecionarQuestoes(qtd, proporcoes);
+    const faceis = embaralhar(banco.filter(q => q.nivel === 'facil'));
+    const medias = embaralhar(banco.filter(q => q.nivel === 'medio'));
+    const dificeis = embaralhar(banco.filter(q => q.nivel === 'dificil'));
+
+    let selecionadas = [];
+    selecionadas.push(...faceis.slice(0, Math.floor(qtd * proporcoes.f)));
+    selecionadas.push(...medias.slice(0, Math.floor(qtd * proporcoes.m)));
+    selecionadas.push(...dificeis.slice(0, Math.floor(qtd * proporcoes.d)));
+
+    // Completar
+    let restantes = embaralhar(banco.filter(q => !selecionadas.includes(q)));
+    while (selecionadas.length < qtd && restantes.length > 0) {
+        selecionadas.push(restantes.pop());
+    }
+
+    appState.provaAtual = embaralhar(selecionadas).slice(0, qtd);
     
     if(appState.provaAtual.length === 0) {
-        alert("O banco de questões não possui questões suficientes.");
+        alert("Não há questões suficientes no banco selecionado.");
         return;
     }
 
+    appState.isModoRevisao = false;
     prepararProvaUI();
 }
 
 function iniciarModoRevisao() {
-    appState.usuario.nome = document.getElementById('input-nome').value.trim() || 'Aluno';
-    appState.usuario.materia = document.getElementById('input-materia').value.trim() || 'Revisão Geral';
-
-    // Seleciona as questões cujos assuntos estão no objeto de erros
-    let assuntosCriticos = Object.keys(appState.errosPorAssunto).sort((a,b) => appState.errosPorAssunto[b] - appState.errosPorAssunto[a]);
-    
-    let selecionadas = [];
-    appState.bancoOriginal.forEach(q => {
-        let key = `${q.materia} - ${q.assunto}`;
-        if(assuntosCriticos.includes(key) && appState.errosPorAssunto[key] > 0) {
-            selecionadas.push(q);
-        }
-    });
-
-    if(selecionadas.length === 0) {
-        alert("Não há histórico de erros no banco atual para revisar!");
+    // Pega as questões erradas da ÚLTIMA prova
+    const erros = appState.respostas.filter(r => !r.acertou).map(r => r.questao);
+    if(erros.length === 0) {
+        alert("Nenhum erro para revisar!");
         return;
     }
-
-    // Pega as top 20
-    appState.provaAtual = embaralhar(selecionadas).slice(0, 20);
+    
+    appState.provaAtual = embaralhar(erros);
+    appState.isModoRevisao = true;
+    
+    document.getElementById('tela-resultado').classList.add('hidden');
     prepararProvaUI();
 }
 
 // ===== FLUXO DA PROVA =====
 function prepararProvaUI() {
     appState.indiceQuestaoAtual = 0;
-    appState.respostas = [];
+    appState.respostas = []; // Reseta para a nova prova
     appState.inicioProva = Date.now();
-    salvarDadosLocais(); // Salva perfil
+    salvarDadosLocais();
 
-    trocarTela('tela-configuracao', 'tela-prova');
+    trocarTela(document.querySelector('.tela.ativa').id, 'tela-prova');
     
-    document.getElementById('prova-materia').innerText = appState.usuario.materia;
-    document.getElementById('prova-nivel').innerText = document.getElementById('select-nivel').options[document.getElementById('select-nivel').selectedIndex].text.split(' ')[0];
+    document.getElementById('prova-materia').innerText = appState.usuario.materiaAtual;
     
-    // Iniciar Cronômetro (simples)
+    if(appState.isModoRevisao) {
+        document.getElementById('prova-nivel').classList.add('hidden');
+        document.getElementById('prova-modo').classList.remove('hidden');
+    } else {
+        const selectNivel = document.getElementById('select-nivel');
+        document.getElementById('prova-nivel').innerText = selectNivel.options[selectNivel.selectedIndex].text;
+        document.getElementById('prova-nivel').classList.remove('hidden');
+        document.getElementById('prova-modo').classList.add('hidden');
+    }
+    
     if(window.timerInterval) clearInterval(window.timerInterval);
     window.timerInterval = setInterval(atualizarCronometro, 1000);
 
@@ -263,50 +261,45 @@ function atualizarCronometro() {
     document.getElementById('tempo-decorrido').innerText = `${m}:${s}`;
 }
 
+let alternativaSelecionada = null;
+
 function renderizarQuestao() {
     const questao = appState.provaAtual[appState.indiceQuestaoAtual];
     const indexStr = (appState.indiceQuestaoAtual + 1);
     const total = appState.provaAtual.length;
     const percent = Math.round((appState.indiceQuestaoAtual / total) * 100);
 
-    // Header & Progresso
     document.getElementById('questao-atual-num').innerText = indexStr;
     document.getElementById('questao-total-num').innerText = total;
     document.getElementById('questao-percentual').innerText = `${percent}%`;
     document.getElementById('progress-fill').style.width = `${percent}%`;
 
-    // Meta da questão
     document.getElementById('questao-assunto').innerText = questao.assunto;
     const diffBadge = document.getElementById('questao-dificuldade');
     diffBadge.innerText = questao.nivel.toUpperCase();
     diffBadge.className = `badge ${questao.nivel}`;
 
-    // Conteúdo
     document.getElementById('enunciado').innerText = questao.enunciado;
 
-    // Alternativas
     const container = document.getElementById('alternativas-container');
     container.innerHTML = '';
+    alternativaSelecionada = null;
     
     let alts = embaralhar([...questao.alternativas]);
     alts.forEach(alt => {
         const btn = document.createElement('button');
         btn.className = 'alternativa-btn';
         btn.innerText = alt;
-        btn.onclick = () => selecionarAlternativa(btn);
+        btn.onclick = () => {
+            document.querySelectorAll('.alternativa-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            alternativaSelecionada = alt;
+            document.getElementById('btn-responder').classList.remove('disabled');
+        };
         container.appendChild(btn);
     });
 
     document.getElementById('btn-responder').classList.add('disabled');
-}
-
-let alternativaSelecionada = null;
-
-function selecionarAlternativa(btnRef) {
-    document.querySelectorAll('.alternativa-btn').forEach(b => b.classList.remove('selected'));
-    btnRef.classList.add('selected');
-    alternativaSelecionada = btnRef.innerText;
-    document.getElementById('btn-responder').classList.remove('disabled');
 }
 
 function confirmarResposta() {
@@ -315,14 +308,11 @@ function confirmarResposta() {
     const questao = appState.provaAtual[appState.indiceQuestaoAtual];
     const acertou = alternativaSelecionada === questao.correta;
 
-    // Registrar no estado
-    appState.respostas.push(acertou);
-
-    // Aprendizado adaptativo (Registrar erro por assunto)
-    if(!acertou) {
-        const key = `${questao.materia} - ${questao.assunto}`;
-        appState.errosPorAssunto[key] = (appState.errosPorAssunto[key] || 0) + 1;
-    }
+    appState.respostas.push({
+        questao: questao,
+        escolhida: alternativaSelecionada,
+        acertou: acertou
+    });
 
     exibirFeedback(acertou, questao);
 }
@@ -331,45 +321,39 @@ function confirmarResposta() {
 function exibirFeedback(acertou, questao) {
     const modal = document.getElementById('modal-feedback');
     const box = document.getElementById('feedback-box');
-    const icon = document.getElementById('feedback-icon');
-    const title = document.getElementById('feedback-title');
-    const msg = document.getElementById('feedback-message');
-    const commentBox = document.getElementById('feedback-comment');
     const correctDiv = document.getElementById('feedback-correct-answer');
+    const commentBox = document.getElementById('feedback-comment');
     
     modal.classList.remove('hidden');
     box.className = `modal-content feedback-box ${acertou ? 'correct' : 'incorrect'}`;
     
     if (acertou) {
-        icon.innerText = "🎉";
-        title.innerText = "Resposta Correta!";
-        msg.innerText = msgsMotivacionaisAcerto[Math.floor(Math.random() * msgsMotivacionaisAcerto.length)];
+        document.getElementById('feedback-icon').innerText = "🎉";
+        document.getElementById('feedback-title').innerText = "Resposta Correta!";
+        document.getElementById('feedback-message').innerText = msgsMotivacionaisAcerto[Math.floor(Math.random() * msgsMotivacionaisAcerto.length)];
         correctDiv.classList.add('hidden');
+        // Comentário resumido no acerto
+        commentBox.innerText = questao.comentario ? `Muito bem! ${questao.comentario.split('.')[0]}.` : "Ótima linha de raciocínio.";
         dispararConfete();
     } else {
-        icon.innerText = "❌";
-        title.innerText = "Resposta Incorreta";
-        msg.innerText = msgsMotivacionaisErro[Math.floor(Math.random() * msgsMotivacionaisErro.length)];
+        document.getElementById('feedback-icon').innerText = "❌";
+        document.getElementById('feedback-title').innerText = "Resposta Incorreta";
+        document.getElementById('feedback-message').innerText = msgsMotivacionaisErro[Math.floor(Math.random() * msgsMotivacionaisErro.length)];
         correctDiv.classList.remove('hidden');
         document.getElementById('texto-correta').innerText = questao.correta;
+        // Comentário completo no erro
+        commentBox.innerText = questao.comentario || "Revise este assunto para não errar na próxima.";
     }
-
-    commentBox.innerText = questao.comentario || "Nenhum comentário disponível para esta questão.";
 }
 
 function dispararConfete() {
     if(typeof confetti !== 'undefined') {
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-        });
+        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
     }
 }
 
 function proximaQuestaoOuResultado() {
     document.getElementById('modal-feedback').classList.add('hidden');
-    alternativaSelecionada = null;
 
     appState.indiceQuestaoAtual++;
     
@@ -380,195 +364,233 @@ function proximaQuestaoOuResultado() {
     }
 }
 
-// ===== RESULTADOS E GAMIFICAÇÃO =====
+// ===== RESULTADOS E HISTÓRICO =====
 function finalizarProva() {
     clearInterval(window.timerInterval);
     document.getElementById('progress-fill').style.width = `100%`;
     
-    const acertos = appState.respostas.filter(r => r).length;
+    const acertos = appState.respostas.filter(r => r.acertou).length;
+    const erros = appState.respostas.length - acertos;
     const total = appState.provaAtual.length;
     const percentual = Math.round((acertos / total) * 100);
-    
     const tempoFinal = document.getElementById('tempo-decorrido').innerText;
 
-    // Calcular Medalha
-    let medalhaHTML = "";
-    let classeCor = "success";
-    let msgResultado = "";
+    // Apenas registra no histórico principal se NÃO for modo revisão
+    if(!appState.isModoRevisao) {
+        const nivel = document.getElementById('select-nivel').value;
+        const dataStr = new Date().toISOString();
+        
+        // Calcular Medalha
+        let classRes = "success";
+        let msgRes = "";
+        
+        if (percentual === 100) { appState.medalhas.mestre++; msgRes = "Perfeito! Nível Mestre alcançado."; }
+        else if (percentual >= 95) { appState.medalhas.ouro++; msgRes = "Incrível! Medalha de Ouro."; }
+        else if (percentual >= 85) { appState.medalhas.prata++; msgRes = "Ótimo trabalho! Medalha de Prata."; }
+        else if (percentual >= 70) { appState.medalhas.bronze++; msgRes = "Bom trabalho! Medalha de Bronze."; }
+        else { classRes = "danger"; msgRes = "Continue estudando, você consegue!"; }
 
-    if (percentual === 100) {
-        medalhaHTML = "🏆"; msgResultado = "Perfeito! Você é um Mestre."; appState.medalhas.mestre++;
-    } else if (percentual >= 95) {
-        medalhaHTML = "🥇"; msgResultado = "Incrível! Medalha de Ouro."; appState.medalhas.ouro++;
-    } else if (percentual >= 85) {
-        medalhaHTML = "🥈"; msgResultado = "Ótimo trabalho! Medalha de Prata."; appState.medalhas.prata++;
-    } else if (percentual >= 70) {
-        medalhaHTML = "🥉"; msgResultado = "Bom trabalho! Medalha de Bronze."; appState.medalhas.bronze++;
+        // Gravar Tentativa
+        const tentativa = {
+            data: dataStr,
+            materia: appState.usuario.materiaAtual,
+            nivel: nivel,
+            nota: percentual,
+            acertos: acertos,
+            total: total,
+            tempo: tempoFinal,
+            respostasDetalhadas: [...appState.respostas]
+        };
+        appState.historico.push(tentativa);
+
+        // Checar Troféus (a cada 3 perfeitas totais)
+        const perfeitasTotais = appState.historico.filter(t => t.nota === 100).length;
+        let ganhouTrofeu = (perfeitasTotais > 0 && perfeitasTotais % 3 === 0 && percentual === 100);
+        if(ganhouTrofeu) {
+            appState.trofeus++;
+            document.getElementById('novo-trofeu-alert').classList.remove('hidden');
+        } else {
+            document.getElementById('novo-trofeu-alert').classList.add('hidden');
+        }
+        
+        salvarDadosLocais();
     } else {
-        medalhaHTML = "📚"; msgResultado = "Continue estudando, você consegue melhorar!"; classeCor = "danger";
+        document.getElementById('novo-trofeu-alert').classList.add('hidden');
     }
 
-    // Histórico
-    const tentativaData = {
-        data: new Date().toISOString(),
-        nota: percentual,
-        acertos,
-        total,
-        tempo: tempoFinal,
-        materia: appState.usuario.materia
-    };
-    appState.historico.push(tentativaData);
-
-    // Sistema de Troféus (100% 3 vezes)
-    const perfeicoes = appState.historico.filter(t => t.nota === 100).length;
-    let desbloqueouTrofeu = false;
-    
-    if (perfeicoes > 0 && perfeicoes % 3 === 0 && percentual === 100) {
-        appState.trofeus++;
-        desbloqueouTrofeu = true;
-    }
-
-    salvarDadosLocais();
-
-    // Renderizar Tela de Resultado
+    // Renderizar Tela Resultado
     trocarTela('tela-prova', 'tela-resultado');
     
-    document.getElementById('medalha-container').innerHTML = medalhaHTML;
-    const percEl = document.getElementById('resultado-percentual');
-    percEl.innerText = `${percentual}%`;
-    percEl.className = `percentual-destaque ${classeCor}`;
-    document.getElementById('resultado-mensagem').innerText = msgResultado;
-
+    // Atualizar UI
+    let medalhaIcon = "📚";
+    if(percentual === 100) medalhaIcon = "🏆";
+    else if(percentual >= 95) medalhaIcon = "🥇";
+    else if(percentual >= 85) medalhaIcon = "🥈";
+    else if(percentual >= 70) medalhaIcon = "🥉";
+    
+    document.getElementById('medalha-container').innerHTML = medalhaIcon;
+    const pEl = document.getElementById('resultado-percentual');
+    pEl.innerText = `${percentual}%`;
+    pEl.className = `percentual-destaque ${percentual < 70 ? 'danger' : 'success'}`;
+    
+    document.getElementById('resultado-mensagem').innerText = appState.isModoRevisao ? "Modo revisão concluído!" : "Prova finalizada!";
     document.getElementById('res-acertos').innerText = acertos;
-    document.getElementById('res-erros').innerText = total - acertos;
+    document.getElementById('res-erros').innerText = erros;
     document.getElementById('res-tempo').innerText = tempoFinal;
 
-    const alertTrofeu = document.getElementById('novo-trofeu-alert');
-    if(desbloqueouTrofeu) {
-        alertTrofeu.classList.remove('hidden');
-        if(typeof confetti !== 'undefined') {
-            let duration = 3000;
-            let end = Date.now() + duration;
-            (function frame() {
-                confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#FFD700'] });
-                confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#FFD700'] });
-                if (Date.now() < end) requestAnimationFrame(frame);
-            }());
-        }
+    // Botões de Revisão
+    if(erros > 0) {
+        document.getElementById('btn-revisar-erradas').style.display = 'inline-block';
+        document.getElementById('btn-refazer-erradas').style.display = 'inline-block';
     } else {
-        alertTrofeu.classList.add('hidden');
+        document.getElementById('btn-revisar-erradas').style.display = 'none';
+        document.getElementById('btn-refazer-erradas').style.display = 'none';
     }
 }
 
-// ===== PAINEL DE EVOLUÇÃO =====
+// ===== REVISÃO DE QUESTÕES =====
+function mostrarRevisaoErradas() {
+    const erradas = appState.respostas.filter(r => !r.acertou);
+    const container = document.getElementById('lista-revisao-container');
+    container.innerHTML = '';
+    
+    erradas.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'revisao-card';
+        div.innerHTML = `
+            <h4><strong>${index+1}.</strong> ${item.questao.enunciado}</h4>
+            <div class="revisao-respostas">
+                <div class="revisao-box box-errada">
+                    <strong>Sua Resposta:</strong><br>${item.escolhida}
+                </div>
+                <div class="revisao-box box-correta">
+                    <strong>Resposta Correta:</strong><br>${item.questao.correta}
+                </div>
+            </div>
+            <div class="revisao-comentario">
+                <strong>Explicação:</strong> ${item.questao.comentario || 'Sem comentário adicional.'}
+            </div>
+        `;
+        container.appendChild(div);
+    });
+
+    trocarTela('tela-resultado', 'tela-revisao');
+}
+
+function voltarParaResultados() {
+    trocarTela('tela-revisao', 'tela-resultado');
+}
+
+// ===== CONQUISTAS =====
+function mostrarConquistas() {
+    document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
+    document.getElementById('tela-conquistas').classList.add('ativa');
+
+    document.getElementById('conq-trofeus').innerText = `${appState.trofeus} conquistados`;
+    document.getElementById('conq-ouro').innerText = `${appState.medalhas.ouro} conquistadas`;
+    document.getElementById('conq-prata').innerText = `${appState.medalhas.prata} conquistadas`;
+    document.getElementById('conq-bronze').innerText = `${appState.medalhas.bronze} conquistadas`;
+    
+    const hist = appState.historico;
+    let perfeitas = hist.filter(t => t.nota === 100).length;
+    let melhor = hist.length > 0 ? Math.max(...hist.map(t => t.nota)) : 0;
+    
+    // Calcular sequência atual de provas >= 70%
+    let seqAtual = 0;
+    for(let i = hist.length - 1; i >= 0; i--) {
+        if(hist[i].nota >= 70) seqAtual++; else break;
+    }
+    
+    if(seqAtual > appState.melhorSequenciaGlobal) {
+        appState.melhorSequenciaGlobal = seqAtual;
+        salvarDadosLocais();
+    }
+
+    document.getElementById('conq-melhor').innerText = `${melhor}%`;
+    document.getElementById('conq-seq').innerText = `${seqAtual} 🔥`;
+    document.getElementById('conq-perfeitas').innerText = perfeitas;
+}
+
+// ===== PAINEL DE EVOLUÇÃO (ESTATÍSTICAS) =====
 let graficoEvolucao = null;
 
 function mostrarPainelEvolucao() {
     document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
     document.getElementById('tela-painel').classList.add('ativa');
 
-    document.getElementById('perfil-nome').innerText = appState.usuario.nome || "Aluno";
-    document.getElementById('perfil-trofeus').innerText = appState.trofeus;
-    document.getElementById('perfil-ouros').innerText = appState.medalhas.ouro;
-    document.getElementById('perfil-pratas').innerText = appState.medalhas.prata;
-    document.getElementById('perfil-bronzes').innerText = appState.medalhas.bronze;
-
     const hist = appState.historico;
+    const totalProvas = hist.length;
     
-    document.getElementById('dash-tentativas').innerText = hist.length;
-    
-    if (hist.length > 0) {
-        const notas = hist.map(t => t.nota);
-        document.getElementById('dash-melhor-nota').innerText = `${Math.max(...notas)}%`;
-        
-        const media = Math.round(notas.reduce((a,b)=>a+b,0) / notas.length);
-        document.getElementById('dash-media').innerText = `${media}%`;
-
-        // Sequência atual (quantas seguidas acima de 70%)
-        let seq = 0;
-        for(let i = hist.length - 1; i >= 0; i--) {
-            if(hist[i].nota >= 70) seq++; else break;
-        }
-        document.getElementById('dash-sequencia').innerText = `${seq} 🔥`;
-
-        renderizarGrafico(notas);
+    if (totalProvas === 0) {
+        return; // Retorna pois não há dados
     }
 
-    // Progresso Mestre
-    const perfeicoes = hist.filter(t => t.nota === 100).length;
-    const progressoAtual = perfeicoes % 3;
-    let estrelasStr = "";
-    for(let i=0; i<3; i++) estrelasStr += (i < progressoAtual) ? "⭐" : "☆";
-    document.getElementById('estrelas-mestre').innerText = estrelasStr;
-    document.getElementById('texto-progresso-mestre').innerText = `${progressoAtual} de 3 perfeições para o próximo Troféu`;
+    const notas = hist.map(t => t.nota);
+    const mediaGeral = Math.round(notas.reduce((a,b)=>a+b,0) / totalProvas);
+    const melhorGeral = Math.max(...notas);
+    const totalQuestoes = hist.reduce((acc, t) => acc + t.total, 0);
+    const totalAcertos = hist.reduce((acc, t) => acc + t.acertos, 0);
+    const totalErros = totalQuestoes - totalAcertos;
 
-    // Adaptive Learning
-    const listaAssuntos = document.getElementById('lista-assuntos-fracos');
-    listaAssuntos.innerHTML = '';
-    
-    // Ordena assuntos por mais erros
-    const sortedErros = Object.entries(appState.errosPorAssunto)
-        .filter(([_, qt]) => qt > 0)
-        .sort((a,b) => b[1] - a[1]);
-        
-    if(sortedErros.length > 0) {
-        sortedErros.slice(0, 5).forEach(([assunto, qt]) => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${assunto}</strong> - Errou ${qt} vezes`;
-            listaAssuntos.appendChild(li);
-        });
-    } else {
-        listaAssuntos.innerHTML = '<li>Nenhum erro registrado ainda! Continue assim.</li>';
-    }
-}
+    document.getElementById('dash-total-provas').innerText = totalProvas;
+    document.getElementById('dash-media-geral').innerText = `${mediaGeral}%`;
+    document.getElementById('dash-melhor-geral').innerText = `${melhorGeral}%`;
+    document.getElementById('dash-total-questoes').innerText = totalQuestoes;
+    document.getElementById('dash-total-acertos').innerText = totalAcertos;
+    document.getElementById('dash-total-erros').innerText = totalErros;
 
-function renderizarGrafico(notas) {
+    // Gráfico de Evolução
     const ctx = document.getElementById('chart-evolucao').getContext('2d');
+    if (graficoEvolucao) graficoEvolucao.destroy();
     
-    if (graficoEvolucao) {
-        graficoEvolucao.destroy();
-    }
-
-    const labels = notas.map((_, i) => `T${i+1}`);
-
-    // Pegar cor da variável CSS
-    const rootStyles = getComputedStyle(document.documentElement);
-    const accentColor = rootStyles.getPropertyValue('--accent-color').trim();
-
     graficoEvolucao = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,
+            labels: hist.map((_, i) => `T${i+1}`),
             datasets: [{
-                label: 'Aproveitamento (%)',
+                label: 'Nota da Prova (%)',
                 data: notas,
-                borderColor: accentColor,
+                borderColor: '#3b82f6',
                 backgroundColor: 'rgba(59, 130, 246, 0.2)',
                 borderWidth: 3,
-                pointBackgroundColor: accentColor,
-                pointRadius: 5,
-                fill: true,
-                tension: 0.3
+                pointBackgroundColor: '#3b82f6',
+                fill: true, tension: 0.3
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100,
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                    ticks: { color: '#cbd5e1' }
-                },
-                x: {
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                    ticks: { color: '#cbd5e1' }
-                }
-            },
-            plugins: {
-                legend: { labels: { color: '#f8fafc' } }
-            }
+            responsive: true, maintainAspectRatio: false,
+            scales: { y: { beginAtZero: true, max: 100 } }
+        }
+    });
+
+    // Evolução por Matéria
+    const mapMaterias = {};
+    hist.forEach(t => {
+        if(!mapMaterias[t.materia]) mapMaterias[t.materia] = { notas: [], tentativas: 0 };
+        mapMaterias[t.materia].notas.push(t.nota);
+        mapMaterias[t.materia].tentativas++;
+    });
+
+    const tbodyMat = document.getElementById('tbody-materias');
+    tbodyMat.innerHTML = '';
+    Object.keys(mapMaterias).forEach(mat => {
+        let n = mapMaterias[mat].notas;
+        let max = Math.max(...n);
+        let med = Math.round(n.reduce((a,b)=>a+b,0) / n.length);
+        tbodyMat.innerHTML += `<tr><td>${mat}</td><td>${mapMaterias[mat].tentativas}</td><td>${max}%</td><td>${med}%</td></tr>`;
+    });
+
+    // Evolução por Nível
+    const mapNiveis = { 'facil': [], 'medio': [], 'dificil': [] };
+    hist.forEach(t => { if(mapNiveis[t.nivel]) mapNiveis[t.nivel].push(t.nota); });
+    
+    const tbodyNiv = document.getElementById('tbody-niveis');
+    tbodyNiv.innerHTML = '';
+    Object.keys(mapNiveis).forEach(niv => {
+        let arr = mapNiveis[niv];
+        if(arr.length > 0) {
+            let med = Math.round(arr.reduce((a,b)=>a+b,0) / arr.length);
+            tbodyNiv.innerHTML += `<tr><td style="text-transform:capitalize;">${niv}</td><td>${arr.length}</td><td>${med}%</td></tr>`;
         }
     });
 }
@@ -591,5 +613,5 @@ function voltarInicio() {
     document.getElementById('tela-configuracao').classList.remove('hidden');
     document.getElementById('tela-configuracao').classList.add('ativa');
     
-    atualizarUIInicial();
+    validarFormularioInicial();
 }

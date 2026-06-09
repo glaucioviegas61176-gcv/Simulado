@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Simulados Inteligente</title>
+    <title>Plataforma de Simulados do PAPAI 2026</title>
     
     <!-- Fontes modernas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +30,8 @@
 
         <!-- TELA 1: CONFIGURAÇÃO INICIAL -->
         <section id="tela-configuracao" class="tela ativa glass-panel">
-            <h1 class="logo-title">Neuro<span>Test</span></h1>
-            <p class="subtitle">Plataforma de Simulados Inteligente</p>
+            <h1 class="logo-title">Plataforma de Simulados do <span>PAPAI 2026</span></h1>
+            <p class="subtitle">Seu ambiente de aprendizagem e evolução constante</p>
 
             <div class="config-grid">
                 <!-- Painel do Usuário -->
@@ -41,15 +41,20 @@
                         <label for="input-nome">Seu Nome</label>
                         <input type="text" id="input-nome" placeholder="Ex: João Silva" required>
                     </div>
+                    
                     <div class="input-group">
-                        <label for="input-materia">Matéria Desejada</label>
-                        <input type="text" id="input-materia" placeholder="Ex: Matemática" required>
+                        <label for="select-materia">Matéria de Estudo</label>
+                        <select id="select-materia">
+                            <option value="">Selecione uma matéria</option>
+                            <!-- Populado dinamicamente via JS -->
+                        </select>
                     </div>
                 </div>
 
                 <!-- Painel do Banco -->
                 <div class="config-card">
-                    <h2>Banco de Questões</h2>
+                    <h2>Adicionar Novo Banco</h2>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 10px;">Envie arquivos .json com questões. O nome do arquivo será o nome da matéria (ex: matematica.json).</p>
                     <div class="file-upload">
                         <label for="input-json" class="btn btn-outline">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
@@ -59,12 +64,8 @@
                     </div>
                     
                     <div id="status-banco" class="status-banco hidden">
+                        <p class="stats-total">Matéria carregada: <strong id="nome-materia-carregada"></strong></p>
                         <p class="stats-total">Total: <span id="total-questoes">0</span> questões</p>
-                        <div class="dificuldade-stats">
-                            <span class="badge facil">Fácil: <span id="qtd-facil">0</span></span>
-                            <span class="badge medio">Médio: <span id="qtd-medio">0</span></span>
-                            <span class="badge dificil">Difícil: <span id="qtd-dificil">0</span></span>
-                        </div>
                     </div>
                 </div>
 
@@ -74,7 +75,7 @@
                     
                     <div class="config-options">
                         <div class="input-group">
-                            <label for="select-quantidade">Quantidade</label>
+                            <label for="select-quantidade">Quantidade de Questões</label>
                             <select id="select-quantidade">
                                 <option value="5">5 questões</option>
                                 <option value="10">10 questões</option>
@@ -87,9 +88,9 @@
                         <div class="input-group">
                             <label for="select-nivel">Nível da Prova</label>
                             <select id="select-nivel">
-                                <option value="facil">Fácil (50% F, 25% M, 25% D)</option>
-                                <option value="medio">Médio (25% F, 50% M, 25% D)</option>
-                                <option value="dificil">Difícil (25% F, 25% M, 50% D)</option>
+                                <option value="facil">Fácil</option>
+                                <option value="medio">Médio</option>
+                                <option value="dificil">Difícil</option>
                             </select>
                         </div>
                     </div>
@@ -97,8 +98,8 @@
                     <button id="btn-iniciar" class="btn btn-primary btn-large disabled">Iniciar Simulado</button>
                     
                     <div class="extra-actions">
-                         <button id="btn-abrir-painel" class="btn btn-text">Ver Meu Painel de Evolução</button>
-                         <button id="btn-modo-revisao" class="btn btn-text" style="display:none;">📚 Modo Revisão (Erros)</button>
+                         <button id="btn-abrir-painel" class="btn btn-text">Ver Painel de Evolução</button>
+                         <button id="btn-abrir-conquistas" class="btn btn-text">🏆 Minhas Conquistas</button>
                     </div>
                 </div>
             </div>
@@ -111,6 +112,7 @@
                 <div class="info-prova">
                     <span id="prova-materia" class="badge">Matéria</span>
                     <span id="prova-nivel" class="badge outline">Nível</span>
+                    <span id="prova-modo" class="badge warning hidden">Modo Revisão</span>
                 </div>
                 <div class="timer">⏱ <span id="tempo-decorrido">00:00</span></div>
             </div>
@@ -148,7 +150,7 @@
                 
                 <div class="feedback-details">
                     <div id="feedback-correct-answer" class="correct-answer hidden">
-                        <strong>Correta:</strong> <span id="texto-correta"></span>
+                        <strong>Resposta Correta:</strong> <span id="texto-correta"></span>
                     </div>
                     <div class="comment-box">
                         <p id="feedback-comment">Comentário aqui.</p>
@@ -191,73 +193,142 @@
                 🏆 TROFÉU DESBLOQUEADO: Mestre da Matéria!
             </div>
 
-            <div class="resultado-actions">
-                <button id="btn-ver-painel-res" class="btn btn-primary">Ver Painel de Evolução</button>
-                <button id="btn-voltar-inicio" class="btn btn-outline">Novo Simulado</button>
+            <div class="resultado-actions multi-actions">
+                <button id="btn-revisar-erradas" class="btn btn-outline" style="display:none;">📚 Revisar Erradas</button>
+                <button id="btn-refazer-erradas" class="btn btn-outline" style="display:none;">🔄 Refazer Erradas</button>
+                <button id="btn-voltar-inicio" class="btn btn-primary">Novo Simulado</button>
+            </div>
+        </section>
+        
+        <!-- TELA: REVISÃO DE QUESTÕES -->
+        <section id="tela-revisao" class="tela glass-panel hidden">
+            <div class="painel-header">
+                <h1>📚 Revisão de Questões</h1>
+                <button id="btn-fechar-revisao" class="btn btn-outline small">Voltar</button>
+            </div>
+            
+            <p class="subtitle" style="text-align:left;">Confira as questões que você errou nesta tentativa para fixar o conhecimento.</p>
+            
+            <div id="lista-revisao-container" class="revisao-lista">
+                <!-- Preenchido via JS -->
             </div>
         </section>
 
-        <!-- TELA 5: PAINEL DE EVOLUÇÃO -->
+        <!-- TELA: CONQUISTAS -->
+        <section id="tela-conquistas" class="tela glass-panel hidden">
+            <div class="painel-header">
+                <h1>🏆 Minhas Conquistas</h1>
+                <button id="btn-fechar-conquistas" class="btn btn-outline small">Voltar</button>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="label">Melhor Resultado</span>
+                    <span class="value success" id="conq-melhor">0%</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Sequência Atual</span>
+                    <span class="value warning" id="conq-seq">0 🔥</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Provas Perfeitas (100%)</span>
+                    <span class="value" id="conq-perfeitas">0</span>
+                </div>
+            </div>
+
+            <div class="conquistas-vitrine">
+                <div class="vitrine-card gold">
+                    <div class="icon">🏆</div>
+                    <h3>Troféus de Mestre</h3>
+                    <p id="conq-trofeus">0 conquistados</p>
+                    <small>Concedido a cada 3 provas perfeitas</small>
+                </div>
+                <div class="vitrine-card">
+                    <div class="icon">🥇</div>
+                    <h3>Medalhas de Ouro</h3>
+                    <p id="conq-ouro">0 conquistadas</p>
+                    <small>Desempenho entre 95% e 99%</small>
+                </div>
+                <div class="vitrine-card">
+                    <div class="icon">🥈</div>
+                    <h3>Medalhas de Prata</h3>
+                    <p id="conq-prata">0 conquistadas</p>
+                    <small>Desempenho entre 85% e 94%</small>
+                </div>
+                <div class="vitrine-card">
+                    <div class="icon">🥉</div>
+                    <h3>Medalhas de Bronze</h3>
+                    <p id="conq-bronze">0 conquistadas</p>
+                    <small>Desempenho entre 70% e 84%</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA: PAINEL DE EVOLUÇÃO -->
         <section id="tela-painel" class="tela glass-panel hidden">
             <div class="painel-header">
                 <h1>Painel de Evolução</h1>
                 <button id="btn-fechar-painel" class="btn btn-outline small">Voltar</button>
             </div>
 
-            <div class="perfil-info">
-                <h2>Olá, <span id="perfil-nome">Aluno</span>!</h2>
-                <div class="conquistas-bar">
-                    <div class="trofeus">
-                        <span class="icon">🏆</span> <span id="perfil-trofeus">0</span> Mestres
-                    </div>
-                    <div class="medalhas">
-                        🥇 <span id="perfil-ouros">0</span>
-                        🥈 <span id="perfil-pratas">0</span>
-                        🥉 <span id="perfil-bronzes">0</span>
-                    </div>
+            <!-- Estatísticas Gerais -->
+            <div class="section-block">
+                <h3>Estatísticas Gerais</h3>
+                <div class="stats-dashboard">
+                    <div class="stat-card"><div class="label">Total Provas</div><div class="value" id="dash-total-provas">0</div></div>
+                    <div class="stat-card"><div class="label">Média Geral</div><div class="value" id="dash-media-geral">0%</div></div>
+                    <div class="stat-card"><div class="label">Melhor Nota</div><div class="value" id="dash-melhor-geral">0%</div></div>
+                    <div class="stat-card"><div class="label">Questões Respondidas</div><div class="value" id="dash-total-questoes">0</div></div>
+                    <div class="stat-card"><div class="label">Total Acertos</div><div class="value success" id="dash-total-acertos">0</div></div>
+                    <div class="stat-card"><div class="label">Total Erros</div><div class="value danger" id="dash-total-erros">0</div></div>
                 </div>
             </div>
 
-            <div class="stats-dashboard">
-                <div class="stat-card">
-                    <div class="label">Tentativas</div>
-                    <div class="value" id="dash-tentativas">0</div>
-                </div>
-                <div class="stat-card">
-                    <div class="label">Melhor Nota</div>
-                    <div class="value" id="dash-melhor-nota">0%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="label">Média Geral</div>
-                    <div class="value" id="dash-media">0%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="label">Sequência Atual</div>
-                    <div class="value" id="dash-sequencia">0 🔥</div>
-                </div>
-            </div>
-
-            <div class="graficos-container">
+            <!-- Evolução Geral Gráfico -->
+            <div class="section-block">
+                <h3>Evolução de Desempenho (Histórico de Notas)</h3>
                 <div class="grafico-box">
-                    <h3>Evolução das Notas</h3>
                     <canvas id="chart-evolucao"></canvas>
                 </div>
             </div>
 
-            <div class="adaptive-learning-box">
-                <h3>🧠 Foco de Revisão</h3>
-                <p>Baseado nos seus erros, recomendamos revisar:</p>
-                <ul id="lista-assuntos-fracos" class="assuntos-fracos">
-                    <!-- Preenchido via JS -->
-                </ul>
-            </div>
-            
-            <div id="trofeu-progresso" class="trofeu-progresso-box">
-                <h3>Progresso para Mestre (100%)</h3>
-                <div class="estrelas" id="estrelas-mestre">
-                    <!-- ⭐⭐⭐ -->
+            <!-- Evolução por Matéria -->
+            <div class="section-block">
+                <h3>Evolução por Matéria</h3>
+                <div class="table-container">
+                    <table id="tabela-materias">
+                        <thead>
+                            <tr>
+                                <th>Matéria</th>
+                                <th>Tentativas</th>
+                                <th>Melhor Nota</th>
+                                <th>Média</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-materias">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
                 </div>
-                <p id="texto-progresso-mestre">0 de 3 perfeições alcançadas</p>
+            </div>
+
+            <!-- Evolução por Nível -->
+            <div class="section-block">
+                <h3>Evolução por Nível</h3>
+                <div class="table-container">
+                    <table id="tabela-niveis">
+                        <thead>
+                            <tr>
+                                <th>Nível</th>
+                                <th>Provas</th>
+                                <th>Média</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-niveis">
+                            <!-- Preenchido via JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </section>
