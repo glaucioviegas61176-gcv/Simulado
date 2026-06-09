@@ -29,7 +29,8 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Em vez de center, para evitar que o topo seja cortado no celular */
+    padding: 40px 0; /* Espaço no topo e embaixo */
     overflow-x: hidden;
     position: relative;
 }
