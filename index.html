@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 
     <!-- Chart.js para os gráficos e Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -51,24 +51,6 @@
                     </div>
                 </div>
 
-                <!-- Painel do Banco -->
-                <div class="config-card">
-                    <h2>Adicionar Novo Banco</h2>
-                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 10px;">Envie arquivos .json com questões. O nome do arquivo será o nome da matéria (ex: matematica.json).</p>
-                    <div class="file-upload">
-                        <label for="input-json" class="btn btn-outline">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                            Carregar JSON
-                        </label>
-                        <input type="file" id="input-json" accept=".json">
-                    </div>
-                    
-                    <div id="status-banco" class="status-banco hidden">
-                        <p class="stats-total">Matéria carregada: <strong id="nome-materia-carregada"></strong></p>
-                        <p class="stats-total">Total: <span id="total-questoes">0</span> questões</p>
-                    </div>
-                </div>
-
                 <!-- Painel da Prova -->
                 <div class="config-card full-width">
                     <h2>Configuração da Prova</h2>
@@ -100,6 +82,24 @@
                     <div class="extra-actions">
                          <button id="btn-abrir-painel" class="btn btn-text">Ver Painel de Evolução</button>
                          <button id="btn-abrir-conquistas" class="btn btn-text">🏆 Minhas Conquistas</button>
+                    </div>
+                </div>
+
+                <!-- Painel do Banco -->
+                <div class="config-card full-width">
+                    <h2>Adicionar Novo Banco</h2>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 10px;">Envie arquivos .json com questões. O nome do arquivo será o nome da matéria (ex: matematica.json).</p>
+                    <div class="file-upload">
+                        <label for="input-json" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            Carregar JSON
+                        </label>
+                        <input type="file" id="input-json" accept=".json">
+                    </div>
+                    
+                    <div id="status-banco" class="status-banco hidden">
+                        <p class="stats-total">Matéria carregada: <strong id="nome-materia-carregada"></strong></p>
+                        <p class="stats-total">Total: <span id="total-questoes">0</span> questões</p>
                     </div>
                 </div>
             </div>
@@ -336,6 +336,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
