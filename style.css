@@ -696,9 +696,19 @@ tr:hover { background: rgba(255, 255, 255, 0.02); }
 
 /* Responsividade Geral */
 @media (max-width: 768px) {
+    .app-container { padding: 10px; }
+    .glass-panel { padding: 20px; }
     .config-grid { grid-template-columns: 1fr; }
     .stats-grid { grid-template-columns: 1fr; }
     .conquistas-vitrine { grid-template-columns: 1fr; }
     .resultado-actions { flex-direction: column; }
-    .logo-title { font-size: 2rem; }
+    .logo-title { font-size: 1.8rem; }
+    .subtitle { font-size: 1rem; }
+    .medal-container { font-size: 4rem; }
+    .percentual-destaque { font-size: 3rem; }
+}
+
+@media (max-width: 400px) {
+    .glass-panel { padding: 15px; }
+    .stat-box .value { font-size: 1.5rem; }
 }
