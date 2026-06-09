@@ -82,6 +82,7 @@
                     <div class="extra-actions">
                          <button id="btn-abrir-painel" class="btn btn-text">Ver Painel de Evolução</button>
                          <button id="btn-abrir-conquistas" class="btn btn-text">🏆 Minhas Conquistas</button>
+                         <button id="btn-abrir-ranking" class="btn btn-text">👑 Ranking Global</button>
                     </div>
                 </div>
 
@@ -235,6 +236,40 @@
                     <span class="value" id="conq-perfeitas">0</span>
                 </div>
             </div>
+        </section>
+
+        <!-- Tela de Ranking Global -->
+        <section id="tela-ranking" class="tela glass-panel hidden">
+            <div class="painel-header">
+                <h2>👑 Ranking Global</h2>
+                <button class="btn btn-outline" onclick="voltarInicio()">Voltar</button>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 20px;">Veja quem são os melhores na plataforma!</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Nome do Aluno</th>
+                            <th>Matéria</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-ranking">
+                        <!-- Preenchido via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tela de Conquistas -->
+        <section id="tela-conquistas" class="tela glass-panel hidden">
+            <div class="painel-header">
+                <h2>🏆 Minhas Conquistas</h2>
+                <button class="btn btn-outline" onclick="voltarInicio()">Voltar</button>
+            </div>
 
             <div class="conquistas-vitrine">
                 <div class="vitrine-card gold">
@@ -336,6 +371,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=6"></script>
 </body>
 </html>

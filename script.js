@@ -37,8 +37,24 @@ const msgsMotivacionaisErro = [
 ];
 
 // ===== INICIALIZAÇÃO =====
+let rankingGlobal = [];
+
+function carregarRanking() {
+    try {
+        const dados = localStorage.getItem('papai2026_ranking');
+        if (dados) rankingGlobal = JSON.parse(dados);
+    } catch(e) {}
+}
+
+function salvarRanking() {
+    try {
+        localStorage.setItem('papai2026_ranking', JSON.stringify(rankingGlobal));
+    } catch(e) {}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     carregarDadosLocais();
+    carregarRanking();
     configurarEventListeners();
     atualizarDropdownMaterias();
     validarFormularioInicial();
@@ -88,11 +104,12 @@ function configurarEventListeners() {
     document.getElementById('btn-proxima-questao').addEventListener('click', proximaQuestaoOuResultado);
     
     // Telas Adicionais
-    document.getElementById('btn-abrir-painel').addEventListener('click', mostrarPainelEvolucao);
-    document.getElementById('btn-abrir-conquistas').addEventListener('click', mostrarConquistas);
-    document.getElementById('btn-fechar-painel').addEventListener('click', voltarInicio);
-    document.getElementById('btn-fechar-conquistas').addEventListener('click', voltarInicio);
     document.getElementById('btn-fechar-revisao').addEventListener('click', voltarParaResultados);
+    document.getElementById('btn-abrir-conquistas').addEventListener('click', mostrarConquistas);
+    document.getElementById('btn-fechar-conquistas').addEventListener('click', voltarInicio);
+    document.getElementById('btn-abrir-painel').addEventListener('click', mostrarPainelEvolucao);
+    document.getElementById('btn-fechar-painel').addEventListener('click', voltarInicio);
+    document.getElementById('btn-abrir-ranking').addEventListener('click', mostrarRanking);
     
     // Resultado Actions
     document.getElementById('btn-voltar-inicio').addEventListener('click', voltarInicio);
@@ -383,18 +400,16 @@ function exibirFeedback(acertou, questao) {
     if (acertou) {
         document.getElementById('feedback-icon').innerText = "🎉";
         document.getElementById('feedback-title').innerText = "Resposta Correta!";
-        document.getElementById('feedback-message').innerText = msgsMotivacionaisAcerto[Math.floor(Math.random() * msgsMotivacionaisAcerto.length)];
+        document.getElementById('feedback-message').innerText = `${msgsMotivacionaisAcerto[Math.floor(Math.random() * msgsMotivacionaisAcerto.length)]} Parabéns, ${appState.usuario.nome}!`;
         correctDiv.classList.add('hidden');
-        // Comentário resumido no acerto
         commentBox.innerText = questao.comentario ? `Muito bem! ${questao.comentario.split('.')[0]}.` : "Ótima linha de raciocínio.";
         dispararConfete();
     } else {
         document.getElementById('feedback-icon').innerText = "❌";
         document.getElementById('feedback-title').innerText = "Resposta Incorreta";
-        document.getElementById('feedback-message').innerText = msgsMotivacionaisErro[Math.floor(Math.random() * msgsMotivacionaisErro.length)];
+        document.getElementById('feedback-message').innerText = `${msgsMotivacionaisErro[Math.floor(Math.random() * msgsMotivacionaisErro.length)]} Não desanime, ${appState.usuario.nome}!`;
         correctDiv.classList.remove('hidden');
         document.getElementById('texto-correta').innerText = questao.correta;
-        // Comentário completo no erro
         commentBox.innerText = questao.comentario || "Revise este assunto para não errar na próxima.";
     }
 }
@@ -456,6 +471,15 @@ function finalizarProva() {
         };
         appState.historico.push(tentativa);
 
+        // Salvar no ranking global
+        rankingGlobal.push({
+            nome: appState.usuario.nome,
+            materia: appState.usuario.materiaAtual,
+            nota: percentual,
+            data: dataStr
+        });
+        salvarRanking();
+
         // Checar Troféus (a cada 3 perfeitas totais)
         const perfeitasTotais = appState.historico.filter(t => t.nota === 100).length;
         let ganhouTrofeu = (perfeitasTotais > 0 && perfeitasTotais % 3 === 0 && percentual === 100);
@@ -486,7 +510,13 @@ function finalizarProva() {
     pEl.innerText = `${percentual}%`;
     pEl.className = `percentual-destaque ${percentual < 70 ? 'danger' : 'success'}`;
     
-    document.getElementById('resultado-mensagem').innerText = appState.isModoRevisao ? "Modo revisão concluído!" : "Prova finalizada!";
+    let msgFinal = "";
+    if (percentual === 100) msgFinal = `Perfeito, ${appState.usuario.nome}! Você não errou nada!`;
+    else if (percentual >= 80) msgFinal = `Excelente, ${appState.usuario.nome}! Muito bom!`;
+    else if (percentual >= 60) msgFinal = `Bom trabalho, ${appState.usuario.nome}!`;
+    else msgFinal = `Continue estudando, ${appState.usuario.nome}! Você consegue melhorar.`;
+    
+    document.getElementById('resultado-mensagem').innerText = appState.isModoRevisao ? "Modo revisão concluído!" : msgFinal;
     document.getElementById('res-acertos').innerText = acertos;
     document.getElementById('res-erros').innerText = erros;
     document.getElementById('res-tempo').innerText = tempoFinal;
@@ -637,18 +667,107 @@ function mostrarPainelEvolucao() {
         tbodyMat.innerHTML += `<tr><td>${mat}</td><td>${mapMaterias[mat].tentativas}</td><td>${max}%</td><td>${med}%</td></tr>`;
     });
 
-    // Evolução por Nível
-    const mapNiveis = { 'facil': [], 'medio': [], 'dificil': [] };
-    hist.forEach(t => { if(mapNiveis[t.nivel]) mapNiveis[t.nivel].push(t.nota); });
-    
-    const tbodyNiv = document.getElementById('tbody-niveis');
-    tbodyNiv.innerHTML = '';
-    Object.keys(mapNiveis).forEach(niv => {
-        let arr = mapNiveis[niv];
-        if(arr.length > 0) {
-            let med = Math.round(arr.reduce((a,b)=>a+b,0) / arr.length);
-            tbodyNiv.innerHTML += `<tr><td style="text-transform:capitalize;">${niv}</td><td>${arr.length}</td><td>${med}%</td></tr>`;
+    preencherTabelaMaterias(hist);
+    preencherTabelaNiveis(hist);
+}
+
+function preencherTabelaMaterias(hist) {
+    const tbody = document.getElementById('tbody-materias');
+    tbody.innerHTML = '';
+
+    const dadosMateria = {};
+    hist.forEach(t => {
+        if (!dadosMateria[t.materia]) dadosMateria[t.materia] = { tent: 0, soma: 0, melhor: 0 };
+        dadosMateria[t.materia].tent++;
+        dadosMateria[t.materia].soma += t.nota;
+        if (t.nota > dadosMateria[t.materia].melhor) dadosMateria[t.materia].melhor = t.nota;
+    });
+
+    for (const [mat, d] of Object.entries(dadosMateria)) {
+        let media = Math.round(d.soma / d.tent);
+        tbody.innerHTML += `
+            <tr>
+                <td><strong>${mat}</strong></td>
+                <td>${d.tent}</td>
+                <td style="color:var(--success-color)">${d.melhor}%</td>
+                <td>${media}%</td>
+            </tr>
+        `;
+    }
+}
+
+function preencherTabelaNiveis(hist) {
+    const tbody = document.getElementById('tbody-niveis');
+    tbody.innerHTML = '';
+
+    const dados = { facil: {t:0, s:0}, medio: {t:0, s:0}, dificil: {t:0, s:0} };
+    hist.forEach(t => {
+        if (dados[t.nivel]) {
+            dados[t.nivel].t++;
+            dados[t.nivel].s += t.nota;
         }
+    });
+
+    for (const [niv, d] of Object.entries(dados)) {
+        if (d.t > 0) {
+            let label = niv.charAt(0).toUpperCase() + niv.slice(1);
+            let media = Math.round(d.s / d.t);
+            tbody.innerHTML += `
+                <tr>
+                    <td>${label}</td>
+                    <td>${d.t}</td>
+                    <td>${media}%</td>
+                </tr>
+            `;
+        }
+    }
+}
+
+// ===== RANKING GLOBAL =====
+function mostrarRanking() {
+    document.querySelectorAll('.tela').forEach(t => {
+        t.classList.remove('ativa');
+        t.classList.add('hidden');
+    });
+    document.getElementById('tela-ranking').classList.remove('hidden');
+    document.getElementById('tela-ranking').classList.add('ativa');
+    
+    const tbody = document.getElementById('tabela-ranking');
+    tbody.innerHTML = '';
+    
+    // Agrupar a melhor nota de cada usuário
+    let melhores = {};
+    rankingGlobal.forEach(r => {
+        // Ignora se não houver nome
+        if (!r.nome) return;
+        if (!melhores[r.nome] || r.nota > melhores[r.nome].nota) {
+            melhores[r.nome] = r;
+        }
+    });
+    
+    // Ordenar por nota descrecente
+    const lista = Object.values(melhores).sort((a,b) => b.nota - a.nota);
+    
+    if (lista.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 20px;">Ninguém jogou ainda. Seja o primeiro da plataforma!</td></tr>';
+        return;
+    }
+    
+    lista.forEach((item, index) => {
+        let pos = index + 1;
+        let posStr = pos + 'º';
+        if (pos === 1) posStr = '🥇 1º';
+        if (pos === 2) posStr = '🥈 2º';
+        if (pos === 3) posStr = '🥉 3º';
+        
+        tbody.innerHTML += `
+            <tr>
+                <td><strong>${posStr}</strong></td>
+                <td>${item.nome}</td>
+                <td>${item.materia}</td>
+                <td style="color: var(--accent-color); font-weight: bold;">${item.nota}%</td>
+            </tr>
+        `;
     });
 }
 
