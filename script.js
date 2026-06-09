@@ -108,25 +108,38 @@ function handleUploadJSON(e) {
 
     const reader = new FileReader();
     reader.onload = function(event) {
+        let parsedData;
         try {
-            const data = JSON.parse(event.target.result);
-            appState.bancosDisponiveis[nomeMateria] = data;
-            salvarDadosLocais();
-            
-            // Atualizar UI
-            atualizarDropdownMaterias();
-            document.getElementById('select-materia').value = nomeMateria;
-            
-            document.getElementById('status-banco').classList.remove('hidden');
-            document.getElementById('nome-materia-carregada').innerText = nomeMateria;
-            document.getElementById('total-questoes').innerText = data.length;
-            
-            validarFormularioInicial();
-            alert(`Banco de ${nomeMateria} carregado com sucesso!`);
+            parsedData = JSON.parse(event.target.result);
         } catch (err) {
-            alert("Erro ao ler o arquivo JSON. Verifique a formatação.");
+            alert("Erro ao ler o arquivo JSON. O formato está incorreto.");
             console.error(err);
+            e.target.value = '';
+            return;
         }
+
+        appState.bancosDisponiveis[nomeMateria] = parsedData;
+        
+        try {
+            salvarDadosLocais();
+        } catch (err) {
+            console.error("Erro ao salvar no localStorage (possível limite de espaço):", err);
+            // Mesmo se falhar ao salvar, mantém na memória para a sessão atual
+        }
+        
+        // Atualizar UI
+        atualizarDropdownMaterias();
+        document.getElementById('select-materia').value = nomeMateria;
+        
+        document.getElementById('status-banco').classList.remove('hidden');
+        document.getElementById('nome-materia-carregada').innerText = nomeMateria;
+        document.getElementById('total-questoes').innerText = parsedData.length;
+        
+        validarFormularioInicial();
+        alert(`Banco de ${nomeMateria} carregado com sucesso!`);
+        
+        // Limpar o input para permitir enviar o mesmo arquivo novamente
+        e.target.value = '';
     };
     reader.readAsText(file);
 }
@@ -491,7 +504,11 @@ function voltarParaResultados() {
 
 // ===== CONQUISTAS =====
 function mostrarConquistas() {
-    document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
+    document.querySelectorAll('.tela').forEach(t => {
+        t.classList.remove('ativa');
+        t.classList.add('hidden');
+    });
+    document.getElementById('tela-conquistas').classList.remove('hidden');
     document.getElementById('tela-conquistas').classList.add('ativa');
 
     document.getElementById('conq-trofeus').innerText = `${appState.trofeus} conquistados`;
@@ -523,19 +540,19 @@ function mostrarConquistas() {
 let graficoEvolucao = null;
 
 function mostrarPainelEvolucao() {
-    document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
+    document.querySelectorAll('.tela').forEach(t => {
+        t.classList.remove('ativa');
+        t.classList.add('hidden');
+    });
+    document.getElementById('tela-painel').classList.remove('hidden');
     document.getElementById('tela-painel').classList.add('ativa');
 
     const hist = appState.historico;
     const totalProvas = hist.length;
     
-    if (totalProvas === 0) {
-        return; // Retorna pois não há dados
-    }
-
     const notas = hist.map(t => t.nota);
-    const mediaGeral = Math.round(notas.reduce((a,b)=>a+b,0) / totalProvas);
-    const melhorGeral = Math.max(...notas);
+    const mediaGeral = totalProvas > 0 ? Math.round(notas.reduce((a,b)=>a+b,0) / totalProvas) : 0;
+    const melhorGeral = totalProvas > 0 ? Math.max(...notas) : 0;
     const totalQuestoes = hist.reduce((acc, t) => acc + t.total, 0);
     const totalAcertos = hist.reduce((acc, t) => acc + t.acertos, 0);
     const totalErros = totalQuestoes - totalAcertos;
