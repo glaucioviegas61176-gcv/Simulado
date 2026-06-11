@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function carregarBancosPadrao() {
     // Tenta várias variações para garantir que o nome do arquivo seja encontrado
-    const arquivosPadrao = ['modelo_banco_questoes.json', 'portuguesN2.json', 'portugues.json', 'PortuguesN2.json'];
+    const arquivosPadrao = ['QuimicaN2.json', 'portuguesN2.json', 'portugues.json', 'PortuguesN2.json'];
     let teveMudanca = false;
     
     for (const arquivo of arquivosPadrao) {
