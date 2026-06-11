@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "enunciado": "O que são combustíveis fósseis?",
+        "comentario": "Os combustíveis fósseis são formados a partir do acúmulo de restos orgânicos (plantas e animais) que sofreram decomposição lenta sob altas pressões e temperaturas no subsolo ao longo de milhões de anos.",
+        "materia": "Química",
+        "alternativas": [
+            "Combustíveis produzidos em laboratório a partir de elementos sintéticos.",
+            "Fontes de energia geradas pela decomposição de materiais orgânicos ao longo de milhões de anos sob condições específicas de pressão e temperatura.",
+            "Combustíveis derivados da queima direta de madeira fresca e reflorestada.",
+            "Substâncias gasosas encontradas exclusivamente na atmosfera terrestre.",
+            "Fontes de energia infinitas e totalmente limpas produzidas pelo calor do sol."
+        ],
+        "nivel": "facil",
+        "assunto": "Combustíveis fósseis",
+        "correta": "Fontes de energia geradas pela decomposição de materiais orgânicos ao longo de milhões de anos sob condições específicas de pressão e temperatura."
+    },
+    {
+        "id": 2,
+        "enunciado": "Qual dos seguintes recursos é considerado um combustível fóssil?",
+        "comentario": "O carvão mineral é um combustível fóssil sólido, ao contrário do etanol e do biodiesel (biocombustíveis), da energia eólica (vento) e solar (sol).",
+        "materia": "Química",
+        "alternativas": [
+            "Etanol",
+            "Biodiesel",
+            "Carvão mineral",
+            "Energia eólica",
+            "Energia solar"
+        ],
+        "nivel": "facil",
+        "assunto": "Combustíveis fósseis",
+        "correta": "Carvão mineral"
+    },
+    {
+        "id": 3,
+        "enunciado": "O carvão mineral (fóssil) é originado principalmente a partir de:",
+        "comentario": "O carvão mineral é formado pela fossilização e soterramento de grandes florestas e vegetação terrestre que viveram há milhões de anos.",
+        "materia": "Química",
+        "alternativas": [
+            "Decomposição de dinossauros e animais marinhos gigantes.",
+            "Resíduos vulcânicos resfriados e solidificados.",
+            "Soterramento e fossilização de restos vegetais florestais ao longo de eras geológicas.",
+            "Acúmulo de lixo urbano compactado sob a terra.",
+            "Petrificação de minerais ricos em ferro e enxofre."
+        ],
+        "nivel": "facil",
+        "assunto": "Carvão fóssil",
+        "correta": "Soterramento e fossilização de restos vegetais florestais ao longo de eras geológicas."
+    },
+    {
+        "id": 4,
+        "enunciado": "Qual gás é essencial para que ocorra uma reação de combustão?",
+        "comentario": "O oxigênio ($O_2$) atua como comburente, sendo indispensável para sustentar a reação de queima (combustão).",
+        "materia": "Química",
+        "alternativas": [
+            "Nitrogênio ($N_2$)",
+            "Gás Carbônico ($CO_2$)",
+            "Hélio ($He$)",
+            "Oxigênio ($O_2$)",
+            "Hidrogênio ($H_2$)"
+        ],
+        "nivel": "facil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Oxigênio ($O_2$)"
+    },
+    {
+        "id": 5,
+        "enunciado": "Uma combustão completa de um hidrocarboneto sempre produz, além de água:",
+        "comentario": "Na combustão completa de compostos orgânicos contendo carbono e hidrogênio, todo o carbono é totalmente oxidado a dióxido de carbono ($CO_2$).",
+        "materia": "Química",
+        "alternativas": [
+            "Monóxido de carbono ($CO$)",
+            "Dióxido de carbono ($CO_2$)",
+            "Fuligem (Carbono puro)",
+            "Gás Metano ($CH_4$)",
+            "Gás Oxigênio ($O_2$)"
+        ],
+        "nivel": "facil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Dióxido de carbono ($CO_2$)"
+    },
+    {
+        "id": 6,
+        "enunciado": "A combustão incompleta ocorre quando há:",
+        "comentario": "A escassez ou limitação de oxigênio impede a oxidação total do combustível, gerando produtos como monóxido de carbono e fuligem.",
+        "materia": "Química",
+        "alternativas": [
+            "Quantidade insuficiente de comburente (oxigênio) para oxidar totalmente o combustível.",
+            "Excesso de calor e combustível no ambiente.",
+            "Umidade muito elevada que apaga a chama imediatamente.",
+            "Presença exclusiva de gases nobres na queima.",
+            "Ausência total de qualquer tipo de combustível."
+        ],
+        "nivel": "facil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Quantidade insuficiente de comburente (oxigênio) para oxidar totalmente o combustível."
+    },
+    {
+        "id": 7,
+        "enunciado": "O gás altamente tóxico, inodoro e incolor liberado na combustão incompleta de combustíveis fósseis é o:",
+        "comentario": "O monóxido de carbono ($CO$) é um gás extremamente tóxico que se liga fortemente à hemoglobina do sangue, impedindo o transporte de oxigênio.",
+        "materia": "Química",
+        "alternativas": [
+            "Dióxido de carbono ($CO_2$)",
+            "Monóxido de carbono ($CO$)",
+            "Oxigênio ($O_2$)",
+            "Gás Nitrogênio ($N_2$)",
+            "Vapor de água ($H_2O$)"
+        ],
+        "nivel": "facil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Monóxido de carbono ($CO$)"
+    },
+    {
+        "id": 8,
+        "enunciado": "Qual é a principal aplicação do carvão fóssil no mundo atual?",
+        "comentario": "A queima de carvão mineral é amplamente utilizada em usinas termelétricas para ferver água, gerar vapor e produzir energia elétrica.",
+        "materia": "Química",
+        "alternativas": [
+            "Fabricação de combustíveis líquidos para aviação doméstica.",
+            "Geração de energia elétrica em usinas termelétricas e uso em indústrias siderúrgicas.",
+            "Uso direto na alimentação animal e fertilização do solo.",
+            "Substituição do plástico na produção de embalagens recicláveis.",
+            "Purificação da água potável residencial de forma direta."
+        ],
+        "nivel": "facil",
+        "assunto": "Carvão fóssil",
+        "correta": "Geração de energia elétrica em usinas termelétricas e uso em indústrias siderúrgicas."
+    },
+    {
+        "id": 9,
+        "enunciado": "Os combustíveis fósseis são considerados fontes de energia:",
+        "comentario": "Os combustíveis fósseis levam milhões de anos para se formar e são consumidos muito mais rápido do que a capacidade da natureza de renová-los, sendo, portanto, não renováveis.",
+        "materia": "Química",
+        "alternativas": [
+            "Renováveis, pois se formam rapidamente na natureza.",
+            "Infinitas, pois as reservas terrestres nunca se esgotam.",
+            "Não renováveis, pois suas reservas são limitadas e levam milhões de anos para se regenerar.",
+            "Ecológicas, pois não geram poluição ou gases estufa quando queimados.",
+            "Sintéticas, criadas exclusivamente pela atividade industrial humana recente."
+        ],
+        "nivel": "facil",
+        "assunto": "Combustíveis fósseis",
+        "correta": "Não renováveis, pois suas reservas são limitadas e levam milhões de anos para se regenerar."
+    },
+    {
+        "id": 10,
+        "enunciado": "O que significa o termo 'combustão'?",
+        "comentario": "A combustão é uma reação química exotérmica (que libera calor) de rápida oxidação entre um combustível e um comburente (geralmente o oxigênio).",
+        "materia": "Química",
+        "alternativas": [
+            "Processo físico de evaporação rápida da água.",
+            "Reação química de queima rápida que libera calor e luz.",
+            "Fusão de materiais metálicos em altas temperaturas.",
+            "Decomposição lenta de matéria orgânica no solo sem oxigênio.",
+            "Congelamento instantâneo de gases em baixas pressões."
+        ],
+        "nivel": "facil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Reação química de queima rápida que libera calor e luz."
+    },
+    {
+        "id": 11,
+        "enunciado": "Durante a queima do carvão mineral, impurezas contendo enxofre são oxidadas e liberadas na atmosfera. Esse fenômeno está diretamente associado à ocorrência de qual problema ambiental?",
+        "comentario": "A queima do enxofre contido no carvão gera dióxido de enxofre ($SO_2$), que ao reagir com a água da chuva forma ácidos fortes, resultando na chuva ácida.",
+        "materia": "Química",
+        "alternativas": [
+            "Destruição direta da camada de ozônio por CFCs.",
+            "Chuva ácida, decorrente da formação de óxidos de enxofre ($SO_x$) que reagem com a água atmosférica.",
+            "Inversão térmica severa em áreas exclusivamente rurais.",
+            "Eutrofização de rios devido ao acúmulo de resíduos sólidos.",
+            "Aumento da salinidade dos oceanos devido às cinzas voláteis."
+        ],
+        "nivel": "medio",
+        "assunto": "Carvão fóssil",
+        "correta": "Chuva ácida, decorrente da formação de óxidos de enxofre ($SO_x$) que reagem com a água atmosférica."
+    },
+    {
+        "id": 12,
+        "enunciado": "Qual é a principal diferença visual observada na chama de uma combustão completa em relação a uma incompleta?",
+        "comentario": "A combustão completa apresenta chama predominantemente azul (alta temperatura e oxigenação), enquanto a incompleta exibe chama amarela ou alaranjada (presença de partículas de carbono incandescentes devido à falta de oxigênio).",
+        "materia": "Química",
+        "alternativas": [
+            "A chama completa é amarela/brilhante e a incompleta é totalmente azul.",
+            "A chama completa é azul e a incompleta é amarela ou alaranjada.",
+            "A chama completa não emite luz nenhuma, sendo invisível a olho nu.",
+            "A chama incompleta produz faíscas verdes e a completa produz faíscas vermelhas.",
+            "Não há diferença visual, pois ambas produzem a mesma coloração e brilho de chama."
+        ],
+        "nivel": "medio",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "A chama completa é azul e a incompleta é amarela ou alaranjada."
+    },
+    {
+        "id": 13,
+        "enunciado": "O monóxido de carbono ($CO$), produto de combustões incompletas, é extremamente perigoso para a saúde humana porque:",
+        "comentario": "O monóxido de carbono possui alta afinidade com a hemoglobina, formando a carboxihemoglobina, o que impede o sangue de transportar oxigênio para os tecidos do corpo.",
+        "materia": "Química",
+        "alternativas": [
+            "Destrói os alvéolos pulmonares por contato ácido e corrosivo.",
+            "Associa-se irreversivelmente com as plaquetas, provocando hemorragias internas imediatas.",
+            "Liga-se estavelmente à hemoglobina do sangue, impedindo o transporte de oxigênio pelo organismo.",
+            "Causa irritação extrema nos olhos, levando à cegueira temporária instantânea.",
+            "Provoca queimaduras químicas nas vias aéreas superiores devido ao seu calor latente."
+        ],
+        "nivel": "medio",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Liga-se estavelmente à hemoglobina do sangue, impedindo o transporte de oxigênio pelo organismo."
+    },
+    {
+        "id": 14,
+        "enunciado": "A hulha é um tipo de carvão fóssil muito importante para a indústria. O processo de destilação seca da hulha produz o coque, que é utilizado para:",
+        "comentario": "O coque (carbono quase puro obtido da hulha) é essencial nas indústrias siderúrgicas para atuar como agente redutor na extração do ferro a partir do minério de ferro em altos-fornos.",
+        "materia": "Química",
+        "alternativas": [
+            "Gerar energia elétrica residencial de forma direta e sem emissões.",
+            "Atuar como agente redutor e combustível na produção de ferro gusa em indústrias siderúrgicas.",
+            "Produzir asfalto para pavimentação de rodovias urbanas.",
+            "Servir de matéria-prima para a fabricação de adubos orgânicos nitrogenados.",
+            "Substituir o silício na manufatura de chips e processadores eletrônicos."
+        ],
+        "nivel": "medio",
+        "assunto": "Carvão fóssil",
+        "correta": "Atuar como agente redutor e combustível na produção de ferro gusa in indústrias siderúrgicas."
+    },
+    {
+        "id": 15,
+        "enunciado": "O efeito estufa é um fenômeno natural benéfico, mas tem sido intensificado pela queima de combustíveis fósseis devido ao aumento de qual gás na atmosfera?",
+        "comentario": "O dióxido de carbono ($CO_2$), principal produto da combustão completa de combustíveis fósseis, é um potente gás de efeito estufa que retém calor na atmosfera terrestre.",
+        "materia": "Química",
+        "alternativas": [
+            "Gás Hélio ($He$)",
+            "Dióxido de carbono ($CO_2$)",
+            "Gás Oxigênio ($O_2$)",
+            "Monóxido de carbono ($CO$)",
+            "Gás Argônio ($Ar$)"
+        ],
+        "nivel": "medio",
+        "assunto": "Combustíveis fósseis",
+        "correta": "Dióxido de carbono ($CO_2$)"
+    },
+    {
+        "id": 16,
+        "enunciado": "Qual das seguintes equações químicas representa corretamente a reação de combustão completa do carbono elementar sólido ($C$)?",
+        "comentario": "Na combustão completa do carbono puro, 1 mol de $C(s)$ reage com 1 mol de $O_2(g)$ para formar 1 mol de dióxido de carbono gás ($CO_2$).",
+        "materia": "Química",
+        "alternativas": [
+            "$C(s) + O_2(g) \\rightarrow CO_2(g)$",
+            "$C(s) + \\frac{1}{2} O_2(g) \\rightarrow CO(g)$",
+            "$C(s) + H_2O(l) \\rightarrow CO(g) + H_2(g)$",
+            "$2 C(s) + O_2(g) \\rightarrow 2 CO(g)$",
+            "$C(s) + 2 O_2(g) \\rightarrow CO_4(g)$"
+        ],
+        "nivel": "medio",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "$C(s) + O_2(g) \\rightarrow CO_2(g)$"
+    },
+    {
+        "id": 17,
+        "enunciado": "O carvão fóssil passa por várias fases de carbonização ao longo de milhões de anos. Qual é a ordem correta dessas etapas, organizada do menor teor de carbono (mais jovem) para o maior teor de carbono (mais antigo)?",
+        "comentario": "A evolução geológica do carvão mineral segue a ordem de maturação e teor de carbono: Turfa (menor teor) -> Linhito -> Hulha -> Antracito (maior teor, acima de 90% de carbono).",
+        "materia": "Química",
+        "alternativas": [
+            "Antracito, Hulha, Linhito, Turfa.",
+            "Turfa, Linhito, Hulha, Antracito.",
+            "Hulha, Turfa, Antracito, Linhito.",
+            "Linhito, Antracito, Turfa, Hulha.",
+            "Turfa, Antracito, Linhito, Hulha."
+        ],
+        "nivel": "medio",
+        "assunto": "Carvão fóssil",
+        "correta": "Turfa, Linhito, Hulha, Antracito."
+    },
+    {
+        "id": 18,
+        "enunciado": "Em um automóvel com motor desregulado, observa-se a saída de fumaça preta pelo escapamento. Quimicamente, essa fumaça preta é composta por:",
+        "comentario": "A fumaça preta é constituída por fuligem, que são partículas sólidas finas de carbono puro formadas devido à queima incompleta do combustível por falta de oxigênio.",
+        "materia": "Química",
+        "alternativas": [
+            "Vapor de água condensado com poeira da estrada.",
+            "Partículas sólidas finas de carbono elementar não queimado (fuligem).",
+            "Dióxido de carbono liquefeito sob alta pressão.",
+            "Gotículas de combustível puro que evaporaram sem sofrer aquecimento.",
+            "Gás monóxido de carbono concentrado e resfriado."
+        ],
+        "nivel": "medio",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Partículas sólidas finas de carbono elementar não queimado (fuligem)."
+    },
+    {
+        "id": 19,
+        "enunciado": "Por que a formação de fuligem em fogões ou motores é considerada um indicativo de desperdício de energia?",
+        "comentario": "A fuligem indica que o combustível não foi totalmente queimado (combustão incompleta). Como a oxidação foi parcial, a energia térmica total contida nas ligações químicas do combustível não foi plenamente liberada.",
+        "materia": "Química",
+        "alternativas": [
+            "Porque a fuligem consome o calor do fogo para se manter aquecida.",
+            "Porque indica uma combustão incompleta, onde a energia química do combustível não é totalmente liberada na forma de calor.",
+            "Porque a fuligem impede a passagem física da eletricidade nos cabos do motor.",
+            "Porque indica que o oxigênio está sendo transformado em nitrogênio inútil.",
+            "Porque a fuligem aumenta a velocidade da queima, fazendo o combustível acabar muito rápido."
+        ],
+        "nivel": "medio",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Porque indica uma combustão incompleta, onde a energia química do combustível não é totalmente liberada na forma de calor."
+    },
+    {
+        "id": 20,
+        "enunciado": "A maior parte das grandes reservas de carvão fóssil (mineral) exploradas hoje começou a se formar em qual período geológico da Terra, conhecido por suas imensas florestas pantanosas?",
+        "comentario": "O período Carbonífero (há cerca de 300 a 360 milhões de anos) recebe esse nome justamente pela grande deposição de restos vegetais que originaram as ricas jazidas de carvão mineral atuais.",
+        "materia": "Química",
+        "alternativas": [
+            "Período Jurássico.",
+            "Período Carbonífero.",
+            "Era Quaternária.",
+            "Período Cambriano.",
+            "Período Triássico."
+        ],
+        "nivel": "medio",
+        "assunto": "Carvão fóssil",
+        "correta": "Período Carbonífero."
+    },
+    {
+        "id": 21,
+        "enunciado": "Comparando a termodinâmica da combustão completa do metano ($CH_4$) com a sua combustão incompleta (gerando monóxido de carbono), qual das seguintes afirmações sobre a energia liberada está correta?",
+        "comentario": "A combustão completa oxida totalmente os átomos de carbono a $CO_2$, liberando a quantidade máxima de energia térmica da reação (maior entalpia de reação em módulo). A combustão incompleta libera menos calor por mol de combustível reagido.",
+        "materia": "Química",
+        "alternativas": [
+            "Ambas liberam a mesma quantidade exata de calor, mudando apenas os subprodutos gasosos.",
+            "A combustão incompleta libera mais calor, pois o monóxido de carbono acumula energia cinética instável.",
+            "A combustão completa libera uma quantidade significativamente maior de calor por mol de combustível consumido.",
+            "A combustão incompleta absorve calor do ambiente (reação endotérmica), enquanto a completa libera calor.",
+            "A combustão completa consome mais energia externa do que libera, resultando em saldo energético negativo."
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "A combustão completa libera uma quantidade significativamente maior de calor por mol de combustível consumido."
+    },
+    {
+        "id": 22,
+        "enunciado": "Considere a combustão incompleta do octano líquido ($C_8H_{18}$), gerando monóxido de carbono gasoso ($CO$) e água líquida ($H_2O$). Qual é o coeficiente estequiométrico do oxigênio ($O_2$) quando a equação química está corretamente balanceada com os menores números inteiros?",
+        "comentario": "A equação química balanceada é: $2 C_8H_{18} + 17 O_2 \\rightarrow 16 CO + 18 H_2O$. Portanto, o coeficiente estequiométrico do oxigênio ($O_2$) é 17.",
+        "materia": "Química",
+        "alternativas": [
+            "9",
+            "12",
+            "17",
+            "25",
+            "34"
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "17"
+    },
+    {
+        "id": 23,
+        "enunciado": "O carvão ativado, muito utilizado em filtros e tratamentos médicos, difere do carvão fóssil comum extraído das minas porque o carvão ativado:",
+        "comentario": "O carvão ativado passa por um tratamento térmico com gases oxidantes para criar uma micro-porosidade extrema, conferindo-lhe uma enorme área superficial que favorece o processo físico de adsorção de impurezas.",
+        "materia": "Química",
+        "alternativas": [
+            "Possui maior concentração de enxofre e metais pesados inflamáveis.",
+            "É composto puramente por moléculas de hidrocarbonetos de cadeia longa.",
+            "Passa por um tratamento físico-químico que aumenta drasticamente sua porosidade e área superficial, facilitando a adsorção.",
+            "É obtido diretamente através da fusão nuclear de isótopos de carbono em laboratório.",
+            "Consegue conduzir eletricidade melhor do que o cobre e o ouro."
+        ],
+        "nivel": "dificil",
+        "assunto": "Carvão fóssil",
+        "correta": "Passa por um tratamento físico-químico que aumenta drasticamente sua porosidade e área superficial, facilitando a adsorção."
+    },
+    {
+        "id": 24,
+        "enunciado": "Em termos de variação de entalpia ($\\Delta H$) e quebra/formação de ligações químicas, a reação de combustão de combustíveis fósseis é classificada como:",
+        "comentario": "A combustão é uma reação exotérmica ($\\Delta H < 0$). A energia liberada na formação das novas ligações químicas dos produtos ($C=O$ e $O-H$) é maior do que a energia absorvida para romper as ligações dos reagentes ($C-C$, $C-H$ e $O=O$).",
+        "materia": "Química",
+        "alternativas": [
+            "Endotérmica ($\\Delta H > 0$), pois absorve calor para quebrar as ligações estáveis dos hidrocarbonetos.",
+            "Exotérmica ($\\Delta H < 0$), onde a energia liberada na formação das ligações dos produtos é maior que a energia gasta na quebra das ligações dos reagentes.",
+            "Isotérmica ($\\Delta H = 0$), mantendo o balanço de energia interna totalmente inalterado no sistema fechado.",
+            "Endotérmica ($\\Delta H < 0$), pois consome calor latente para converter o oxigênio líquido em gasoso.",
+            "Exotérmica ($\\Delta H > 0$), pois necessita de uma faísca externa constante para manter os reagentes excitados."
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Exotérmica ($\\Delta H < 0$), onde a energia liberada na formação das ligações dos produtos é maior que a energia gasta na quebra das ligações dos reagentes."
+    },
+    {
+        "id": 25,
+        "enunciado": "A deposição de fuligem (carbono elementar sólido) gerada por combustões incompletas no interior de caldeiras industriais e motores causa qual problema físico-químico?",
+        "comentario": "O carbono amorfo (fuligem) atua como um isolante térmico nas paredes metálicas dos trocadores de calor de caldeiras, reduzindo severamente a eficiência da transferência de calor e exigindo maior consumo de combustível.",
+        "materia": "Química",
+        "alternativas": [
+            "Acelera a transferência térmica devido à excelente condutividade do carbono sólido.",
+            "Atua como um isolante térmico nas superfícies metálicas, reduzindo drasticamente a eficiência da troca de calor.",
+            "Reage com as paredes de aço provocando a solidificação instantânea da água interna.",
+            "Impede a corrosão do metal por atuar como uma camada protetora totalmente inerte e indestrutível.",
+            "Eleva a pressão interna do sistema devido à liquefação espontânea do carbono sólido."
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Atua como um isolante térmico nas superfícies metálicas, reduzindo drasticamente a eficiência da troca de calor."
+    },
+    {
+        "id": 26,
+        "enunciado": "O gás natural (composto principalmente por metano, $CH_4$) é frequentemente considerado um combustível fóssil de queima 'mais limpa' quando comparado ao carvão mineral. Qual característica química justifica essa afirmação?",
+        "comentario": "O metano possui uma alta proporção de hidrogênio em relação ao carbono ($H/C = 4$) e praticamente não contém contaminantes como enxofre ou nitrogênio. Assim, sua combustão gera muito menos $CO_2$ por unidade de energia térmica liberada e não emite fuligem ou óxidos de enxofre.",
+        "materia": "Química",
+        "alternativas": [
+            "O gás natural possui ligações triplas estáveis que não liberam carbono durante a oxidação.",
+            "A molécula de metano possui alta relação hidrogênio/carbono e baixa presença de contaminantes como enxofre e metais, reduzindo as emissões de poluentes e gases estufa por joule de energia gerada.",
+            "Sua queima consome monóxido de carbono da atmosfera, purificando o ar circundante.",
+            "O gás natural não necessita de oxigênio para queimar, evitando a formação de vapor de água tóxico.",
+            "O metano é um hidrocarboneto aromático de cadeia fechada que precipita as cinzas antes da exaustão."
+        ],
+        "nivel": "dificil",
+        "assunto": "Combustíveis fósseis",
+        "correta": "A molécula de metano possui alta relação hidrogênio/carbono e baixa presença de contaminantes como enxofre e metais, reduzindo as emissões de poluentes e gases estufa por joule de energia gerada."
+    },
+    {
+        "id": 27,
+        "enunciado": "No contexto da substituição do carvão fóssil por biomassa lignocelulósica (como pellets de madeira) em termelétricas antigas, qual o principal desafio técnico relacionado à composição química da biomassa?",
+        "comentario": "A biomassa possui menor densidade energética em comparação ao carvão mineral e contém maiores teores de compostos voláteis e metais alcalinos (como potássio e sódio) que podem provocar problemas de corrosão e incrustação ácida nas caldeiras.",
+        "materia": "Química",
+        "alternativas": [
+            "A biomassa não queima na presença de ar atmosférico comum.",
+            "Menor densidade energética e teores elevados de umidade e metais alcalinos na biomassa, que podem provocar corrosão ácida e incrustações cinzentas nas tubulações da caldeira.",
+            "A biomassa mineraliza-se instantaneamente impedindo a passagem de vapor nas turbinas.",
+            "Emissão exclusiva de gases nobres altamente inflamáveis que desestabilizam o gerador.",
+            "A ausência total de hidrogênio nas fibras de celulose inviabiliza as reações exotérmicas."
+        ],
+        "nivel": "dificil",
+        "assunto": "Carvão fóssil",
+        "correta": "Menor densidade energética e teores elevados de umidade e metais alcalinos na biomassa, que podem provocar corrosão ácida e incrustações cinzentas nas tubulações da caldeira."
+    },
+    {
+        "id": 28,
+        "enunciado": "A pirita ($FeS_2$) é um mineral sulfetado comumente encontrado como impureza no carvão mineral bruto. Durante o processo de combustão do carvão, a oxidação química da pirita gera principalmente qual gás poluente?",
+        "comentario": "A oxidação da pirita na queima do carvão mineral gera óxido de ferro ($Fe_2O_3$) e dióxido de enxofre ($SO_2$), que é um gás poluente responsável pela chuva ácida e problemas respiratórios. A reação é: $4 FeS_2 + 11 O_2 \\rightarrow 2 Fe_2O_3 + 8 SO_2$.",
+        "materia": "Química",
+        "alternativas": [
+            "Sulfeto de hidrogênio ($H_2S$)",
+            "Dióxido de enxofre ($SO_2$)",
+            "Gás Sulfídrico ($S_8$)",
+            "Trióxido de ferro ($Fe_2O_3$)",
+            "Monóxido de nitrogênio ($NO$)"
+        ],
+        "nivel": "dificil",
+        "assunto": "Carvão fóssil",
+        "correta": "Dióxido de enxofre ($SO_2$)"
+    },
+    {
+        "id": 29,
+        "enunciado": "A energia de ativação ($E_a$) é a barreira energética necessária para que os reagentes de uma combustão iniciem a reação. Do ponto de vista cinético molecular, o fornecimento dessa energia inicial serve para:",
+        "comentario": "A energia de ativação serve para romper as ligações químicas estáveis dos reagentes (como a ligação $O=O$ do oxigênio e as ligações $C-H$ do combustível), permitindo a colisão efetiva e a formação do complexo ativado para iniciar a reação em cadeia.",
+        "materia": "Química",
+        "alternativas": [
+            "Aumentar o volume físico do oxigênio, permitindo que ele ocupe todo o recipiente.",
+            "Fornecer energia térmica para quebrar as ligações moleculares dos reagentes e permitir colisões moleculares eficazes que gerem o complexo ativado.",
+            "Diminuir a temperatura da chama para torná-la visível e controlável pelas leis da física.",
+            "Neutralizar as cargas elétricas positivas dos núcleos dos átomos de carbono.",
+            "Catalisar a reação, reduzindo permanentemente a necessidade de oxigênio durante a queima."
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "Fornecer energia térmica para quebrar as ligações moleculares dos reagentes e permitir colisões moleculares eficazes que gerem o complexo ativado."
+    },
+    {
+        "id": 30,
+        "enunciado": "A queima completa do carbono elementar é expressa por: $C(s) + O_2(g) \\rightarrow CO_2(g)$ ($\\Delta H_1 = -393,5 \\text{ kJ/mol}$). A queima do monóxido de carbono é: $CO(g) + \\frac{1}{2} O_2(g) \\rightarrow CO_2(g)$ ($\\Delta H_2 = -283,0 \\text{ kJ/mol}$). Utilizando a Lei de Hess, qual é o valor aproximado da variação de entalpia para a combustão incompleta de 1 mol de carbono gerando apenas monóxido de carbono gasoso ($C(s) + \\frac{1}{2} O_2(g) \\rightarrow CO(g)$)?",
+        "comentario": "Aplicando a Lei de Hess: queremos a reação $C(s) + \\frac{1}{2} O_2(g) \\rightarrow CO(g)$. Podemos somar a primeira reação com a segunda invertida: $\\Delta H = \\Delta H_1 - \\Delta H_2 = -393,5 - (-283,0) = -110,5 \\text{ kJ/mol}$.",
+        "materia": "Química",
+        "alternativas": [
+            "$-676,5 \\text{ kJ/mol}$",
+            "$-110,5 \\text{ kJ/mol}$",
+            "$+110,5 \\text{ kJ/mol}$",
+            "$-283,0 \\text{ kJ/mol}$",
+            "$+676,5 \\text{ kJ/mol}$"
+        ],
+        "nivel": "dificil",
+        "assunto": "Reações de combustão completa e incompleta",
+        "correta": "$-110,5 \\text{ kJ/mol}$"
+    }
+]
