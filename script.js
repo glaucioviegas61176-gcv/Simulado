@@ -20,12 +20,12 @@ let appState = {
 
 // Configurações Globais
 const msgsMotivacionaisAcerto = [
-    "Excelente trabalho!",
-    "Você está dominando este conteúdo!",
+    "Excelente trabalho molecão!",
+    "Você está dominando este conteúdo! 67!!!",
     "Mais um passo rumo ao troféu!",
-    "Continue assim!",
+    "Continue assim, ah moleke!",
     "Acertou em cheio!",
-    "Brilhante!"
+    "Brilhante garotão!"
 ];
 
 const msgsMotivacionaisErro = [
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function carregarBancosPadrao() {
     // Tenta várias variações para garantir que o nome do arquivo seja encontrado
-    const arquivosPadrao = ['QuimicaN2.json', 'portuguesN2.json', 'portugues.json', 'PortuguesN2.json'];
+    const arquivosPadrao = ['Inglês N2.json', 'QuimicaN2.json', 'PortuguesN2.json'];
     let teveMudanca = false;
     
     for (const arquivo of arquivosPadrao) {
