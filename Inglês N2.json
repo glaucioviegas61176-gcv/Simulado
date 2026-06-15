@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "facil",
+        "enunciado": "Choose the correct option to complete the sentence:\n\"My brother finished college three years _________.\"",
+        "alternativas": [
+            "in",
+            "last",
+            "ago",
+            "at",
+            "on"
+        ],
+        "correta": "ago",
+        "comentario": "Usamos 'ago' após a expressão de tempo (three years) para indicar há quanto tempo no passado a ação ocorreu."
+    },
+    {
+        "id": 2,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence with the appropriate time expression:\n\"They visited their grandparents _________ month.\"",
+        "alternativas": [
+            "in",
+            "last",
+            "ago",
+            "at",
+            "on"
+        ],
+        "correta": "last",
+        "comentario": "Usamos 'last' antes de unidades de tempo (ex: month, week, year) para significar 'passado' ou 'último'."
+    },
+    {
+        "id": 3,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "facil",
+        "enunciado": "Complete the preference statement:\n\"I would rather _________ a documentary tonight.\"",
+        "alternativas": [
+            "watch",
+            "to watch",
+            "watching",
+            "watched",
+            "watches"
+        ],
+        "correta": "watch",
+        "comentario": "A estrutura 'would rather' (preferir) exige o verbo no infinitivo sem a partícula 'to'."
+    },
+    {
+        "id": 4,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "facil",
+        "enunciado": "Which of the following is the correct interrogative form using 'would rather'?",
+        "alternativas": [
+            "Would you rather play video games now?",
+            "Do you would rather play video games now?",
+            "Would you rather to play video games now?",
+            "Would rather you play video games now?",
+            "Will you rather play video games now?"
+        ],
+        "correta": "Would you rather play video games now?",
+        "comentario": "Para fazer perguntas com 'would rather', invertemos a ordem do sujeito com o auxiliar 'would' (Would you rather...)."
+    },
+    {
+        "id": 5,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "facil",
+        "enunciado": "Choose the correct verb form to complete the recommendation:\n\"You had better _________ a coat. It's freezing outside.\"",
+        "alternativas": [
+            "wear",
+            "to wear",
+            "wearing",
+            "wore",
+            "wears"
+        ],
+        "correta": "wear",
+        "comentario": "A expressão 'had better' indica um conselho forte e é seguida pelo verbo no infinitivo sem 'to'."
+    },
+    {
+        "id": 6,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "facil",
+        "enunciado": "What is the correct negative form of the recommendation: \"We had better go\"?",
+        "alternativas": [
+            "We had better not go.",
+            "We hadn't better go.",
+            "We had not better go.",
+            "We had better to not go.",
+            "We don't had better go."
+        ],
+        "correta": "We had better not go.",
+        "comentario": "A forma negativa de 'had better' é construída colocando o 'not' logo após a palavra 'better'."
+    },
+    {
+        "id": 7,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "facil",
+        "enunciado": "Choose the correct connective based on the sentence structure:\n\"I was very tired, _________ I took a short nap after lunch.\"",
+        "alternativas": [
+            "so",
+            "therefore",
+            "because",
+            "but",
+            "although"
+        ],
+        "correta": "so",
+        "comentario": "Usamos 'so' (então/por isso) após uma vírgula para ligar uma causa ao seu resultado."
+    },
+    {
+        "id": 8,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence paying attention to punctuation:\n\"Sarah forgot her keys. _________, she couldn't enter her apartment.\"",
+        "alternativas": [
+            "Therefore",
+            "So",
+            "Because",
+            "But",
+            "Although"
+        ],
+        "correta": "Therefore",
+        "comentario": "Usamos 'Therefore' (portanto) no início de uma frase nova, iniciando com letra maiúscula e seguida por vírgula."
+    },
+    {
+        "id": 9,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence:\n\"The team practiced every day. _________, they won the championship.\"",
+        "alternativas": [
+            "Therefore",
+            "So",
+            "Because",
+            "But",
+            "Although"
+        ],
+        "correta": "Therefore",
+        "comentario": "Após um ponto final, para expressar conclusão ou consequência, iniciamos a frase com 'Therefore' seguido de vírgula."
+    },
+    {
+        "id": 10,
+        "materia": "Inglês",
+        "assunto": "Connectives: Because",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence showing the cause of the action:\n\"She bought a large bottle of water _________ she was very thirsty.\"",
+        "alternativas": [
+            "because",
+            "so",
+            "therefore",
+            "but",
+            "although"
+        ],
+        "correta": "because",
+        "comentario": "A conjunção 'because' conecta o efeito (comprar água) com a sua causa/motivo (estar com sede)."
+    },
+    {
+        "id": 11,
+        "materia": "Inglês",
+        "assunto": "Connectives: Because",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence:\n\"We put on our heavy boots _________ it started to snow.\"",
+        "alternativas": [
+            "because",
+            "so",
+            "therefore",
+            "but",
+            "although"
+        ],
+        "correta": "because",
+        "comentario": "'Because' é usado aqui para apresentar a razão ou motivo pelo qual eles calçaram as botas pesadas."
+    },
+    {
+        "id": 12,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence in the Present Continuous:\n\"The children _________ in the garden right now.\"",
+        "alternativas": [
+            "are playing",
+            "is playing",
+            "play",
+            "played",
+            "playing"
+        ],
+        "correta": "are playing",
+        "comentario": "Como o sujeito 'The children' é plural, o Present Continuous exige o verbo auxiliar 'are' + verbo principal com '-ing'."
+    },
+    {
+        "id": 13,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "facil",
+        "enunciado": "Complete with the correct form of the Present Continuous:\n\"Your father _________ in the office at the moment.\"",
+        "alternativas": [
+            "is working",
+            "are working",
+            "works",
+            "work",
+            "working"
+        ],
+        "correta": "is working",
+        "comentario": "Para o sujeito singular 'Your father' (he), a estrutura do Present Continuous é 'is' + verbo com '-ing'."
+    },
+    {
+        "id": 14,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "facil",
+        "enunciado": "Convert the sentence \"The children are playing\" into the negative form:",
+        "alternativas": [
+            "The children are not playing.",
+            "The children not are playing.",
+            "The children don't playing.",
+            "The children aren't play.",
+            "The children isn't playing."
+        ],
+        "correta": "The children are not playing.",
+        "comentario": "A forma negativa do Present Continuous é formada adicionando 'not' após o verbo auxiliar 'are'."
+    },
+    {
+        "id": 15,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "facil",
+        "enunciado": "Complete with the Simple Past form of the verb:\n\"Yesterday, we _________ to our new house.\"",
+        "alternativas": [
+            "moved",
+            "moves",
+            "move",
+            "moving",
+            "were moving"
+        ],
+        "correta": "moved",
+        "comentario": "Para ações concluídas no passado (Yesterday), usamos o Simple Past. O verbo 'move' é regular, bastando acrescentar '-d'."
+    },
+    {
+        "id": 16,
+        "materia": "Inglês",
+        "assunto": "Future: Will",
+        "nivel": "facil",
+        "enunciado": "Complete the promise with the correct future form:\n\"I promise I _________ help you with your homework.\"",
+        "alternativas": [
+            "will",
+            "going to",
+            "am going to",
+            "would",
+            "won't to"
+        ],
+        "correta": "will",
+        "comentario": "Usamos o auxiliar 'will' para fazer promessas ou ofertas espontâneas no futuro."
+    },
+    {
+        "id": 17,
+        "materia": "Inglês",
+        "assunto": "Future: Will",
+        "nivel": "facil",
+        "enunciado": "Complete the prediction about the future:\n\"I think they _________ to Europe next summer.\"",
+        "alternativas": [
+            "will travel",
+            "are travel",
+            "going to travel",
+            "travels",
+            "travelled"
+        ],
+        "correta": "will travel",
+        "comentario": "Expressões de opinião ou achismo como 'I think' costumam ser seguidas do futuro simples com 'will'."
+    },
+    {
+        "id": 18,
+        "materia": "Inglês",
+        "assunto": "Future: Be Going To",
+        "nivel": "facil",
+        "enunciado": "Complete the sentence showing a planned future action:\n\"They _________ visit the museum tomorrow. They already have the tickets.\"",
+        "alternativas": [
+            "are going to",
+            "will",
+            "is going to",
+            "going to",
+            "am going to"
+        ],
+        "correta": "are going to",
+        "comentario": "Para planos futuros e intenções já decididas, usamos 'be going to'. Como o sujeito é plural (They), usamos 'are going to'."
+    },
+    {
+        "id": 19,
+        "materia": "Inglês",
+        "assunto": "Future: Be Going To",
+        "nivel": "facil",
+        "enunciado": "What is the correct negative form of: \"They are going to visit the museum tomorrow\"?",
+        "alternativas": [
+            "They are not going to visit the museum tomorrow.",
+            "They not are going to visit the museum tomorrow.",
+            "They won't going to visit the museum tomorrow.",
+            "They don't going to visit the museum tomorrow.",
+            "They aren't go to visit the museum tomorrow."
+        ],
+        "correta": "They are not going to visit the museum tomorrow.",
+        "comentario": "Para negar com 'going to', inserimos a partícula 'not' após o verbo auxiliar (am/is/are)."
+    },
+    {
+        "id": 20,
+        "materia": "Inglês",
+        "assunto": "Future: Be Going To",
+        "nivel": "facil",
+        "enunciado": "Select the correct interrogative form for a planned action:\n\"_________ she going to buy a new laptop?\"",
+        "alternativas": [
+            "Is",
+            "Are",
+            "Am",
+            "Will",
+            "Does"
+        ],
+        "correta": "Is",
+        "comentario": "Na interrogativa com 'going to', o verbo to be correspondente ao sujeito ('she' exige 'is') deve iniciar a pergunta."
+    },
+    {
+        "id": 21,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "medio",
+        "enunciado": "Choose the correct preposition to indicate a specific time in the past:\n\"The students were studying in the library _________ 8:30 a.m. yesterday.\"",
+        "alternativas": [
+            "at",
+            "in",
+            "on",
+            "last",
+            "ago"
+        ],
+        "correta": "at",
+        "comentario": "Usamos a preposição 'at' para nos referirmos a horários ou momentos precisos do dia (at 8:30 a.m.)."
+    },
+    {
+        "id": 22,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "medio",
+        "enunciado": "Select the correct preposition for a calendar year:\n\"We moved to this new house _________ 2021.\"",
+        "alternativas": [
+            "in",
+            "on",
+            "at",
+            "last",
+            "ago"
+        ],
+        "correta": "in",
+        "comentario": "Usamos a preposição 'in' antes de anos específicos no passado (in 2021)."
+    },
+    {
+        "id": 23,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "medio",
+        "enunciado": "Identify the sentence that uses a past time expression INCORRECTLY:",
+        "alternativas": [
+            "We graduated from high school three years last.",
+            "They arrived from London last night.",
+            "She woke up early at 6:00 a.m. yesterday.",
+            "I visited Paris in 2019.",
+            "He completed the project two days ago."
+        ],
+        "correta": "We graduated from high school three years last.",
+        "comentario": "Para indicar 'atrás' após uma expressão de duração de tempo (three years), o correto é usar 'ago', e não 'last'."
+    },
+    {
+        "id": 24,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "medio",
+        "enunciado": "Rewrite the sentence \"I want to watch a documentary tonight\" using WOULD RATHER:",
+        "alternativas": [
+            "I would rather watch a documentary tonight.",
+            "I would rather to watch a documentary tonight.",
+            "I rather would watch a documentary tonight.",
+            "I would rather watching a documentary tonight.",
+            "I would watch rather a documentary tonight."
+        ],
+        "correta": "I would rather watch a documentary tonight.",
+        "comentario": "A estrutura de preferência 'would rather' substitui 'want to' e elimina o infinitivo com 'to', usando apenas o verbo básico ('watch')."
+    },
+    {
+        "id": 25,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "medio",
+        "enunciado": "Rewrite the question \"Do you want to play video games now?\" using WOULD RATHER:",
+        "alternativas": [
+            "Would you rather play video games now?",
+            "Do you would rather play video games now?",
+            "Would you rather to play video games now?",
+            "Would rather you play video games now?",
+            "Did you rather play video games now?"
+        ],
+        "correta": "Would you rather play video games now?",
+        "comentario": "Substituímos o auxiliar de pergunta 'Do you want to' por 'Would you rather', seguido diretamente pelo verbo de ação sem 'to'."
+    },
+    {
+        "id": 26,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "medio",
+        "enunciado": "Choose the grammatically correct response for the preference:\n\"Marcus wants to have some coke.\"",
+        "alternativas": [
+            "Marcus would rather have some coke.",
+            "Marcus would rather to have some coke.",
+            "Marcus rather would have some coke.",
+            "Marcus would rather having some coke.",
+            "Marcus would had rather some coke."
+        ],
+        "correta": "Marcus would rather have some coke.",
+        "comentario": "Para terceira pessoa do singular, 'would rather' permanece invariável e é seguido pelo verbo na forma básica ('have')."
+    },
+    {
+        "id": 27,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "medio",
+        "enunciado": "Fill in the blank with the appropriate verb combination:\n\"You _________ careful with that glass. It is broken.\"",
+        "alternativas": [
+            "had better be",
+            "had better to be",
+            "better had be",
+            "had better not being",
+            "have better be"
+        ],
+        "correta": "had better be",
+        "comentario": "Had better + base form. Como o adjetivo 'careful' exige o verbo de ligação 'be', usamos 'had better be'."
+    },
+    {
+        "id": 28,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "medio",
+        "enunciado": "Complete the warning with the correct option:\n\"He _________ that old milk. It smells bad.\"",
+        "alternativas": [
+            "had better not drink",
+            "had better to not drink",
+            "had not better drink",
+            "better had not drink",
+            "has better not drink"
+        ],
+        "correta": "had better not drink",
+        "comentario": "Para expressar um conselho negativo ('melhor não beber'), a estrutura correta é 'had better not' + base form ('drink')."
+    },
+    {
+        "id": 29,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "medio",
+        "enunciado": "Which of the following sentences represents a correct strong recommendation?",
+        "alternativas": [
+            "You had better study more for the finals; your grades are low.",
+            "You had better to study more for the finals.",
+            "You better had study more for the finals.",
+            "You had better studying more for the finals.",
+            "You has better study more for the finals."
+        ],
+        "correta": "You had better study more for the finals; your grades are low.",
+        "comentario": "'Had better' não muda com o tempo verbal do conselho (sempre 'had') e deve preceder diretamente o infinitivo puro."
+    },
+    {
+        "id": 30,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "medio",
+        "enunciado": "Identify the sentence where the connective and punctuation are used correctly:",
+        "alternativas": [
+            "The weather was extremely hot; therefore, we decided to go to the beach.",
+            "The weather was extremely hot, therefore we decided to go to the beach.",
+            "The weather was extremely hot. So, we decided to go to the beach.",
+            "The weather was extremely hot; so we decided to go to the beach.",
+            "The weather was extremely hot therefore, we decided to go to the beach."
+        ],
+        "correta": "The weather was extremely hot; therefore, we decided to go to the beach.",
+        "comentario": "O conectivo formal 'therefore' deve ser precedido por ponto e vírgula (ou ponto final) e seguido imediatamente por vírgula."
+    },
+    {
+        "id": 31,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "medio",
+        "enunciado": "Complete the sentence with the correct connective and punctuation choice:\n\"The printer ran out of ink _________ we couldn't print the document.\"",
+        "alternativas": [
+            ", so",
+            "; therefore",
+            ", because",
+            ", therefore,",
+            "; so,"
+        ],
+        "correta": ", so",
+        "comentario": "Para conectar duas orações de forma simples na mesma frase sem quebras formais, a conjunção ', so' (com vírgula antes e sem vírgula depois) é a única correta."
+    },
+    {
+        "id": 32,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "medio",
+        "enunciado": "Complete the text:\n\"John did not wear a coat. _________, he caught a cold.\"",
+        "alternativas": [
+            "Therefore,",
+            "So,",
+            "Because",
+            "Therefore",
+            "So"
+        ],
+        "correta": "Therefore,",
+        "comentario": "Por estar no início de uma frase independente (após ponto final), usamos 'Therefore' seguido de vírgula obrigatoriamente."
+    },
+    {
+        "id": 33,
+        "materia": "Inglês",
+        "assunto": "Connectives: Because",
+        "nivel": "medio",
+        "enunciado": "Complete the sentence expressing cause and effect:\n\"They cancelled the picnic _________ the heavy rain was falling.\"",
+        "alternativas": [
+            "because",
+            "so",
+            "therefore",
+            "although",
+            "but"
+        ],
+        "correta": "because",
+        "comentario": "Usamos 'because' para introduzir a causa (a chuva forte que caía) pelo cancelamento do piquenique."
+    },
+    {
+        "id": 34,
+        "materia": "Inglês",
+        "assunto": "Connectives: Because",
+        "nivel": "medio",
+        "enunciado": "Select the option that correctly rephrases: \"Because it was cold, she wore a scarf.\"",
+        "alternativas": [
+            "She wore a scarf because it was cold.",
+            "She wore a scarf so it was cold.",
+            "It was cold because she wore a scarf.",
+            "She wore a scarf; therefore it was cold.",
+            "She wore a scarf, because, it was cold."
+        ],
+        "correta": "She wore a scarf because it was cold.",
+        "comentario": "Podemos mover a oração causal para o fim da frase eliminando a vírgula inicial: 'She wore a scarf because it was cold'."
+    },
+    {
+        "id": 35,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "medio",
+        "enunciado": "Complete with the correct tense combination:\n\"While my mother _________ dinner, the telephone suddenly _________.\"",
+        "alternativas": [
+            "was cooking / rang",
+            "cooked / was ringing",
+            "was cooking / was ringing",
+            "is cooking / rings",
+            "cooked / rang"
+        ],
+        "correta": "was cooking / rang",
+        "comentario": "Usamos o Past Continuous ('was cooking') para uma ação longa em andamento no passado que foi interrompida por uma ação curta no Past Simple ('rang')."
+    },
+    {
+        "id": 36,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "medio",
+        "enunciado": "Identify the sentence that shows an action in progress in the past:",
+        "alternativas": [
+            "They were playing video games at 9:00 p.m. yesterday.",
+            "They played video games yesterday.",
+            "They play video games every day.",
+            "They are playing video games now.",
+            "They will play video games tomorrow."
+        ],
+        "correta": "They were playing video games at 9:00 p.m. yesterday.",
+        "comentario": "O Past Continuous (were playing) indica uma ação contínua ou em progresso em um momento específico do passado (at 9:00 p.m. yesterday)."
+    },
+    {
+        "id": 37,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "medio",
+        "enunciado": "Which sentence is in the Present Continuous interrogative form?",
+        "alternativas": [
+            "Is your father working in the office right now?",
+            "Does your father work in the office right now?",
+            "Your father is working in the office right now?",
+            "Is working your father in the office right now?",
+            "Are your father working in the office right now?"
+        ],
+        "correta": "Is your father working in the office right now?",
+        "comentario": "Perguntas no Present Continuous iniciam com a forma do verbo to be ('is') seguida do sujeito ('your father') e do verbo principal em '-ing'."
+    },
+    {
+        "id": 38,
+        "materia": "Inglês",
+        "assunto": "Future: Will",
+        "nivel": "medio",
+        "enunciado": "Complete with WILL or WON'T according to the context:\n\"She studied hard all week, so she _________ fail her math exam.\"",
+        "alternativas": [
+            "won't",
+            "will",
+            "is going to",
+            "is not",
+            "wouldn't"
+        ],
+        "correta": "won't",
+        "comentario": "O contexto lógico indica que, por ter estudado bastante, ela 'não vai reprovar' (won't fail) no exame."
+    },
+    {
+        "id": 39,
+        "materia": "Inglês",
+        "assunto": "Future: Will",
+        "nivel": "medio",
+        "enunciado": "Complete the question: \"_________ he _________ the driving test tomorrow?\" (affirmative projection)",
+        "alternativas": [
+            "Will / pass",
+            "Is / going to pass",
+            "Will / passing",
+            "Does / pass",
+            "Is / pass"
+        ],
+        "correta": "Will / pass",
+        "comentario": "A estrutura de pergunta de previsão futura com will é: Will + sujeito + verbo base (Will he pass)."
+    },
+    {
+        "id": 40,
+        "materia": "Inglês",
+        "assunto": "Future: Be Going To",
+        "nivel": "medio",
+        "enunciado": "Complete the dialogue using plans/intentions:\n\"Why are you buying flour and eggs?\"\n\"Because I _________ bake a cake for Sarah's birthday.\"",
+        "alternativas": [
+            "am going to",
+            "will",
+            "would",
+            "going to",
+            "bakes"
+        ],
+        "correta": "am going to",
+        "comentario": "Como há uma intenção planejada evidente (comprar ingredientes antes), o uso de 'am going to' é o mais adequado."
+    },
+    {
+        "id": 41,
+        "materia": "Inglês",
+        "assunto": "Time Expressions: Past",
+        "nivel": "dificil",
+        "enunciado": "Analyze the sentences and choose the option where all time expressions are grammatically correct:\nI. He finished his project three days ago.\nII. The kids were sleeping at midnight last night.\nIII. We traveled to Japan on 2022.\nIV. She met her best friend in last month.",
+        "alternativas": [
+            "I and II only",
+            "I and III only",
+            "II and IV only",
+            "I, II and III",
+            "All sentences are correct"
+        ],
+        "correta": "I and II only",
+        "comentario": "A sentença III está incorreta porque anos exigem a preposição 'in' (in 2022). A sentença IV está incorreta pois não se usa preposição antes de 'last month'."
+    },
+    {
+        "id": 42,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "dificil",
+        "enunciado": "Choose the correct negative preference structure using 'would rather':\n\"I want to stay home. I don't want to go to the party.\"",
+        "alternativas": [
+            "I would rather not go to the party.",
+            "I would rather don't go to the party.",
+            "I would not rather go to the party.",
+            "I would rather to not go to the party.",
+            "I wouldn't rather go to the party."
+        ],
+        "correta": "I would rather not go to the party.",
+        "comentario": "Para negar uma preferência, inserimos 'not' logo após 'rather' seguido do verbo básico: 'would rather not' + verb."
+    },
+    {
+        "id": 43,
+        "materia": "Inglês",
+        "assunto": "Would Rather",
+        "nivel": "dificil",
+        "enunciado": "Convert the question \"Do you want to invite Jason to the party?\" into the equivalent preference question:",
+        "alternativas": [
+            "Would you rather invite Jason to the party?",
+            "Would you rather to invite Jason to the party?",
+            "Do you would rather invite Jason to the party?",
+            "Would you rather inviting Jason to the party?",
+            "Rather would you invite Jason to the party?"
+        ],
+        "correta": "Would you rather invite Jason to the party?",
+        "comentario": "A forma equivalente de expressar preferência substitui o desejo geral (Do you want to invite) por 'Would you rather' + verbo base ('invite')."
+    },
+    {
+        "id": 44,
+        "materia": "Inglês",
+        "assunto": "Had Better",
+        "nivel": "dificil",
+        "enunciado": "Analyze the sentences with 'had better' and determine which are grammatically correct:\n1. You had better to unplug the toaster before cleaning it.\n2. We had better stop talking before the teacher gets angry.\n3. They had better not be late for the exam.",
+        "alternativas": [
+            "2 and 3 only",
+            "1 and 2 only",
+            "1 and 3 only",
+            "All are correct",
+            "2 only"
+        ],
+        "correta": "2 and 3 only",
+        "comentario": "A frase 1 está errada porque 'had better' não aceita a partícula 'to' antes do verbo principal (o correto seria 'had better unplug')."
+    },
+    {
+        "id": 45,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "dificil",
+        "enunciado": "Select the correct punctuation and connective combination to merge these clauses:\n\"The car broke down\" and \"They had to call a mechanic\"",
+        "alternativas": [
+            "The car broke down; therefore, they had to call a mechanic.",
+            "The car broke down, therefore they had to call a mechanic.",
+            "The car broke down; so they had to call a mechanic.",
+            "The car broke down. Therefore they had to call a mechanic.",
+            "The car broke down, so, they had to call a mechanic."
+        ],
+        "correta": "The car broke down; therefore, they had to call a mechanic.",
+        "comentario": "Para unir duas orações independentes em um único período com 'therefore', usa-se ponto e vírgula antes e vírgula depois."
+    },
+    {
+        "id": 46,
+        "materia": "Inglês",
+        "assunto": "Connectives: So, Therefore",
+        "nivel": "dificil",
+        "enunciado": "Choose the option that represents an INCORRECT usage of punctuation with connectives:",
+        "alternativas": [
+            "He studied all night, therefore, he got a perfect score.",
+            "He studied all night; therefore, he got a perfect score.",
+            "He studied all night. Therefore, he got a perfect score.",
+            "He studied all night, so he got a perfect score.",
+            "Because he studied all night, he got a perfect score."
+        ],
+        "correta": "He studied all night, therefore, he got a perfect score.",
+        "comentario": "Usar apenas uma vírgula antes de 'therefore' (com ou sem vírgula depois) causa um erro gramatical chamado 'comma splice'. Exige-se ponto ou ponto e vírgula."
+    },
+    {
+        "id": 47,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "dificil",
+        "enunciado": "Identify the sentence where the Past Continuous is used correctly to show parallel actions in progress simultaneously in the past:",
+        "alternativas": [
+            "While my sister was studying in her bedroom, I was playing video games in the living room.",
+            "While my sister studied in her bedroom, I was playing video games.",
+            "My sister was studying in her bedroom when I played video games.",
+            "My sister was studying in her bedroom while I played video games.",
+            "While my sister was studying, I had played video games."
+        ],
+        "correta": "While my sister was studying in her bedroom, I was playing video games in the living room.",
+        "comentario": "Quando duas ações longas ocorrem ao mesmo tempo no passado, usamos o Past Continuous em ambas as orações, ligadas por 'while'."
+    },
+    {
+        "id": 48,
+        "materia": "Inglês",
+        "assunto": "Verb Tenses",
+        "nivel": "dificil",
+        "enunciado": "Choose the correct option that completes both blanks:\n\"Yesterday at 3 p.m., I _________ (read) a book when my brother _________ (shout) for help.\"",
+        "alternativas": [
+            "was reading / shouted",
+            "read / was shouting",
+            "was reading / was shouting",
+            "were reading / shouted",
+            "read / shouted"
+        ],
+        "correta": "was reading / shouted",
+        "comentario": "Uma ação contínua no passado (was reading) foi interrompida de repente por um evento pontual no passado simples (shouted)."
+    },
+    {
+        "id": 49,
+        "materia": "Inglês",
+        "assunto": "Future: Will",
+        "nivel": "dificil",
+        "enunciado": "Choose the option where 'will' or 'won't' is used correctly according to formal English rules:",
+        "alternativas": [
+            "I'm sure the team will win the championship; they have the best players.",
+            "I'm sure the team won't winning the championship.",
+            "I think the team is going to win the championship because I saw them practice yesterday.",
+            "The team will winning the championship next year.",
+            "The team won't to win the championship."
+        ],
+        "correta": "I'm sure the team will win the championship; they have the best players.",
+        "comentario": "Previsões subjetivas baseadas em crença ('I'm sure') usam o 'will' seguido do verbo no infinitivo puro ('win')."
+    },
+    {
+        "id": 50,
+        "materia": "Inglês",
+        "assunto": "Future: Be Going To",
+        "nivel": "dificil",
+        "enunciado": "Choose the sentence that correctly uses 'be going to' to represent a future prediction based on present physical evidence:",
+        "alternativas": [
+            "Look at those dark clouds! It is going to rain soon.",
+            "Look at those dark clouds! It will rain soon.",
+            "Look at those dark clouds! It is raining soon.",
+            "Look at those dark clouds! It rains soon.",
+            "Look at those dark clouds! It is going to raining soon."
+        ],
+        "correta": "Look at those dark clouds! It is going to rain soon.",
+        "comentario": "Quando fazemos uma previsão sobre o futuro baseada em evidência física clara presente (ex: nuvens escuras), usamos 'be going to'."
+    }
+]
