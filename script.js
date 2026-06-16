@@ -20,12 +20,12 @@ let appState = {
 
 // Configurações Globais
 const msgsMotivacionaisAcerto = [
-    "Excelente trabalho molecão!",
-    "Você está dominando este conteúdo! 67!!!",
+    "Excelente trabalho!",
+    "Você está dominando este conteúdo!",
     "Mais um passo rumo ao troféu!",
-    "Continue assim, ah moleke!",
+    "Continue assim!",
     "Acertou em cheio!",
-    "Brilhante garotão!"
+    "Brilhante!"
 ];
 
 const msgsMotivacionaisErro = [
@@ -37,19 +37,72 @@ const msgsMotivacionaisErro = [
 ];
 
 // ===== INICIALIZAÇÃO =====
+// ===== CONFIGURAÇÃO DE CONTROLE E ARMAZENAMENTO =====
+const SYNC_URL = "https://kvdb.io/papai2026_glauc_family_384ff484/ranking";
+
+function getStorageKey(baseKey) {
+    // Extrai o nome do repositório/pasta do pathname da URL para isolar os dados
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    let keySuffix = 'local';
+    if (pathParts.length > 0) {
+        let lastPart = pathParts[pathParts.length - 1];
+        if (lastPart.endsWith('.html')) {
+            keySuffix = pathParts[pathParts.length - 2] || 'local';
+        } else {
+            keySuffix = lastPart;
+        }
+    }
+    // Remove caracteres especiais
+    keySuffix = keySuffix.replace(/[^a-zA-Z0-9_-]/g, '_');
+    return `${baseKey}_${keySuffix}`;
+}
+
 let rankingGlobal = [];
 
-function carregarRanking() {
+async function carregarRanking() {
     try {
-        const dados = localStorage.getItem('papai2026_ranking');
+        const dados = localStorage.getItem(getStorageKey('papai2026_ranking'));
         if (dados) rankingGlobal = JSON.parse(dados);
     } catch(e) {}
+    
+    // Tenta carregar em paralelo os dados da nuvem para atualizar
+    carregarRankingNuvem();
 }
 
 function salvarRanking() {
     try {
-        localStorage.setItem('papai2026_ranking', JSON.stringify(rankingGlobal));
+        localStorage.setItem(getStorageKey('papai2026_ranking'), JSON.stringify(rankingGlobal));
+        salvarRankingNuvem(); // Sincroniza em segundo plano com a nuvem
     } catch(e) {}
+}
+
+async function salvarRankingNuvem() {
+    try {
+        await fetch(SYNC_URL, {
+            method: 'POST',
+            body: JSON.stringify(rankingGlobal),
+            headers: { 'Content-Type': 'application/json' }
+        });
+    } catch (e) {
+        console.warn("Erro ao salvar ranking na nuvem (sem conexão?):", e);
+    }
+}
+
+async function carregarRankingNuvem() {
+    try {
+        const res = await fetch(SYNC_URL);
+        if (res.ok) {
+            const dados = await res.json();
+            if (Array.isArray(dados)) {
+                rankingGlobal = dados;
+                try {
+                    localStorage.setItem(getStorageKey('papai2026_ranking'), JSON.stringify(rankingGlobal));
+                } catch(e) {}
+            }
+        }
+    } catch (e) {
+        console.warn("Erro ao carregar ranking da nuvem (sem conexão?):", e);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,17 +111,50 @@ document.addEventListener('DOMContentLoaded', () => {
     configurarEventListeners();
     atualizarDropdownMaterias();
     validarFormularioInicial();
-    carregarBancosPadrao(); // Tenta baixar arquivos locais via internet/github pages
+    carregarBancosPadrao(); // Baixa arquivos locais/github pages
 });
 
+async function listarArquivosGithub() {
+    const hostname = window.location.hostname;
+    if (hostname.includes('github.io')) {
+        try {
+            const owner = hostname.split('.')[0];
+            const pathParts = window.location.pathname.split('/').filter(Boolean);
+            if (pathParts.length > 0) {
+                const repo = pathParts[0];
+                const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/`);
+                if (res.ok) {
+                    const files = await res.json();
+                    return files
+                        .filter(f => f.name.endsWith('.json') && f.type === 'file' && f.name !== 'package.json')
+                        .map(f => f.name);
+                }
+            }
+        } catch (e) {
+            console.warn("Erro ao carregar lista de arquivos do GitHub:", e);
+        }
+    }
+    return [];
+}
+
 async function carregarBancosPadrao() {
-    // Tenta várias variações para garantir que o nome do arquivo seja encontrado
-    const arquivosPadrao = ['Inglês N2.json', 'QuimicaN2.json', 'PortuguesN2.json'];
-    let teveMudanca = false;
+    // Lista padrão local (fallback caso esteja offline ou localmente)
+    let arquivosPadrao = ['modelo_banco_questoes.json', 'portuguesN2.json', 'QuimicaN2.json', 'banco_gerado.json'];
     
+    // Tenta obter dinamicamente os arquivos do repositório no GitHub
+    const arquivosGithub = await listarArquivosGithub();
+    if (arquivosGithub.length > 0) {
+        arquivosPadrao = [...new Set([...arquivosPadrao, ...arquivosGithub])];
+    }
+    
+    let teveMudanca = false;
     for (const arquivo of arquivosPadrao) {
         let nomeMateria = arquivo.replace('.json', '');
-        nomeMateria = nomeMateria.charAt(0).toUpperCase() + nomeMateria.slice(1);
+        
+        // Mapeia arquivos específicos para nomes de exibição amigáveis
+        if (nomeMateria === 'banco_gerado') nomeMateria = 'Inglês N2';
+        else if (nomeMateria === 'portuguesN2') nomeMateria = 'Português N2';
+        else nomeMateria = nomeMateria.charAt(0).toUpperCase() + nomeMateria.slice(1);
         
         if (!appState.bancosDisponiveis[nomeMateria]) {
             try {
@@ -79,7 +165,6 @@ async function carregarBancosPadrao() {
                     teveMudanca = true;
                 }
             } catch (e) {
-                // Silencioso, pois vai tentar outras variações
                 console.log("Erro ao baixar:", arquivo, e);
             }
         }
@@ -119,7 +204,7 @@ function configurarEventListeners() {
 
 // ===== PERSISTÊNCIA =====
 function salvarDadosLocais() {
-    localStorage.setItem('papai2026_profile', JSON.stringify({
+    localStorage.setItem(getStorageKey('papai2026_profile'), JSON.stringify({
         historico: appState.historico,
         trofeus: appState.trofeus,
         medalhas: appState.medalhas,
@@ -130,7 +215,7 @@ function salvarDadosLocais() {
 }
 
 function carregarDadosLocais() {
-    const saved = localStorage.getItem('papai2026_profile');
+    const saved = localStorage.getItem(getStorageKey('papai2026_profile'));
     if (saved) {
         try {
             const data = JSON.parse(saved);
@@ -724,7 +809,10 @@ function preencherTabelaNiveis(hist) {
 }
 
 // ===== RANKING GLOBAL =====
-function mostrarRanking() {
+async function mostrarRanking() {
+    // Tenta obter os resultados mais recentes da nuvem antes de exibir o ranking
+    await carregarRankingNuvem();
+    
     document.querySelectorAll('.tela').forEach(t => {
         t.classList.remove('ativa');
         t.classList.add('hidden');
