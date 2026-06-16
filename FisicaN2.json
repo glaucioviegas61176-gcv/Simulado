@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "facil",
+        "enunciado": "Um objeto é levantado a uma certa altura do solo, ganhando energia devido à gravidade. Como é chamada essa energia armazenada?",
+        "alternativas": [
+            "Energia cinética",
+            "Energia potencial gravitacional",
+            "Energia térmica",
+            "Energia química",
+            "Energia elástica"
+        ],
+        "correta": "Energia potencial gravitacional",
+        "comentario": "A energia potencial gravitacional é a energia que um corpo possui devido à sua posição em um campo gravitacional (altura em relação ao solo)."
+    },
+    {
+        "id": 2,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "facil",
+        "enunciado": "Qual tipo de energia está diretamente associada ao movimento de um corpo?",
+        "alternativas": [
+            "Energia cinética",
+            "Energia potencial gravitacional",
+            "Energia química",
+            "Energia térmica",
+            "Energia nuclear"
+        ],
+        "correta": "Energia cinética",
+        "comentario": "A energia cinética é a forma de energia associada ao estado de movimento de um corpo. Depende da sua massa e da sua velocidade."
+    },
+    {
+        "id": 3,
+        "materia": "Física",
+        "assunto": "Usinas Termoelétricas",
+        "nivel": "facil",
+        "enunciado": "Nas usinas termoelétricas, qual é a fonte primária de energia utilizada para ferver a água e gerar vapor?",
+        "alternativas": [
+            "Vento",
+            "Luz solar",
+            "Queima de combustíveis (carvão, gás ou óleo)",
+            "Queda d'água",
+            "Reação de fissão nuclear"
+        ],
+        "correta": "Queima de combustíveis (carvão, gás ou óleo)",
+        "comentario": "As usinas termoelétricas utilizam o calor gerado pela queima de combustíveis fósseis ou biomassa para produzir o vapor que move as turbinas."
+    },
+    {
+        "id": 4,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "facil",
+        "enunciado": "De acordo com a história popular, qual acontecimento cotidiano teria inspirado Isaac Newton a formular a Lei da Gravitação Universal?",
+        "alternativas": [
+            "A queda de uma maçã de uma árvore",
+            "A observação de uma estrela cadente",
+            "O movimento das ondas do mar",
+            "A oscilação de um pêndulo",
+            "A ebulição da água em uma chaleira"
+        ],
+        "correta": "A queda de uma maçã de uma árvore",
+        "comentario": "A lenda conta que a queda de uma maçã fez com que Newton se questionasse se a mesma força que atrai a maçã também mantém a Lua em órbita."
+    },
+    {
+        "id": 5,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "facil",
+        "enunciado": "Como é chamado o ponto da órbita de um planeta em que ele se encontra mais próximo do Sol?",
+        "alternativas": [
+            "Periélio",
+            "Afélio",
+            "Apogeu",
+            "Perigeu",
+            "Equinócio"
+        ],
+        "correta": "Periélio",
+        "comentario": "O periélio é o ponto da órbita elíptica de um corpo celeste (como um planeta) no qual ele está mais próximo do Sol."
+    },
+    {
+        "id": 6,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "facil",
+        "enunciado": "Como é chamado o ponto da órbita de um planeta em que ele se encontra mais afastado do Sol?",
+        "alternativas": [
+            "Afélio",
+            "Periélio",
+            "Apogeu",
+            "Perigeu",
+            "Solstício"
+        ],
+        "correta": "Afélio",
+        "comentario": "O afélio é o ponto orbital de máxima distância entre o planeta e o Sol."
+    },
+    {
+        "id": 7,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "facil",
+        "enunciado": "A força que atrai a Terra em direção ao Sol e nos mantém presos à superfície terrestre é chamada de força:",
+        "alternativas": [
+            "Magnética",
+            "Gravitacional",
+            "Elétrica",
+            "Forte",
+            "Elástica"
+        ],
+        "correta": "Gravitacional",
+        "comentario": "A gravidade é a força de atração mútua que corpos com massa exercem uns sobre os outros."
+    },
+    {
+        "id": 8,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "facil",
+        "enunciado": "A fórmula matemática utilizada para calcular a energia potencial gravitacional de um corpo próximo à Terra é:",
+        "alternativas": [
+            "Ep = m * g * h",
+            "Ec = (m * v^2) / 2",
+            "F = m * a",
+            "P = m * g",
+            "W = F * d"
+        ],
+        "correta": "Ep = m * g * h",
+        "comentario": "A energia potencial gravitacional (Ep) é calculada pelo produto da massa (m), aceleração da gravidade (g) e altura (h) do objeto em relação a um referencial."
+    },
+    {
+        "id": 9,
+        "materia": "Física",
+        "assunto": "Usinas Termoelétricas",
+        "nivel": "facil",
+        "enunciado": "Que tipo de energia é gerada e distribuída aos consumidores finais no término do processo de uma usina termoelétrica?",
+        "alternativas": [
+            "Energia química",
+            "Energia elétrica",
+            "Energia mecânica",
+            "Energia térmica",
+            "Energia luminosa"
+        ],
+        "correta": "Energia elétrica",
+        "comentario": "O objetivo final de qualquer usina geradora de eletricidade, incluindo a termoelétrica, é converter outras formas de energia em energia elétrica."
+    },
+    {
+        "id": 10,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "facil",
+        "enunciado": "Quem foi o cientista responsável por formular a Lei da Gravitação Universal em 1687?",
+        "alternativas": [
+            "Albert Einstein",
+            "Galileu Galilei",
+            "Isaac Newton",
+            "Johannes Kepler",
+            "Nicolaus Copernicus"
+        ],
+        "correta": "Isaac Newton",
+        "comentario": "Isaac Newton formulou e publicou a Lei da Gravitação Universal em sua célebre obra 'Principia'."
+    },
+    {
+        "id": 11,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "medio",
+        "enunciado": "Um corpo de massa 2 kg é abandonado do topo de um prédio de 20 metros de altura. Desprezando a resistência do ar e usando g = 10 m/s², qual é a energia potencial gravitacional do corpo no topo do prédio?",
+        "alternativas": [
+            "40 J",
+            "200 J",
+            "400 J",
+            "800 J",
+            "1000 J"
+        ],
+        "correta": "400 J",
+        "comentario": "Ep = m * g * h = 2 kg * 10 m/s² * 20 m = 400 Joules."
+    },
+    {
+        "id": 12,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "medio",
+        "enunciado": "Um carrinho de brinquedo de 0,5 kg move-se com uma velocidade constante de 4 m/s. Qual é a energia cinética desse brinquedo?",
+        "alternativas": [
+            "2 J",
+            "4 J",
+            "8 J",
+            "16 J",
+            "1 J"
+        ],
+        "correta": "4 J",
+        "comentario": "Ec = (m * v²) / 2 = (0,5 * 4²) / 2 = (0,5 * 16) / 2 = 8 / 2 = 4 Joules."
+    },
+    {
+        "id": 13,
+        "materia": "Física",
+        "assunto": "Usinas Termoelétricas",
+        "nivel": "medio",
+        "enunciado": "Qual é a sequência correta de transformações de energia que ocorre em uma usina termoelétrica, desde o combustível até a geração de eletricidade?",
+        "alternativas": [
+            "Química -> Térmica -> Mecânica (cinética) -> Elétrica",
+            "Térmica -> Química -> Elétrica -> Mecânica",
+            "Mecânica -> Térmica -> Química -> Elétrica",
+            "Química -> Elétrica -> Térmica -> Mecânica",
+            "Nuclear -> Térmica -> Elétrica -> Química"
+        ],
+        "correta": "Química -> Térmica -> Mecânica (cinética) -> Elétrica",
+        "comentario": "A queima do combustível libera calor (energia química em térmica). Esse calor gera vapor que move a turbina (mecânica), a qual aciona o gerador elétrico (elétrica)."
+    },
+    {
+        "id": 14,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "medio",
+        "enunciado": "Ao questionar por que os objetos caíam em direção à Terra, Newton deduziu que a mesma força física que puxava a maçã da árvore também mantinha:",
+        "alternativas": [
+            "A Lua em sua órbita ao redor da Terra",
+            "A Terra aquecida pela energia solar",
+            "Os oceanos em estado líquido",
+            "Os elétrons girando ao redor dos núcleos atômicos",
+            "Os ventos soprando na atmosfera"
+        ],
+        "correta": "A Lua em sua órbita ao redor da Terra",
+        "comentario": "Newton compreendeu que a gravidade terrestre se estendia até o espaço, atraindo a Lua e mantendo-a em sua órbita ao invés de escapar em linha reta."
+    },
+    {
+        "id": 15,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "medio",
+        "enunciado": "De acordo com a Segunda Lei de Kepler (Lei das Áreas), a velocidade orbital de um planeta ao redor do Sol:",
+        "alternativas": [
+            "É constante em todos os pontos da órbita",
+            "É máxima no periélio (mais perto) e mínima no afélio (mais longe)",
+            "É mínima no periélio e máxima no afélio",
+            "Depende apenas da massa do planeta",
+            "Diminui continuamente até o planeta parar"
+        ],
+        "correta": "É máxima no periélio (mais perto) e mínima no afélio (mais longe)",
+        "comentario": "A Segunda Lei de Kepler afirma que a linha que liga o Sol ao planeta varre áreas iguais em tempos iguais, implicando que o planeta se move mais rápido ao passar no periélio."
+    },
+    {
+        "id": 16,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "medio",
+        "enunciado": "Se a distância entre dois objetos no espaço for duplicada (multiplicada por 2), o que acontece com o valor da força de atração gravitacional entre eles?",
+        "alternativas": [
+            "A força dobra de valor",
+            "A força cai pela metade",
+            "A força quadruplica de valor",
+            "A força reduz-se a um quarto do valor original",
+            "A força permanece inalterada"
+        ],
+        "correta": "A força reduz-se a um quarto do valor original",
+        "comentario": "Pela Lei da Gravitação, a força é inversamente proporcional ao quadrado da distância (1/d²). Ao duplicar a distância, a força cai por um fator de 2² = 4."
+    },
+    {
+        "id": 17,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "medio",
+        "enunciado": "Um mergulhador de 70 kg está parado em uma plataforma de salto a 10 metros de altura da água. Considerando g = 10 m/s², qual é a sua energia mecânica total antes de saltar?",
+        "alternativas": [
+            "700 J",
+            "7000 J",
+            "3500 J",
+            "0 J",
+            "14000 J"
+        ],
+        "correta": "7000 J",
+        "comentario": "Como está parado, a energia cinética é zero. A energia mecânica total é igual à energia potencial gravitacional: Em = Ep = m * g * h = 70 kg * 10 m/s² * 10 m = 7000 Joules."
+    },
+    {
+        "id": 18,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "medio",
+        "enunciado": "Quem determinou experimentalmente o valor da Constante de Gravitação Universal (G), confirmando a teoria de Newton?",
+        "alternativas": [
+            "Isaac Newton",
+            "Henry Cavendish",
+            "Albert Einstein",
+            "Johannes Kepler",
+            "Robert Hooke"
+        ],
+        "correta": "Henry Cavendish",
+        "comentario": "Newton propôs a lei de atração gravitacional, mas foi o cientista Henry Cavendish quem mediu a força da gravidade em laboratório com uma balança de torção, calculando a constante G."
+    },
+    {
+        "id": 19,
+        "materia": "Física",
+        "assunto": "Usinas Termoelétricas",
+        "nivel": "medio",
+        "enunciado": "Qual é o papel desempenhado pelo 'condensador' no ciclo de funcionamento de uma usina termoelétrica?",
+        "alternativas": [
+            "Queimar o combustível com maior eficiência",
+            "Transformar o vapor d'água de volta em água líquida para reiniciar o ciclo",
+            "Aumentar a pressão do gerador elétrico",
+            "Resfriar diretamente a turbina de metal para não derreter",
+            "Purificar o combustível fóssil antes da queima"
+        ],
+        "correta": "Transformar o vapor d'água de volta em água líquida para reiniciar o ciclo",
+        "comentario": "O condensador resfria o vapor que passa pela turbina, convertendo-o de volta em líquido para que seja bombeado novamente à caldeira, recomeçando o circuito fechado."
+    },
+    {
+        "id": 20,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "medio",
+        "enunciado": "A Primeira Lei de Kepler (Lei das Órbitas) descreve que a órbita de cada planeta ao redor do Sol é uma:",
+        "alternativas": [
+            "Circunferência perfeita, com o Sol no centro",
+            "Elipse, com o Sol em um dos focos",
+            "Espiral interminável em direção ao Sol",
+            "Linha reta infinita no vácuo",
+            "Parábola aberta"
+        ],
+        "correta": "Elipse, com o Sol em um dos focos",
+        "comentario": "Kepler provou que os planetas descrevem trajetórias elípticas (elipses) ao redor do Sol, que fica posicionado em um dos focos desse formato geométrico."
+    },
+    {
+        "id": 21,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "dificil",
+        "enunciado": "Um corpo de 1000 kg encontra-se com uma velocidade de 50 m/s e altura de 100 m do solo. Usando g = 10 m/s², determine os valores exatos de sua energia cinética (Ec) e de sua energia potencial gravitacional (Ep):",
+        "alternativas": [
+            "Ec = 1.250.000 J e Ep = 1.000.000 J",
+            "Ec = 2.500.000 J e Ep = 1.000.000 J",
+            "Ec = 1.250.000 J e Ep = 100.000 J",
+            "Ec = 50.000 J e Ep = 100.000 J",
+            "Ec = 2.500.000 J e Ep = 10.000.000 J"
+        ],
+        "correta": "Ec = 1.250.000 J e Ep = 1.000.000 J",
+        "comentario": "Ec = (1000 * 50²) / 2 = 1.250.000 J. Ep = 1000 * 10 * 100 = 1.000.000 J."
+    },
+    {
+        "id": 22,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "dificil",
+        "enunciado": "Se a força de atração gravitacional entre dois corpos separados a uma distância d é de 200 N, qual será o valor dessa força de atração quando a distância for aumentada para 4d?",
+        "alternativas": [
+            "50 N",
+            "25 N",
+            "12,5 N",
+            "800 N",
+            "3200 N"
+        ],
+        "correta": "12,5 N",
+        "comentario": "Pela lei do inverso do quadrado da distância: F_nova = F_antiga / (4²) = 200 / 16 = 12,5 N."
+    },
+    {
+        "id": 23,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "dificil",
+        "enunciado": "Qual é a fundamentação física newtoniana que explica por que a velocidade orbital de um planeta é máxima no periélio?",
+        "alternativas": [
+            "A menor distância ao Sol aumenta a força gravitacional, causando maior aceleração orbital",
+            "A maior distância ao Sol aumenta a inércia do planeta",
+            "A massa do Sol diminui temporariamente durante a aproximação",
+            "A força centrífuga anula a gravidade nesse ponto",
+            "A radiação térmica do Sol empurra o planeta com mais força"
+        ],
+        "correta": "A menor distância ao Sol aumenta a força gravitacional, causando maior aceleração orbital",
+        "comentario": "Como F = G*(M1*M2)/d², no periélio (menor d) a força gravitacional que puxa o planeta em direção ao Sol é máxima, gerando maior aceleração e, consequentemente, velocidade tangencial máxima."
+    },
+    {
+        "id": 24,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "dificil",
+        "enunciado": "Um carrinho de montanha-russa de 500 kg parte do repouso do ponto A, a uma altura de 45 metros do solo. Supondo que não haja perdas por atrito e adotando g = 10 m/s², qual será a velocidade do carrinho ao passar pelo ponto B, situado a 25 metros de altura do solo?",
+        "alternativas": [
+            "10 m/s",
+            "20 m/s",
+            "30 m/s",
+            "40 m/s",
+            "15 m/s"
+        ],
+        "correta": "20 m/s",
+        "comentario": "Pela conservação da energia mecânica: Ep_perdida = Ec_ganha. m * g * (hA - hB) = (m * v²) / 2 => 10 * 20 = v² / 2 => v² = 400 => v = 20 m/s."
+    },
+    {
+        "id": 25,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "dificil",
+        "enunciado": "Considere que a força de atração gravitacional entre duas massas esféricas no espaço vale F. Se dobrarmos a massa do primeiro corpo, triplicarmos a massa do segundo corpo e duplicarmos a distância entre eles, qual será a nova força de atração gravitacional?",
+        "alternativas": [
+            "1,5 F",
+            "6 F",
+            "1,2 F",
+            "3 F",
+            "0,75 F"
+        ],
+        "correta": "1,5 F",
+        "comentario": "F = G * (M1 * M2) / d². Nova força F' = G * (2*M1 * 3*M2) / (2*d)² = 6/4 * G * (M1 * M2) / d² = 1,5 F."
+    },
+    {
+        "id": 26,
+        "materia": "Física",
+        "assunto": "Usinas Termoelétricas",
+        "nivel": "dificil",
+        "enunciado": "Em uma termoelétrica, o vapor d'água sob altíssima pressão expande-se ao passar pela turbina, girando suas pás. Do ponto de vista da termodinâmica, esse processo representa a transformação direta de:",
+        "alternativas": [
+            "Energia térmica em trabalho mecânico através da expansão do gás",
+            "Energia cinética em calor pela compressão do vapor",
+            "Trabalho elétrico diretamente em energia cinética",
+            "Energia química em radiação eletromagnética",
+            "Energia potencial gravitacional em energia térmica"
+        ],
+        "correta": "Energia térmica em trabalho mecânico através da expansão do gás",
+        "comentario": "A energia interna do vapor sob alta pressão realiza trabalho útil de expansão sobre as pás da turbina, transferindo energia térmica em energia cinética de rotação (mecânica)."
+    },
+    {
+        "id": 27,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "dificil",
+        "enunciado": "A Terceira Lei de Kepler estabelece a relação T²/R³ = k. A dedução newtoniana dessa lei mostra que o valor da constante k depende diretamente de qual grandeza física do sistema?",
+        "alternativas": [
+            "Apenas da massa da estrela central (o Sol)",
+            "Apenas da massa do próprio planeta orbitador",
+            "Da soma das massas de todos os planetas do sistema",
+            "Apenas da velocidade média orbital",
+            "Do diâmetro equatorial do Sol"
+        ],
+        "correta": "Apenas da massa da estrela central (o Sol)",
+        "comentario": "Pela mecânica de Newton, a constante é dada por k = 4*pi² / (G * M_central). Portanto, k é inversamente proporcional à massa da estrela central e não depende da massa do objeto orbitador."
+    },
+    {
+        "id": 28,
+        "materia": "Física",
+        "assunto": "Energia Cinética e Potencial",
+        "nivel": "dificil",
+        "enunciado": "Um projétil de 0,1 kg é disparado verticalmente para cima com velocidade inicial de 100 m/s. Adotando g = 10 m/s² e desprezando o atrito do ar, determine a altura máxima atingida pelo projétil usando princípios de energia:",
+        "alternativas": [
+            "100 m",
+            "250 m",
+            "500 m",
+            "1000 m",
+            "2000 m"
+        ],
+        "correta": "500 m",
+        "comentario": "Toda a Ec inicial se converte em Ep no ponto mais alto: (m * v²) / 2 = m * g * h => (100²) / 2 = 10 * h => 5000 = 10 * h => h = 500 metros."
+    },
+    {
+        "id": 29,
+        "materia": "Física",
+        "assunto": "Gravitação Universal",
+        "nivel": "dificil",
+        "enunciado": "A aceleração da gravidade na superfície da Terra vale g. Se um satélite orbital afasta-se da superfície terrestre para um ponto no espaço cuja distância ao centro da Terra é o triplo do raio da Terra (3R), qual será a aceleração da gravidade sentida por ele nesse local?",
+        "alternativas": [
+            "g / 3",
+            "g / 9",
+            "g / 6",
+            "3g",
+            "g"
+        ],
+        "correta": "g / 9",
+        "comentario": "A aceleração da gravidade varia de acordo com 1/d². Ao triplicar a distância em relação ao centro (3R), a aceleração cai a 1 / (3²) = 1/9 do valor da superfície (g/9)."
+    },
+    {
+        "id": 30,
+        "materia": "Física",
+        "assunto": "Leis de Kepler",
+        "nivel": "dificil",
+        "enunciado": "Um satélite orbita a Terra em órbita elíptica. Ao se mover do apogeu (ponto mais distante) para o perigeu (ponto mais próximo), o que ocorre com suas energias cinética (Ec) e potencial (Ep)?",
+        "alternativas": [
+            "Ec aumenta e Ep diminui, mantendo a energia mecânica total conservada",
+            "Ec diminui e Ep aumenta, mantendo a energia mecânica total conservada",
+            "Ambas Ec e Ep aumentam devido à aproximação",
+            "Ambas Ec e Ep diminuem devido à perda de altitude",
+            "Ec e Ep permanecem constantes durante toda a órbita"
+        ],
+        "correta": "Ec aumenta e Ep diminui, mantendo a energia mecânica total conservada",
+        "comentario": "Ao se aproximar da Terra, o satélite perde altitude (Ep diminui), o que se converte em velocidade (Ec aumenta). Como não há forças dissipativas, a energia mecânica total se conserva constante."
+    }
+]
