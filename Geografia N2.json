@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do São Francisco",
+        "nivel": "facil",
+        "enunciado": "A bacia hidrográfica do São Francisco é de extrema importância para o Nordeste brasileiro. Qual das seguintes alternativas apresenta uma importante atividade econômica viabilizada pelas águas do Rio São Francisco na região semiárida?",
+        "alternativas": [
+            "A fruticultura irrigada",
+            "A extração de carvão mineral",
+            "O plantio de trigo em larga escala",
+            "A exploração de petróleo em águas profundas",
+            "A silvicultura de eucalipto"
+        ],
+        "correta": "A fruticultura irrigada",
+        "comentario": "O Rio São Francisco possibilita a fruticultura irrigada no Sertão nordestino, com grande destaque para a produção de uvas e mangas voltadas para exportação."
+    },
+    {
+        "id": 2,
+        "materia": "Geografia N2",
+        "assunto": "Clima predominante",
+        "nivel": "facil",
+        "enunciado": "O Nordeste brasileiro apresenta grande diversidade climática, mas um tipo específico de clima domina a maior parte do seu território, especialmente no interior. Qual é o clima predominante da região Nordeste?",
+        "alternativas": [
+            "Semiárido",
+            "Equatorial úmido",
+            "Tropical litorâneo",
+            "Subtropical",
+            "Temperado"
+        ],
+        "correta": "Semiárido",
+        "comentario": "O clima semiárido é o predominante no Nordeste, abrangendo grande parte do Sertão, caracterizado por altas temperaturas e chuvas escassas e irregulares."
+    },
+    {
+        "id": 3,
+        "materia": "Geografia N2",
+        "assunto": "Distribuição da População",
+        "nivel": "facil",
+        "enunciado": "A população da região Nordeste está distribuída de maneira bastante desigual pelo território. Em qual sub-região nordestina há a maior concentração populacional e densidade demográfica?",
+        "alternativas": [
+            "Zona da Mata",
+            "Sertão",
+            "Agreste",
+            "Meio-Norte",
+            "Planalto da Borborema"
+        ],
+        "correta": "Zona da Mata",
+        "comentario": "A Zona da Mata, localizada na faixa litorânea, abriga as principais capitais e a maior densidade demográfica do Nordeste, herança histórica da colonização e da atividade açucareira."
+    },
+    {
+        "id": 4,
+        "materia": "Geografia N2",
+        "assunto": "Formações Vegetais",
+        "nivel": "facil",
+        "enunciado": "A Caatinga é a vegetação típica e exclusiva do Sertão nordestino. Qual das seguintes características é marcante nesse bioma para se adaptar ao clima da região?",
+        "alternativas": [
+            "Presença de plantas xerófilas com espinhos e folhas pequenas",
+            "Árvores de grande porte com folhas perenes",
+            "Vegetação rasteira coberta por neve constante",
+            "Plantas que necessitam de solo constantemente encharcado",
+            "Florestas densas e fechadas com cipós"
+        ],
+        "correta": "Presença de plantas xerófilas com espinhos e folhas pequenas",
+        "comentario": "A Caatinga é composta por plantas xerófilas, que desenvolveram adaptações como espinhos e perda de folhas na estação seca para reduzir a perda de água."
+    },
+    {
+        "id": 5,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do Parnaíba",
+        "nivel": "facil",
+        "enunciado": "A Bacia do Parnaíba situa-se em uma área de transição e é vital para a região em que se insere. Qual estado brasileiro tem quase a totalidade de seu território abrangido por essa bacia hidrográfica?",
+        "alternativas": [
+            "Piauí",
+            "Bahia",
+            "Ceará",
+            "Sergipe",
+            "Pernambuco"
+        ],
+        "correta": "Piauí",
+        "comentario": "A Bacia do Rio Parnaíba drena quase todo o estado do Piauí, sendo essencial para o abastecimento público, pesca e agricultura local."
+    },
+    {
+        "id": 6,
+        "materia": "Geografia N2",
+        "assunto": "Comportamento das chuvas",
+        "nivel": "facil",
+        "enunciado": "O comportamento das chuvas no interior da Região Nordeste é um dos fatores que mais impacta a vida da população local. Como se caracterizam as chuvas no clima semiárido nordestino?",
+        "alternativas": [
+            "Irregulares e concentradas em poucos meses do ano",
+            "Bem distribuídas ao longo de todos os meses",
+            "Escassas no inverno e torrenciais no verão",
+            "Ausentes durante todo o ano",
+            "Diárias e de baixa intensidade"
+        ],
+        "correta": "Irregulares e concentradas em poucos meses do ano",
+        "comentario": "As chuvas no Sertão nordestino são marcadas pela irregularidade interanual e espacial, concentrando-se em um curto período do ano."
+    },
+    {
+        "id": 7,
+        "materia": "Geografia N2",
+        "assunto": "Destacamento de Cidades",
+        "nivel": "facil",
+        "enunciado": "Duas importantes cidades do Nordeste destacam-se nacionalmente pela produção de frutas e desenvolvimento tecnológico graças à irrigação propiciada pelo Rio São Francisco. Que cidades são essas?",
+        "alternativas": [
+            "Petrolina (PE) e Juazeiro (BA)",
+            "Recife (PE) e Salvador (BA)",
+            "Teresina (PI) e São Luís (MA)",
+            "Fortaleza (CE) e Natal (RN)",
+            "Aracaju (SE) e Maceió (AL)"
+        ],
+        "correta": "Petrolina (PE) e Juazeiro (BA)",
+        "comentario": "Petrolina (Pernambuco) e Juazeiro (Bahia), situadas em margens opostas do Rio São Francisco, formam um dinâmico polo agroindustrial de fruticultura irrigada."
+    },
+    {
+        "id": 8,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do Atlântico Leste",
+        "nivel": "facil",
+        "enunciado": "A Bacia do Atlântico Leste engloba rios que correm em direção ao oceano cortando partes de estados como Bahia e Minas Gerais. Uma de suas principais importâncias econômicas é:",
+        "alternativas": [
+            "O abastecimento urbano e atividades industriais locais",
+            "O transporte de soja por navios cargueiros gigantes",
+            "A pesca industrial de bacalhau em larga escala",
+            "A extração de petróleo em plataformas fluviais",
+            "A prática de esportes de neve em suas margens"
+        ],
+        "correta": "O abastecimento urbano e atividades industriais locais",
+        "comentario": "A bacia do Atlântico Leste atende a importantes centros urbanos e industriais, além de apoiar a agropecuária em sua área de abrangência."
+    },
+    {
+        "id": 9,
+        "materia": "Geografia N2",
+        "assunto": "Tipos de Clima",
+        "nivel": "facil",
+        "enunciado": "Na faixa costeira oriental do Nordeste, estendendo-se do Rio Grande do Norte até o sul da Bahia, predomina qual tipo de clima?",
+        "alternativas": [
+            "Tropical Úmido ou Litorâneo",
+            "Semiárido",
+            "Equatorial semiúmido",
+            "Subtropical de altitude",
+            "Desértico"
+        ],
+        "correta": "Tropical Úmido ou Litorâneo",
+        "comentario": "O clima tropical úmido ou litorâneo prevalece no litoral nordestino, influenciado pela umidade trazida pelos ventos alísios do oceano."
+    },
+    {
+        "id": 10,
+        "materia": "Geografia N2",
+        "assunto": "Condições Sociais",
+        "nivel": "facil",
+        "enunciado": "A falta de água no Sertão é um problema histórico. No entanto, o acesso desigual à água no Nordeste decorre não apenas da escassez física, mas principalmente de:",
+        "alternativas": [
+            "Decisões políticas e má gestão dos recursos hídricos",
+            "Falta de tecnologia de dessalinização em todo o planeta",
+            "Ausência total de rios perenes na região",
+            "Falta de interesse da população em construir poços",
+            "Baixa qualidade da água subterrânea em todo o Nordeste"
+        ],
+        "correta": "Decisões políticas e má gestão dos recursos hídricos",
+        "comentario": "Embora a seca seja um fenômeno natural, a falta de acesso à água para os pequenos produtores é agravada pela concentração de terras e falta de políticas públicas distributivas."
+    },
+    {
+        "id": 11,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do Atlântico Nordeste Ocidental",
+        "nivel": "medio",
+        "enunciado": "A bacia do Atlântico Nordeste Ocidental localiza-se na transição entre o Nordeste e o Norte do Brasil. Qual rio é o principal curso d'água dessa bacia no estado do Maranhão?",
+        "alternativas": [
+            "Rio Itapecuru",
+            "Rio Parnaíba",
+            "Rio São Francisco",
+            "Rio Tocantins",
+            "Rio Jaguaribe"
+        ],
+        "correta": "Rio Itapecuru",
+        "comentario": "O Rio Itapecuru é um dos principais rios maranhenses que compõem a Bacia do Atlântico Nordeste Ocidental, sendo vital para o abastecimento de São Luís."
+    },
+    {
+        "id": 12,
+        "materia": "Geografia N2",
+        "assunto": "Mata dos Cocais",
+        "nivel": "medio",
+        "enunciado": "Na sub-região do Meio-Norte, ocorre uma vegetação de transição muito importante economicamente para as comunidades tradicionais, especialmente para as quebradeiras de coco. Que vegetação é essa?",
+        "alternativas": [
+            "Mata dos Cocais",
+            "Caatinga",
+            "Manguezal",
+            "Campos limpos",
+            "Floresta Amazônica"
+        ],
+        "correta": "Mata dos Cocais",
+        "comentario": "A Mata dos Cocais é uma mata de transição rica em palmeiras como o babaçu e a carnaúba, cujos produtos são fundamentais para o extrativismo local."
+    },
+    {
+        "id": 13,
+        "materia": "Geografia N2",
+        "assunto": "Fenômenos de Emigração",
+        "nivel": "medio",
+        "enunciado": "Ao longo do século XX, milhões de nordestinos deixaram sua região de origem em direção a outras partes do país. Esse fluxo migratório foi motivado principalmente por:",
+        "alternativas": [
+            "Busca por melhores condições de vida, emprego e renda no Sudeste",
+            "Falta de ferrovias que conectassem as cidades nordestinas",
+            "Decisão governamental de expulsar moradores do semiárido",
+            "Atração pelo turismo de inverno na região Sul",
+            "Falta de áreas disponíveis para agricultura no Nordeste"
+        ],
+        "correta": "Busca por melhores condições de vida, emprego e renda no Sudeste",
+        "comentario": "As secas prolongadas somadas à falta de oportunidades econômicas e de terras no Nordeste levaram à migração maciça de trabalhadores em direção às indústrias e construções civis do Sudeste."
+    },
+    {
+        "id": 14,
+        "materia": "Geografia N2",
+        "assunto": "A \"Indústria da Seca\"",
+        "nivel": "medio",
+        "enunciado": "O termo \"indústria da seca\" refere-se a uma prática política e social muito comum na história do Nordeste brasileiro. Essa prática consiste em:",
+        "alternativas": [
+            "Utilizar recursos públicos de combate à seca para benefício próprio de elites locais",
+            "Instalar indústrias químicas que utilizam o ar seco da região",
+            "Vender garrafas de água mineral a preços populares",
+            "Construir fábricas de dessalinização de água para exportação",
+            "Substituir a agricultura tradicional por indústrias têxteis"
+        ],
+        "correta": "Utilizar recursos públicos de combate à seca para benefício próprio de elites locais",
+        "comentario": "A \"indústria da seca\" é o fenômeno político em que elites latifundiárias e políticos locais lucram ou obtêm vantagens eleitorais explorando o sofrimento da população causado pela seca."
+    },
+    {
+        "id": 15,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do Atlântico Nordeste Oriental",
+        "nivel": "medio",
+        "enunciado": "A Bacia do Atlântico Nordeste Oriental abrange rios de estados como Ceará, Rio Grande do Norte, Paraíba, Pernambuco e Alagoas. Uma característica marcante da maioria dos rios dessa bacia é que eles são:",
+        "alternativas": [
+            "Temporários ou intermitentes no interior",
+            "Perenes em todo o seu curso",
+            "Navegáveis por grandes embarcações",
+            "Ricos em peixes de água fria",
+            "Alimentados pelo derretimento de geleiras"
+        ],
+        "correta": "Temporários ou intermitentes no interior",
+        "comentario": "Devido ao clima semiárido, a maioria dos rios do interior dessa bacia seca durante o período de estiagem, caracterizando-os como temporários."
+    },
+    {
+        "id": 16,
+        "materia": "Geografia N2",
+        "assunto": "Clima Equatorial",
+        "nivel": "medio",
+        "enunciado": "Embora o Nordeste seja conhecido pelo clima semiárido, uma pequena porção do seu território apresenta clima equatorial. Em qual estado do Nordeste esse clima ocorre?",
+        "alternativas": [
+            "Maranhão",
+            "Ceará",
+            "Bahia",
+            "Alagoas",
+            "Sergipe"
+        ],
+        "correta": "Maranhão",
+        "comentario": "O oeste do estado do Maranhão, devido à proximidade com a Região Norte e a Floresta Amazônica, apresenta clima equatorial com altos índices de chuva."
+    },
+    {
+        "id": 17,
+        "materia": "Geografia N2",
+        "assunto": "Transposição do Rio São Francisco",
+        "nivel": "medio",
+        "enunciado": "A Transposição do Rio São Francisco é um megaprojeto hídrico que visa desviar parte das águas do rio para canais artificiais. O principal objetivo dessa obra é:",
+        "alternativas": [
+            "Garantir segurança hídrica para rios temporários e cidades do semiárido",
+            "Gerar energia elétrica para todo o Sul do país",
+            "Tornar o sertão navegável por grandes navios de carga",
+            "Substituir o turismo litorâneo pelo turismo fluvial",
+            "Criar um canal de ligação comercial com o Rio Amazonas"
+        ],
+        "correta": "Garantir segurança hídrica para rios temporários e cidades do semiárido",
+        "comentario": "A transposição visa perenizar rios temporários e levar água a canais para o abastecimento de populações urbanas e rurais no semiárido setentrional (CE, RN, PB, PE)."
+    },
+    {
+        "id": 18,
+        "materia": "Geografia N2",
+        "assunto": "Cerrado no Nordeste",
+        "nivel": "medio",
+        "enunciado": "O bioma Cerrado também está presente na região Nordeste, caracterizando-se por solos ácidos e árvores de troncos retorcidos. Em qual área do Nordeste o Cerrado ganha grande destaque na produção de grãos (soja)?",
+        "alternativas": [
+            "No oeste baiano e sul do Maranhão e Piauí",
+            "No litoral leste de Pernambuco",
+            "No Sertão central do Ceará",
+            "No Recôncavo Baiano",
+            "Na Zona da Mata de Alagoas"
+        ],
+        "correta": "No oeste baiano e sul do Maranhão e Piauí",
+        "comentario": "O Cerrado nordestino, sobretudo na região conhecida como MATOPIBA (áreas do MA, TO, PI, BA), é uma grande fronteira agrícola produtora de soja e milho."
+    },
+    {
+        "id": 19,
+        "materia": "Geografia N2",
+        "assunto": "Hidrografia e Relevo",
+        "nivel": "medio",
+        "enunciado": "O Planalto da Borborema atua como uma importante barreira física no Nordeste. Qual o impacto desse relevo sobre o clima e a hidrografia do interior nordestino?",
+        "alternativas": [
+            "Impede a passagem da umidade oceânica, favorecendo a seca no interior",
+            "Provoca nevascas constantes nas áreas de maior altitude",
+            "Facilita a passagem de ventos úmidos do oeste para o litoral",
+            "Drena todos os rios em direção à Bacia Amazônica",
+            "Mantém as temperaturas baixas durante todo o ano no Sertão"
+        ],
+        "correta": "Impede a passagem da umidade oceânica, favorecendo a seca no interior",
+        "comentario": "O Planalto da Borborema retém as massas de ar úmidas vindas do oceano Atlântico no seu lado oriental (provocando chuvas orográficas), fazendo com que o ar chegue seco ao Sertão (lado ocidental)."
+    },
+    {
+        "id": 20,
+        "materia": "Geografia N2",
+        "assunto": "O Rio Parnaíba e Economia",
+        "nivel": "medio",
+        "enunciado": "O Rio Parnaíba possui o único delta em mar aberto das Américas. Além da beleza natural e potencial turístico, o delta do Parnaíba destaca-se pela:",
+        "alternativas": [
+            "Pesca artesanal, cata de caranguejos e turismo ecológico",
+            "Exploração de minério de ferro em larga escala",
+            "Instalação de refinarias de petróleo flutuantes",
+            "Navegação comercial de soja para a Europa",
+            "Criação intensiva de salmão em cativeiro"
+        ],
+        "correta": "Pesca artesanal, cata de caranguejos e turismo ecológico",
+        "comentario": "O Delta do Parnaíba é uma importante reserva ambiental que sustenta famílias locais por meio da pesca, cata de caranguejo e do turismo ecológico."
+    },
+    {
+        "id": 21,
+        "materia": "Geografia N2",
+        "assunto": "Bacias do Atlântico Sul",
+        "nivel": "dificil",
+        "enunciado": "As bacias hidrográficas do Atlântico Sul (trecho norte e nordeste) compartilham características geográficas e morfológicas específicas. Qual das alternativas a seguir descreve corretamente uma característica comum a essas bacias?",
+        "alternativas": [
+            "Apresentam rios curtos com regime predominantemente intermitente devido ao clima semiárido",
+            "Possuem rios exclusivamente perenes com grande volume hídrico anual constante",
+            "São alimentadas por bacias glaciais localizadas na Cordilheira dos Andes",
+            "Destacam-se por possuírem os maiores potenciais hidrelétricos instalados do país",
+            "Apresentam foz em forma de estuários profundos sem deposição de sedimentos"
+        ],
+        "correta": "Apresentam rios curtos com regime predominantemente intermitente devido ao clima semiárido",
+        "comentario": "Exceto por rios principais como o São Francisco e o Parnaíba, a maioria das bacias hidrográficas menores da vertente norte-nordeste do Atlântico Sul é composta por rios curtos e intermitentes que secam na estiagem."
+    },
+    {
+        "id": 22,
+        "materia": "Geografia N2",
+        "assunto": "Transição Climatobotânica",
+        "nivel": "dificil",
+        "enunciado": "A distribuição da vegetação no Nordeste reflete diretamente as zonas de transição climática. Ao viajar do litoral úmido baiano em direção ao Sertão e depois ao norte do Maranhão, qual sequência de biomas/vegetação é observada?",
+        "alternativas": [
+            "Mata Atlântica -> Caatinga -> Mata dos Cocais",
+            "Caatinga -> Mata dos Cocais -> Mata Atlântica",
+            "Mata dos Cocais -> Mata Atlântica -> Caatinga",
+            "Manguezal -> Pampa -> Cerrado",
+            "Cerrado -> Caatinga -> Floresta Temperada"
+        ],
+        "correta": "Mata Atlântica -> Caatinga -> Mata dos Cocais",
+        "comentario": "No litoral úmido oriental (Zona da Mata) temos a Mata Atlântica. No interior semiárido (Sertão), a Caatinga. Na transição úmida do Meio-Norte (Maranhão), a Mata dos Cocais."
+    },
+    {
+        "id": 23,
+        "materia": "Geografia N2",
+        "assunto": "Bacia do São Francisco",
+        "nivel": "dificil",
+        "enunciado": "A construção de grandes barragens no Rio São Francisco, como a de Sobradinho, alterou significativamente a dinâmica fluvial e social da região. Qual foi um dos impactos socioambientais mais marcantes dessa obra?",
+        "alternativas": [
+            "O deslocamento forçado de populações ribeirinhas e inundação de cidades históricas",
+            "O congelamento das águas a jusante durante os meses de inverno",
+            "A salinização completa da água do rio inviabilizando o consumo humano",
+            "O desaparecimento total da foz do rio São Francisco no Oceano Atlântico",
+            "A proliferação de tubarões de água doce em todo o reservatório"
+        ],
+        "correta": "O deslocamento forçado de populações ribeirinhas e inundação de cidades históricas",
+        "comentario": "A inundação do reservatório de Sobradinho submergiu cidades como Remanso e Casa Nova, forçando a transferência de milhares de famílias e alterando a dinâmica pesqueira local."
+    },
+    {
+        "id": 24,
+        "materia": "Geografia N2",
+        "assunto": "Dinâmica de Chuvas",
+        "nivel": "dificil",
+        "enunciado": "A variabilidade nas chuvas do Sertão nordestino não decorre apenas de fatores locais, mas também de anomalias térmicas oceânicas globais. Qual fenômeno climático global está frequentemente associado a secas extremas no Nordeste brasileiro?",
+        "alternativas": [
+            "El Niño",
+            "La Niña",
+            "Monções asiáticas",
+            "Oscilação do Atlântico Norte",
+            "Corrente de Humboldt"
+        ],
+        "correta": "El Niño",
+        "comentario": "O El Niño (aquecimento anômalo das águas do Pacífico Equatorial) altera a circulação atmosférica global, inibindo a formação de nuvens e provocando secas severas no Nordeste."
+    },
+    {
+        "id": 25,
+        "materia": "Geografia N2",
+        "assunto": "A Questão Geopolítica da Água",
+        "nivel": "dificil",
+        "enunciado": "Analisando historicamente a escassez de água no Nordeste, geógrafos apontam que a seca é um fenômeno natural (climático), enquanto a falta de água é um fenômeno social e político. Qual argumento sustenta essa afirmação?",
+        "alternativas": [
+            "A infraestrutura hídrica existente atende prioritariamente latifúndios e projetos comerciais em detrimento do abastecimento difuso das famílias",
+            "A evaporação impede fisicamente que a água chegue às populações mais pobres, acumulando-se apenas nos reservatórios ricos",
+            "As chuvas ocorrem apenas sobre propriedades privadas, evitando as áreas públicas de uso comum",
+            "Não existem rios que cortem as terras das populações carentes no semiárido",
+            "A água subterrânea do Nordeste é de propriedade exclusiva das indústrias multinacionais por lei"
+        ],
+        "correta": "A infraestrutura hídrica existente atende prioritariamente latifúndios e projetos comerciais em detrimento do abastecimento difuso das famílias",
+        "comentario": "A distribuição de água no semiárido reflete as relações de poder históricas: grandes açudes e canais beneficiam grandes propriedades agrícolas irrigadas, deixando comunidades vulneráveis desassistidas."
+    },
+    {
+        "id": 26,
+        "materia": "Geografia N2",
+        "assunto": "Migração de Retorno",
+        "nivel": "dificil",
+        "enunciado": "Nas últimas duas décadas, observou-se uma desaceleração no fluxo emigratório do Nordeste para o Sudeste, acompanhada por um aumento na chamada \"migração de retorno\". Esse fenômeno é explicado por:",
+        "alternativas": [
+            "O crescimento econômico do Nordeste associado a políticas de transferência de renda e saturação do mercado de trabalho no Sudeste",
+            "A proibição federal da circulação interestadual de ônibus de migração",
+            "A descoberta de grandes reservas de ouro no Sertão nordestino",
+            "O esgotamento completo de postos de trabalho no setor industrial paulista",
+            "Uma mudança climática que tornou o Sudeste mais quente e seco que o Nordeste"
+        ],
+        "correta": "O crescimento econômico do Nordeste associado a políticas de transferência de renda e saturação do mercado de trabalho no Sudeste",
+        "comentario": "Projetos de infraestrutura, atração de indústrias para o Nordeste, expansão do setor de serviços, programas sociais (como Bolsa Família) e o custo de vida elevado no Sudeste incentivaram o retorno de muitos migrantes."
+    },
+    {
+        "id": 27,
+        "materia": "Geografia N2",
+        "assunto": "Conflito pelo Uso da Água",
+        "nivel": "dificil",
+        "enunciado": "Na Bacia do Atlântico Leste, o uso múltiplo das águas frequentemente gera conflitos locais de interesse. Qual das seguintes situações representa um conflito típico nessa bacia?",
+        "alternativas": [
+            "A disputa entre o uso da água para mineração de grande porte vs. abastecimento de comunidades tradicionais e ribeirinhas",
+            "A proibição de uso de hidrelétricas devido à proteção integral de recifes de coral fluviais",
+            "A competição entre pescadores de lagosta fluvial e criadores de gado em áreas alagadas",
+            "A disputa diplomática entre Brasil e Argentina pelo controle da vazão dos rios baianos",
+            "O bloqueio de rios para a exploração de turismo de geleiras artificiais"
+        ],
+        "correta": "A disputa entre o uso da água para mineração de grande porte vs. abastecimento de comunidades tradicionais e ribeirinhas",
+        "comentario": "Em rios compartilhados da Bacia do Atlântico Leste (norte de MG e BA), há conflitos frequentes entre grandes projetos de mineração/agropecuária e comunidades locais que dependem dos rios para subsistência."
+    },
+    {
+        "id": 28,
+        "materia": "Geografia N2",
+        "assunto": "Climatologia e ZCIT",
+        "nivel": "dificil",
+        "enunciado": "A Zona de Convergência Intertropical (ZCIT) desempenha um papel crucial na determinação climática de parte do Nordeste brasileiro. A atuação da ZCIT é a principal responsável por:",
+        "alternativas": [
+            "Trazer chuvas para o norte do Nordeste (como Ceará e Rio Grande do Norte) nos primeiros meses do ano",
+            "Provocar secas severas no litoral sul da Bahia durante todo o ano",
+            "Manter as temperaturas congelantes no topo do Planalto da Borborema",
+            "Desviar a umidade da Bacia Amazônica em direção ao oceano Atlântico",
+            "Impedir a formação de ciclones tropicais na costa do Maranhão"
+        ],
+        "correta": "Trazer chuvas para o norte do Nordeste (como Ceará e Rio Grande do Norte) nos primeiros meses do ano",
+        "comentario": "A ZCIT é o principal sistema meteorológico indutor de chuvas no norte da região Nordeste durante o verão e o outono do Hemisfério Sul, variando sua posição de acordo com a temperatura do Atlântico."
+    },
+    {
+        "id": 29,
+        "materia": "Geografia N2",
+        "assunto": "Processo de Desertificação",
+        "nivel": "dificil",
+        "enunciado": "O manejo inadequado do solo associado às características climáticas do semiárido tem acelerado processos de degradação ambiental no interior do Nordeste. Qual das seguintes áreas é reconhecida como um dos principais \"núcleos de desertificação\" da região?",
+        "alternativas": [
+            "Cabrobó (PE) e Gilbués (PI)",
+            "Recôncavo Baiano (BA) e Zona da Mata (PE)",
+            "Delta do Parnaíba (PI) e Vale do Cariri (CE)",
+            "Agreste Paraibano (PB) e Chapada Diamantina (BA)",
+            "Lençóis Maranhenses (MA) e Fernando de Noronha (PE)"
+        ],
+        "correta": "Cabrobó (PE) e Gilbués (PI)",
+        "comentario": "Cabrobó (Pernambuco), Gilbués (Piauí), Irauçuba (Ceará) e Seridó (RN/PB) são considerados os núcleos de desertificação mais graves do Nordeste devido à degradação severa da vegetação e solo."
+    },
+    {
+        "id": 30,
+        "materia": "Geografia N2",
+        "assunto": "Êxodo Rural",
+        "nivel": "dificil",
+        "enunciado": "O processo de êxodo rural acelerado no Nordeste nas últimas décadas gerou reflexos urbanos significativos nas capitais e médias cidades da própria região. Entre esses reflexos, destaca-se:",
+        "alternativas": [
+            "A periferização acelerada, com crescimento de ocupações informais e pressão sobre serviços básicos de saúde e saneamento",
+            "O esvaziamento completo das áreas centrais urbanas e retorno imediato ao campo",
+            "A redução drástica dos índices de violência urbana devido à abundância de empregos na construção civil litorânea",
+            "A substituição total de favelas por condomínios de alto padrão financiados pelos trabalhadores rurais",
+            "A redução da demanda por transporte público devido ao planejamento urbano planejado das capitais"
+        ],
+        "correta": "A periferização acelerada, com crescimento de ocupações informais e pressão sobre serviços básicos de saúde e saneamento",
+        "comentario": "A rápida migração do campo para as cidades nordestinas resultou em crescimento desordenado (periferização), falta de infraestrutura de saneamento básico e aumento da informalidade no mercado de trabalho."
+    }
+]

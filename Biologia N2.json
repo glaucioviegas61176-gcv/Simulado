@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "materia": "Biologia N2",
+        "assunto": "Mitocôndria",
+        "nivel": "facil",
+        "enunciado": "A mitocôndria é uma organela celular de extrema importância presente em células eucariontes. Qual é a principal função realizada pela mitocôndria?",
+        "alternativas": [
+            "A respiração celular e produção de energia (ATP)",
+            "A síntese de proteínas",
+            "A digestão intracelular de resíduos",
+            "A fotossíntese e produção de glicose",
+            "O armazenamento de água e sais minerais"
+        ],
+        "correta": "A respiração celular e produção de energia (ATP)",
+        "comentario": "A mitocôndria é a usina de energia da célula, responsável por realizar a respiração celular aeróbica que gera ATP a partir de nutrientes e oxigênio."
+    },
+    {
+        "id": 2,
+        "materia": "Biologia N2",
+        "assunto": "Cloroplastos",
+        "nivel": "facil",
+        "enunciado": "Os cloroplastos são organelas típicas de células vegetais e de algas. Qual é o processo biológico essencial que ocorre no interior dos cloroplastos?",
+        "alternativas": [
+            "A fotossíntese",
+            "A respiração anaeróbica",
+            "A digestão autofágica",
+            "A síntese de lipídeos",
+            "A divisão celular bacteriana"
+        ],
+        "correta": "A fotossíntese",
+        "comentario": "Nos cloroplastos ocorre a fotossíntese, processo que utiliza luz solar, água e gás carbônico para produzir glicose e gás oxigênio."
+    },
+    {
+        "id": 3,
+        "materia": "Biologia N2",
+        "assunto": "Células Procariontes e Eucariontes",
+        "nivel": "facil",
+        "enunciado": "Ao observar uma imagem de uma célula ao microscópio, você nota a ausência de carioteca (membrana nuclear) e de organelas membranosas (como mitocôndrias). Isso confirma que a célula sob observação é:",
+        "alternativas": [
+            "Procarionte",
+            "Eucarionte animal",
+            "Eucarionte vegetal",
+            "Eucarionte fúngica",
+            "Protozoário eucarionte"
+        ],
+        "correta": "Procarionte",
+        "comentario": "Células procariontes (como as bactérias) não possuem núcleo delimitado por carioteca nem organelas membranosas como mitocôndrias ou complexo golgiense."
+    },
+    {
+        "id": 4,
+        "materia": "Biologia N2",
+        "assunto": "Ribossomos",
+        "nivel": "facil",
+        "enunciado": "Os ribossomos são estruturas presentes tanto em células procariontes quanto em eucariontes. Qual é a principal função atribuída aos ribossomos?",
+        "alternativas": [
+            "A síntese de proteínas",
+            "O transporte de íons sódio",
+            "A secreção de hormônios",
+            "A quebra de peróxido de hidrogênio",
+            "A duplicação do envelope nuclear"
+        ],
+        "correta": "A síntese de proteínas",
+        "comentario": "A função fundamental dos ribossomos é a tradução do RNA mensageiro para realizar a síntese de proteínas na célula."
+    },
+    {
+        "id": 5,
+        "materia": "Biologia N2",
+        "assunto": "Lisossomos",
+        "nivel": "facil",
+        "enunciado": "Qual é a principal função dos lisossomos no interior de uma célula animal?",
+        "alternativas": [
+            "A digestão intracelular",
+            "A síntese de polissacarídeos",
+            "O empacotamento de secreções",
+            "A produção de energia",
+            "A replicação do DNA"
+        ],
+        "correta": "A digestão intracelular",
+        "comentario": "Os lisossomos contêm enzimas digestivas (hidrolases) ácidas responsáveis pela digestão de substâncias capturadas pela célula ou de organelas velhas."
+    },
+    {
+        "id": 6,
+        "materia": "Biologia N2",
+        "assunto": "Citoplasma",
+        "nivel": "facil",
+        "enunciado": "O citoplasma é a região da célula localizada entre a membrana plasmática e o núcleo. Nas células procariontes, o que constitui majoritariamente o citoplasma?",
+        "alternativas": [
+            "O citosol, o DNA disperso e os ribossomos",
+            "Uma rede complexa de organelas membranosas",
+            "Apenas água e grandes vacúolos de suco celular",
+            "Mitocôndrias e cloroplastos em grande quantidade",
+            "Um núcleo bem delimitado por membrana dupla"
+        ],
+        "correta": "O citosol, o DNA disperso e os ribossomos",
+        "comentario": "Como os procariontes não têm organelas membranosas nem carioteca, o seu citoplasma abriga o citosol, ribossomos e a região do nucleoide onde fica o material genético."
+    },
+    {
+        "id": 7,
+        "materia": "Biologia N2",
+        "assunto": "Retículo Endoplasmático",
+        "nivel": "facil",
+        "enunciado": "O retículo endoplasmático pode ser classificado em rugoso (ou granuloso) e liso (ou não granuloso). O retículo rugoso recebe esse nome devido à presença de quais estruturas aderidas à sua membrana externa?",
+        "alternativas": [
+            "Ribossomos",
+            "Lisossomos",
+            "Cloroplastos",
+            "Mitocôndrias",
+            "Centríolos"
+        ],
+        "correta": "Ribossomos",
+        "comentario": "O retículo endoplasmático rugoso é assim chamado porque possui ribossomos aderidos às suas membranas, atuando ativamente na síntese de proteínas que serão exportadas."
+    },
+    {
+        "id": 8,
+        "materia": "Biologia N2",
+        "assunto": "Vacúolos",
+        "nivel": "facil",
+        "enunciado": "Os vacúolos de suco celular são estruturas proeminentes encontradas principalmente em qual tipo celular?",
+        "alternativas": [
+            "Célula vegetal adulta",
+            "Célula animal jovem",
+            "Bactéria Gram-positiva",
+            "Hemácia humana",
+            "Neurônio motor"
+        ],
+        "correta": "Célula vegetal adulta",
+        "comentario": "Nas células vegetais maduras, o vacúolo central ou de suco celular ocupa grande parte do volume da célula, regulando o pH, a pressão osmótica e armazenando substâncias."
+    },
+    {
+        "id": 9,
+        "materia": "Biologia N2",
+        "assunto": "Complexo Golgiense",
+        "nivel": "facil",
+        "enunciado": "Qual organela celular é responsável por receber proteínas do retículo endoplasmático, modificá-las, empacotá-las e enviá-las para os seus destinos finais (secreção celular)?",
+        "alternativas": [
+            "Complexo Golgiense",
+            "Lisossomo",
+            "Cloroplasto",
+            "Ribossomo livre",
+            "Peroxissomo"
+        ],
+        "correta": "Complexo Golgiense",
+        "comentario": "O Complexo de Golgi atua como um 'centro de distribuição' da célula, processando e empacotando substâncias sintetizadas no retículo para secreção ou uso interno."
+    },
+    {
+        "id": 10,
+        "materia": "Biologia N2",
+        "assunto": "Mitocôndria",
+        "nivel": "facil",
+        "enunciado": "O funcionamento das mitocôndrias requer a entrada de certos reagentes para que o processo de respiração celular aconteça. Quais são os principais produtos consumidos (reagentes) nesse processo?",
+        "alternativas": [
+            "Glicose e gás oxigênio",
+            "Gás carbônico e água",
+            "Proteínas e lipídeos complexos",
+            "Clorofila e luz solar",
+            "Monóxido de carbono e hélio"
+        ],
+        "correta": "Glicose e gás oxigênio",
+        "comentario": "Na respiração celular, a mitocôndria consome glicose (combustível orgânico) e gás oxigênio (aceptor final de elétrons) para produzir energia (ATP), gerando gás carbônico e água como resíduos."
+    },
+    {
+        "id": 11,
+        "materia": "Biologia N2",
+        "assunto": "Respiração Pulmonar vs. Celular",
+        "nivel": "medio",
+        "enunciado": "A respiração pulmonar (ou ventilação) e a respiração celular são processos integrados, mas conceitualmente distintos. Qual das alternativas descreve corretamente a diferença entre eles?",
+        "alternativas": [
+            "A respiração pulmonar é a troca de gases entre o organismo e o meio ambiente; a celular é a quebra química de nutrientes na célula para gerar ATP",
+            "A respiração pulmonar gera glicose e a respiração celular quebra o oxigênio para produzir gás carbônico",
+            "A respiração pulmonar ocorre nas mitocôndrias e a respiração celular ocorre nas vias aéreas superiores",
+            "Ambos os processos produzem energia de forma anaeróbica a partir de gorduras",
+            "A respiração celular ocorre apenas em plantas e a pulmonar apenas em mamíferos"
+        ],
+        "correta": "A respiração pulmonar é a troca de gases entre o organismo e o meio ambiente; a celular é a quebra química de nutrientes na célula para gerar ATP",
+        "comentario": "A respiração pulmonar traz o oxigênio para o sangue e elimina o gás carbônico; o oxigênio é levado às células para participar da respiração celular, que produz ATP."
+    },
+    {
+        "id": 12,
+        "materia": "Biologia N2",
+        "assunto": "Células Eucariontes Animais vs. Vegetais",
+        "nivel": "medio",
+        "enunciado": "Uma imagem microscópica revela uma célula contendo mitocôndrias, parede celular celulósica externa e um grande vacúolo central. A presença de parede celular e cloroplastos indica com segurança que se trata de uma célula:",
+        "alternativas": [
+            "Eucarionte vegetal",
+            "Eucarionte animal",
+            "Procarionte bacteriana",
+            "Procarionte arqueana",
+            "Eucarionte fúngica"
+        ],
+        "correta": "Eucarionte vegetal",
+        "comentario": "As células eucariontes vegetais contam com parede celular de celulose, cloroplastos para fotossíntese e um grande vacúolo de suco celular, características ausentes nas células eucariontes animais."
+    },
+    {
+        "id": 13,
+        "materia": "Biologia N2",
+        "assunto": "Retículo Endoplasmático Liso",
+        "nivel": "medio",
+        "enunciado": "O retículo endoplasmático liso (REL) desempenha funções cruciais de síntese e desintoxicação. Em qual dos seguintes órgãos humanos as células possuem um retículo endoplasmático liso extremamente desenvolvido?",
+        "alternativas": [
+            "Fígado (hepatócitos)",
+            "Cérebro (neurônios)",
+            "Pâncreas (células beta)",
+            "Estômago (células parietais)",
+            "Pele (queratinócitos)"
+        ],
+        "correta": "Fígado (hepatócitos)",
+        "comentario": "O fígado é o principal órgão responsável pela metabolização e eliminação de toxinas e drogas (como álcool e medicamentos), função altamente dependente do retículo endoplasmático liso dos hepatócitos."
+    },
+    {
+        "id": 14,
+        "materia": "Biologia N2",
+        "assunto": "Teoria Endossimbiótica",
+        "nivel": "medio",
+        "enunciado": "A teoria endossimbiótica propõe que as mitocôndrias e os cloroplastos evoluíram a partir de procariontes de vida livre que foram englobados por células eucariontes ancestrais. Que evidência estrutural apoia fortemente essa teoria?",
+        "alternativas": [
+            "Mitocôndrias e cloroplastos possuem DNA próprio circular e ribossomos semelhantes aos bacterianos",
+            "Ambas as organelas possuem membrana celular de quitina",
+            "Mitocôndrias e cloroplastos realizam meiose celular para se reproduzir",
+            "Estas organelas dependem inteiramente do DNA nuclear para sintetizar 100% de suas proteínas",
+            "Ambas as organelas realizam fagocitose de outras células menores"
+        ],
+        "correta": "Mitocôndrias e cloroplastos possuem DNA próprio circular e ribossomos semelhantes aos bacterianos",
+        "comentario": "A presença de DNA circular de fita dupla próprio, capacidade de autoduplicação e ribossomos bacterianos (70S) evidencia a origem evolutiva dessas organelas a partir de ancestrais procariontes simbiontes."
+    },
+    {
+        "id": 15,
+        "materia": "Biologia N2",
+        "assunto": "Síntese Proteica e Transporte",
+        "nivel": "medio",
+        "enunciado": "O caminho que uma proteína destinada à exportação (secreção) percorre na célula eucarionte desde sua síntese até a saída da célula é:",
+        "alternativas": [
+            "Ribossomo do RER -> Lúmen do RER -> Complexo Golgiense -> Vesícula de Secreção -> Membrana Plasmática",
+            "Lisossomo -> Mitocôndria -> Retículo Liso -> Citoplasma -> Parede Celular",
+            "Complexo Golgiense -> Ribossomo Livre -> Nucléolo -> Citoplasma -> Carioteca",
+            "Nucléolo -> Lisossomo -> Retículo Rugoso -> Citoplasma -> Vacúolo",
+            "Cloroplasto -> Complexo Golgiense -> Retículo Rugoso -> Membrana Plasmática"
+        ],
+        "correta": "Ribossomo do RER -> Lúmen do RER -> Complexo Golgiense -> Vesícula de Secreção -> Membrana Plasmática",
+        "comentario": "Proteínas de secreção são sintetizadas por ribossomos associados ao retículo rugoso (RER), transportadas para o complexo golgiense para modificação e endereçamento, e enviadas à membrana por vesículas."
+    },
+    {
+        "id": 16,
+        "materia": "Biologia N2",
+        "assunto": "Vacúolo Pulsátil ou Contrátil",
+        "nivel": "medio",
+        "enunciado": "Protozoários de água doce (como o paramécio) enfrentam um constante desafio osmótico porque seu citoplasma é hipertônico em relação ao meio externo. Qual organela especial evita o rompimento dessas células controlando a entrada e saída de água?",
+        "alternativas": [
+            "Vacúolo pulsátil ou contrátil",
+            "Lisossomo primário",
+            "Complexo de Golgi",
+            "Cloroplasto",
+            "Parede celular de celulose"
+        ],
+        "correta": "Vacúolo pulsátil ou contrátil",
+        "comentario": "O vacúolo pulsátil (ou contrátil) recolhe a água que entra na célula por osmose e a expulsa ativamente para o exterior, evitando a lise celular."
+    },
+    {
+        "id": 17,
+        "materia": "Biologia N2",
+        "assunto": "Lisossomos e Autofagia",
+        "nivel": "medio",
+        "enunciado": "A autofagia é um processo celular vital que envolve a remoção e degradação de componentes celulares danificados ou desnecessários. Qual organela participa diretamente da fusão de vesículas para realizar a autofagia?",
+        "alternativas": [
+            "Lisossomo",
+            "Ribossomo",
+            "Centríolo",
+            "Nucléolo",
+            "Cloroplasto"
+        ],
+        "correta": "Lisossomo",
+        "comentario": "A vesícula autofágica funde-se com o lisossomo (formando o autolisossomo), cujas enzimas ácidas digerem o material celular senescente para reciclagem de componentes básicos."
+    },
+    {
+        "id": 18,
+        "materia": "Biologia N2",
+        "assunto": "Respiração Celular e Mitocôndria",
+        "nivel": "medio",
+        "enunciado": "Durante a respiração celular nas mitocôndrias, o que acontece com o oxigênio molecular (O2) inalado na respiração pulmonar?",
+        "alternativas": [
+            "Ele atua como aceptor final de elétrons na cadeia respiratória, unindo-se a prótons H+ para formar água",
+            "Ele é convertido em glicose na matriz mitocondrial",
+            "Ele é quebrado para liberar átomos de carbono sob forma de gás carbônico",
+            "Ele é armazenado no interior das cristas mitocondriais para ser transformado em ADP",
+            "Ele é usado para oxidar diretamente os lisossomos"
+        ],
+        "correta": "Ele atua como aceptor final de elétrons na cadeia respiratória, unindo-se a prótons H+ para formar água",
+        "comentario": "O oxigênio inalado atua na etapa final (cadeia transportadora de elétrons) da respiração celular, recebendo elétrons e prótons H+ para produzir água."
+    },
+    {
+        "id": 19,
+        "materia": "Biologia N2",
+        "assunto": "Ribossomos Livres vs. Aderidos",
+        "nivel": "medio",
+        "enunciado": "Os ribossomos podem estar livres no citosol ou aderidos às membranas do retículo endoplasmático rugoso. Qual das seguintes opções indica o destino das proteínas sintetizadas pelos ribossomos livres?",
+        "alternativas": [
+            "Uso intracelular no citosol, núcleo, mitocôndrias ou cloroplastos",
+            "Secreção contínua para fora da célula",
+            "Armazenamento no interior de vesículas de secreção golgienses",
+            "Incorporação na membrana plasmática",
+            "Digestão imediata no interior de lisossomos"
+        ],
+        "correta": "Uso intracelular no citosol, núcleo, mitocôndrias ou cloroplastos",
+        "comentario": "Proteínas produzidas por ribossomos livres no citosol geralmente destinam-se a desempenhar funções no próprio citoplasma ou são importadas por organelas não secretoras (núcleo, mitocôndrias, cloroplastos)."
+    },
+    {
+        "id": 20,
+        "materia": "Biologia N2",
+        "assunto": "Fotossíntese e Produção de Oxigênio",
+        "nivel": "medio",
+        "enunciado": "No processo da fotossíntese realizado pelos cloroplastos, a luz solar estimula a quebra de uma molécula, liberando o gás oxigênio (O2) para a atmosfera. Qual molécula é essa?",
+        "alternativas": [
+            "Água (H2O)",
+            "Gás carbônico (CO2)",
+            "Glicose (C6H12O6)",
+            "Monóxido de carbono (CO)",
+            "Clorofila"
+        ],
+        "correta": "Água (H2O)",
+        "comentario": "O oxigênio liberado na fotossíntese provém da fotólise da água (quebra da molécula de água sob ação da luz) realizada na membrana dos tilacoides do cloroplasto."
+    },
+    {
+        "id": 21,
+        "materia": "Biologia N2",
+        "assunto": "Células Procariontes e Síntese Proteica",
+        "nivel": "dificil",
+        "enunciado": "Bactérias não possuem retículo endoplasmático rugoso nem complexo de Golgi. Como se dá a síntese e destinação de proteínas que devem atuar na parede bacteriana ou no exterior das células procariontes?",
+        "alternativas": [
+            "A síntese ocorre em ribossomos no citosol e a secreção ocorre por sistemas de secreção transmembrana específicos",
+            "Os cloroplastos bacterianos realizam a secreção enzimática",
+            "Os lisossomos bacterianos fundem-se com a membrana plasmática para liberação",
+            "A parede celular bacteriana possui ribossomos próprios aderidos em sua face externa",
+            "Os vacúolos contráteis expulsam as proteínas de forma exocítica"
+        ],
+        "correta": "A síntese ocorre em ribossomos no citosol e a secreção ocorre por sistemas de secreção transmembrana específicos",
+        "comentario": "Procariontes sintetizam suas proteínas nos ribossomos dispersos no citoplasma e utilizam canais proteicos especiais de secreção na membrana plasmática para translocá-las."
+    },
+    {
+        "id": 22,
+        "materia": "Biologia N2",
+        "assunto": "Cristas Mitocondriais e Cadeia Respiratória",
+        "nivel": "dificil",
+        "enunciado": "As cristas mitocondriais são dobras da membrana mitocondrial interna que se projetam para o interior da matriz. Qual é a importância fisiológica dessas dobras estruturais das cristas?",
+        "alternativas": [
+            "Aumentar a área de superfície da membrana interna, maximizando o número de complexos da cadeia respiratória e da ATP sintase",
+            "Armazenar maior quantidade de amido e lipídeos na matriz mitocondrial",
+            "Proteger o DNA mitocondrial de mutações causadas por radicais livres do citoplasma",
+            "Separar fisicamente a glicólise anaeróbica da fosforilação oxidativa",
+            "Permitir que a mitocôndria se movimente pelo citoplasma através de contrações"
+        ],
+        "correta": "Aumentar a área de superfície da membrana interna, maximizando o número de complexos da cadeia respiratória e da ATP sintase",
+        "comentario": "O dobramento da membrana interna in cristas mitocondriais aumenta expressivamente a superfície disponível para a cadeia transportadora de elétrons e a fosforilação oxidativa."
+    },
+    {
+        "id": 23,
+        "materia": "Biologia N2",
+        "assunto": "Controle de Qualidade de Proteínas",
+        "nivel": "dificil",
+        "enunciado": "Durante a síntese proteica no retículo endoplasmático rugoso, se uma proteína recém-formada apresentar dobramento incorreto em sua estrutura tridimensional, qual processo celular de controle de qualidade é acionado?",
+        "alternativas": [
+            "A proteína é identificada, ligada a chaperonas e direcionada para degradação no proteassomo (ERAD)",
+            "Ela é enviada ao complexo golgiense para ser montada novamente",
+            "Os lisossomos englobam o retículo rugoso inteiro em um processo de apoptose",
+            "A célula inverte a rotação da cadeia respiratória para obter energia",
+            "A proteína mal dobrada é expelida via exocitose para fora da célula"
+        ],
+        "correta": "A proteína é identificada, ligada a chaperonas e direcionada para degradação no proteassomo (ERAD)",
+        "comentario": "Proteínas defeituosas ou mal dobradas passam pela Degradação Associada ao Retículo Endoplasmático (ERAD), onde são transportadas de volta ao citosol, marcadas com ubiquitina e degradadas no proteassomo."
+    },
+    {
+        "id": 24,
+        "materia": "Biologia N2",
+        "assunto": "Tilacoides e Estroma do Cloroplasto",
+        "nivel": "dificil",
+        "enunciado": "Os cloroplastos possuem duas regiões bem definidas onde ocorrem etapas distintas da fotossíntese: os tilacoides (membranas internas) e o estroma (fluido interno). Onde ocorrem a etapa fotoquímica (fase clara) e a etapa química (fase escura / ciclo de Calvin)?",
+        "alternativas": [
+            "Fase clara nos tilacoides; Fase escura no estroma",
+            "Fase clara no estroma; Fase escura nos tilacoides",
+            "Fase clara e fase escura ocorrem juntas na matriz mitocondrial externa",
+            "Fase clara na membrana dupla externa; Fase escura no citoplasma celular",
+            "Ambas as fases ocorrem exclusivamente nas cristas e não no estroma"
+        ],
+        "correta": "Fase clara nos tilacoides; Fase escura no estroma",
+        "comentario": "A fase clara (fotoquímica) ocorre nas membranas dos tilacoides, onde estão a clorofila e a ATP sintase. A fase escura (ciclo de Calvin) ocorre no estroma do cloroplasto."
+    },
+    {
+        "id": 25,
+        "materia": "Biologia N2",
+        "assunto": "Doenças de Depósito Lisossômico",
+        "nivel": "dificil",
+        "enunciado": "Algumas mutações genéticas resultam na ausência ou mau funcionamento de enzimas específicas dos lisossomos. Essas patologias levam ao acúmulo de macromoléculas não digeridas na célula, como ocorre na doença de:",
+        "alternativas": [
+            "Tay-Sachs",
+            "Alzheimer",
+            "Diabetes tipo I",
+            "Anemia falciforme",
+            "Hepatite viral"
+        ],
+        "correta": "Tay-Sachs",
+        "comentario": "A doença de Tay-Sachs é uma desordem genética lisossômica (doença de depósito) causada pela deficiência da enzima hexosaminidase A, resultando em acúmulo de lipídeos em neurônios."
+    },
+    {
+        "id": 26,
+        "materia": "Biologia N2",
+        "assunto": "Dinâmica Funcional do Complexo de Golgi",
+        "nivel": "dificil",
+        "enunciado": "O complexo golgiense é uma organela polarizada apresentando faces distintas: a face cis e a face trans. Qual das alternativas descreve corretamente o fluxo de vesículas nessas faces?",
+        "alternativas": [
+            "A face cis recebe vesículas de transição do RER; a face trans brota vesículas secretoras direcionadas para o citosol ou exocitose",
+            "A face trans recebe proteínas do núcleo; a face cis envia vesículas de descarte para os cloroplastos",
+            "Ambas as faces realizam fagocitose e pinocitose de maneira independente da célula",
+            "A face cis conecta-se aos lisossomos para oxigenação; a face trans conecta-se ao retículo liso",
+            "A face trans brota ribossomos livres; a face cis sintetiza lipoproteínas ativas"
+        ],
+        "correta": "A face cis recebe vesículas de transição do RER; a face trans brota vesículas secretoras direcionadas para o citosol ou exocitose",
+        "comentario": "A face cis está voltada para o retículo endoplasmático de onde recebe vesículas de transporte com proteínas. O processamento ocorre ao longo das cisternas e as vesículas prontas saem pela face trans."
+    },
+    {
+        "id": 27,
+        "materia": "Biologia N2",
+        "assunto": "Glicólise vs. Ciclo de Krebs",
+        "nivel": "dificil",
+        "enunciado": "O metabolismo energético celular aeróbico inicia-se no citoplasma e termina nas mitocôndrias. Em qual região específica da mitocôndria ocorre o ciclo de Krebs (ciclo do ácido cítrico)?",
+        "alternativas": [
+            "Na matriz mitocondrial",
+            "Nas cristas mitocondriais",
+            "No espaço intermembranas",
+            "Na membrana externa",
+            "Nos ribossomos mitocondriais"
+        ],
+        "correta": "Na matriz mitocondrial",
+        "comentario": "A glicólise ocorre no citoplasma. O piruvato entra na mitocôndria, é convertido em Acetil-CoA e inicia o Ciclo de Krebs, que ocorre na matriz mitocondrial fluida."
+    },
+    {
+        "id": 28,
+        "materia": "Biologia N2",
+        "assunto": "Apoptose",
+        "nivel": "dificil",
+        "enunciado": "Durante o desenvolvimento embrionário da mão humana, a regressão da membrana interdigital ocorre por meio de uma destruição celular programada na qual as membranas dos lisossomos se rompem simultaneamente, liberando enzimas digestivas no citoplasma e levando à autólise da célula. Como é denominado esse processo?",
+        "alternativas": [
+            "Apoptose",
+            "Heterofagia",
+            "Exocitose",
+            "Plasmólise",
+            "Crenação"
+        ],
+        "correta": "Apoptose",
+        "comentario": "A apoptose é a morte celular programada. Em alguns estágios, o rompimento de organelas digestivas como lisossomos contribui para a degradação e eliminação controlada de tecidos corporais."
+    },
+    {
+        "id": 29,
+        "materia": "Biologia N2",
+        "assunto": "pH Lisossômico",
+        "nivel": "dificil",
+        "enunciado": "Os lisossomos mantêm um pH interno consideravelmente ácido (em torno de 4.8 a 5.0) para que suas enzimas funcionem com eficiência máxima. Como a organela consegue manter essa acidez interna em relação ao citoplasma (pH ~7.2)?",
+        "alternativas": [
+            "Por meio de bombas de prótons (H+ - ATPase) ativas na membrana lisossômica que bombeiam H+ para dentro",
+            "Pela difusão passiva e facilitada de íons cloro (Cl-)",
+            "Pela síntese contínua de ácido sulfúrico na matriz mitocondrial",
+            "Por meio da captação de gás carbônico atmosférico por pinocitose",
+            "Por canais de sódio e potássio ativados por voltagem"
+        ],
+        "correta": "Por meio de bombas de prótons (H+ - ATPase) ativas na membrana lisossômica que bombeiam H+ para dentro",
+        "comentario": "A manutenção do pH ácido é mantida pelo transporte ativo de prótons (H+) do citoplasma para o lúmen lisossômico realizado por bombas de prótons na membrana da organela com consumo de ATP."
+    },
+    {
+        "id": 30,
+        "materia": "Biologia N2",
+        "assunto": "Cloroplasto e Mitocôndria na Evolução",
+        "nivel": "dificil",
+        "enunciado": "Embora cloroplastos e mitocôndrias possuam genomas circulares próprios, eles são considerados organelas semiautônomas. O termo \"semiautônomas\" é empregado porque:",
+        "alternativas": [
+            "A maior parte de suas proteínas estruturais e funcionais é codificada por genes do núcleo da célula hospedeira",
+            "Elas dependem da presença de vírus citoplasmáticos para realizar sua divisão binária",
+            "Eles podem sobreviver indefinidamente fora da célula em água destilada",
+            "Eles compartilham o mesmo DNA linear presente nas cromátides irmãs",
+            "Apenas a mitocôndria possui capacidade replicativa, enquanto o cloroplasto depende de ribossomos nucleares"
+        ],
+        "correta": "A maior parte de suas proteínas estruturais e funcionais é codificada por genes do núcleo da célula hospedeira",
+        "comentario": "São semiautônomas porque, embora tenham material genético e ribossomos próprios para sintetizar parte de suas proteínas, dependem da importação da maior parte de suas proteínas codificadas pelo genoma nuclear."
+    }
+]

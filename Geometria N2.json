@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "materia": "Geometria N2",
+        "assunto": "Translação",
+        "nivel": "facil",
+        "enunciado": "No estudo das transformações geométricas, qual das alternativas a seguir define corretamente o que ocorre com uma figura após passar por uma translação?",
+        "alternativas": [
+            "A figura apenas desliza (desloca-se) em linha reta mantendo seu tamanho, forma e orientação",
+            "A figura é girada em torno de um ponto fixo",
+            "A figura é espelhada em relação a uma reta",
+            "A figura é ampliada ou reduzida de tamanho",
+            "A figura tem seus lados distorcidos de maneira irregular"
+        ],
+        "correta": "A figura apenas desliza (desloca-se) em linha reta mantendo seu tamanho, forma e orientação",
+        "comentario": "A translação desloca todos os pontos de uma figura na mesma direção e pela mesma distância, sem alterar suas dimensões, forma ou orientação."
+    },
+    {
+        "id": 2,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "facil",
+        "enunciado": "Quando realizamos a reflexão de uma figura geométrica plana em relação a uma reta (chamada eixo de reflexão), a figura resultante é:",
+        "alternativas": [
+            "Um espelhamento da figura original, mantendo as distâncias em relação ao eixo",
+            "Uma rotação completa de 360 graus da figura",
+            "O deslocamento lateral da figura sem alterar sua orientação",
+            "A duplicação do tamanho da figura original",
+            "A projeção tridimensional da figura original"
+        ],
+        "correta": "Um espelhamento da figura original, mantendo as distâncias em relação ao eixo",
+        "comentario": "A reflexão funciona como um espelho: cada ponto da imagem refletida está à mesma distância do eixo de reflexão que o ponto correspondente na figura original."
+    },
+    {
+        "id": 3,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "facil",
+        "enunciado": "Para definir completamente uma rotação no plano geométrico, quais elementos são estritamente necessários?",
+        "alternativas": [
+            "Um ponto central (centro de rotação) e um ângulo de giro",
+            "Apenas uma reta de simetria (eixo)",
+            "O comprimento do vetor de deslocamento linear",
+            "A área da figura original e a cor dos vértices",
+            "Duas retas paralelas e a escala de ampliação"
+        ],
+        "correta": "Um ponto central (centro de rotação) e um ângulo de giro",
+        "comentario": "Uma rotação é determinada por um ponto fixo (centro de rotação) em torno do qual a figura gira, um sentido (horário ou anti-horário) e uma medida angular (ângulo de giro)."
+    },
+    {
+        "id": 4,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "facil",
+        "enunciado": "O que significa dizer que dois triângulos são congruentes na geometria plana?",
+        "alternativas": [
+            "Eles possuem a mesma forma e o mesmo tamanho, com lados e ângulos correspondentes iguais",
+            "Eles possuem a mesma área, mas necessariamente formas diferentes",
+            "Eles possuem apenas os ângulos iguais, mas tamanhos de lados diferentes",
+            "A soma de seus lados é igual a 180 centímetros",
+            "Um triângulo é o dobro do tamanho do outro"
+        ],
+        "correta": "Eles possuem a mesma forma e o mesmo tamanho, com lados e ângulos correspondentes iguais",
+        "comentario": "Dois triângulos são congruentes se puderem ser sobrepostos perfeitamente, o que significa que seus lados e ângulos correspondentes possuem a mesma medida."
+    },
+    {
+        "id": 5,
+        "materia": "Geometria N2",
+        "assunto": "Translação",
+        "nivel": "facil",
+        "enunciado": "Se transladarmos um triângulo ABC no plano cartesiano deslocando todos os seus vértices 4 unidades para a direita e 3 unidades para cima, qual será o formato da imagem final em relação ao triângulo ABC original?",
+        "alternativas": [
+            "Será um triângulo congruente ao original",
+            "Será um triângulo ampliado em escala",
+            "Será um triângulo refletido verticalmente",
+            "Será um triângulo girado em 90 graus",
+            "Será um quadrilátero irregular"
+        ],
+        "correta": "Será um triângulo congruente ao original",
+        "comentario": "Como a translação é uma isometria, ela conserva as distâncias entre os pontos e as amplitudes dos ângulos, gerando uma figura congruente à original."
+    },
+    {
+        "id": 6,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "facil",
+        "enunciado": "Ao refletirmos a letra maiúscula 'A' em relação a uma reta vertical colocada exatamente no seu centro, o que acontece com a imagem refletida?",
+        "alternativas": [
+            "A imagem permanece exatamente idêntica à letra original",
+            "A imagem fica de cabeça para baixo",
+            "A letra se transforma na letra V",
+            "A imagem é deslocada para a direita sem inverter",
+            "A letra é reduzida pela metade"
+        ],
+        "correta": "A imagem permanece exatamente idêntica à letra original",
+        "comentario": "Como a letra 'A' possui simetria vertical interna, sua reflexão em relação a um eixo vertical central resulta em uma imagem idêntica à original."
+    },
+    {
+        "id": 7,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "facil",
+        "enunciado": "Se rotacionarmos um quadrado em 90 graus em torno do seu próprio centro, a figura resultante irá coincidir perfeitamente com a posição inicial do quadrado. Essa propriedade é chamada de:",
+        "alternativas": [
+            "Simetria de rotação",
+            "Simetria de translação",
+            "Isometria de reflexão",
+            "Congruência LAL",
+            "Ampliação concêntrica"
+        ],
+        "correta": "Simetria de rotação",
+        "comentario": "Um quadrado possui simetria de rotação de ordem 4, pois giros de 90°, 180°, 270° e 360° em torno do seu centro fazem a figura coincidir consigo mesma."
+    },
+    {
+        "id": 8,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "facil",
+        "enunciado": "O caso de congruência LLL (Lado, Lado, Lado) afirma que dois triângulos são congruentes se:",
+        "alternativas": [
+            "Os três lados de um triângulo forem respectivamente iguais aos três lados do outro triângulo",
+            "Eles possuírem três lados paralelos e da mesma cor",
+            "Dois lados e o ângulo entre eles forem iguais nos dois triângulos",
+            "Os três ângulos internos somarem 180 graus nos dois triângulos",
+            "Eles forem triângulos equiláteros de tamanhos diferentes"
+        ],
+        "correta": "Os três lados de um triângulo forem respectivamente iguais aos três lados do outro triângulo",
+        "comentario": "Pelo caso LLL, se as medidas dos três lados de um triângulo forem iguais às dos três lados correspondentes de outro, garante-se que os dois triângulos são congruentes."
+    },
+    {
+        "id": 9,
+        "materia": "Geometria N2",
+        "assunto": "Transformações Isométricas",
+        "nivel": "facil",
+        "enunciado": "Translação, rotação e reflexão são classificadas como transformações isométricas (ou isometrias). Isso ocorre porque essas transformações geométricas mantêm inalteradas quais propriedades das figuras originais?",
+        "alternativas": [
+            "O tamanho (comprimento dos lados) e a forma (ângulos internos)",
+            "Apenas a cor e a espessura das linhas das figuras",
+            "A posição exata dos vértices no plano de coordenadas",
+            "Apenas a orientação da figura (cima/baixo/lados)",
+            "O número de dimensões espaciais da figura"
+        ],
+        "correta": "O tamanho (comprimento dos lados) e a forma (ângulos internos)",
+        "comentario": "Isometria significa 'mesma medida'. As transformações isométricas preservam as distâncias entre pontos e as medidas dos ângulos, mantendo o tamanho e a forma da figura."
+    },
+    {
+        "id": 10,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "facil",
+        "enunciado": "O caso de congruência ALA (Ângulo, Lado, Ângulo) indica que dois triângulos são congruentes se possuírem:",
+        "alternativas": [
+            "Dois ângulos e o lado adjacente a eles respectivamente iguais",
+            "Dois lados iguais e um ângulo oposto qualquer igual",
+            "Três ângulos iguais, independentemente dos lados",
+            "Um lado e dois ângulos opostos quaisquer iguais",
+            "Todos os lados diferentes e ângulos correspondentes iguais"
+        ],
+        "correta": "Dois ângulos e o lado adjacente a eles respectivamente iguais",
+        "comentario": "O caso ALA estabelece que a correspondência de dois ângulos e do lado que fica entre eles (adjacente) é suficiente para determinar a congruência de dois triângulos."
+    },
+    {
+        "id": 11,
+        "materia": "Geometria N2",
+        "assunto": "Translação",
+        "nivel": "medio",
+        "enunciado": "Um ponto P(3, -2) sofre uma translação definida pelo vetor v(5, 4), o que significa somar 5 às coordenadas x e somar 4 às coordenadas y. Quais serão as coordenadas do ponto transladado P'?",
+        "alternativas": [
+            "P'(8, 2)",
+            "P'(8, -6)",
+            "P'(-2, 2)",
+            "P'(15, -8)",
+            "P'(2, 6)"
+        ],
+        "correta": "P'(8, 2)",
+        "comentario": "As novas coordenadas são x' = 3 + 5 = 8 e y' = -2 + 4 = 2. Logo, P'(8, 2)."
+    },
+    {
+        "id": 12,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "medio",
+        "enunciado": "Se refletirmos um ponto Q(-4, 7) em relação ao eixo das ordenadas (eixo y), quais serão as coordenadas do ponto refletido Q'?",
+        "alternativas": [
+            "Q'(4, 7)",
+            "Q'(-4, -7)",
+            "Q'(4, -7)",
+            "Q'(7, -4)",
+            "Q'(-7, 4)"
+        ],
+        "correta": "Q'(4, 7)",
+        "comentario": "Na reflexão em relação ao eixo y, a coordenada x inverte de sinal (-x) enquanto a coordenada y permanece inalterada. Assim, Q'(-(-4), 7) = Q'(4, 7)."
+    },
+    {
+        "id": 13,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "medio",
+        "enunciado": "Um segmento de reta AB com extremidades A(0,0) e B(4,0) sofre uma rotação de 90 graus no sentido anti-horário em torno da origem A. Qual será a coordenada final da extremidade B'?",
+        "alternativas": [
+            "B'(0, 4)",
+            "B'(0, -4)",
+            "B'(-4, 0)",
+            "B'(4, 4)",
+            "B'(-4, -4)"
+        ],
+        "correta": "B'(0, 4)",
+        "comentario": "Girar o ponto (4,0) em 90° no sentido anti-horário em torno de (0,0) desloca o ponto sobre o eixo x positivo para o eixo y positivo, resultando em (0,4)."
+    },
+    {
+        "id": 14,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "medio",
+        "enunciado": "Considere dois triângulos ABC e DEF. Sabe-se que AB = DE = 5 cm, AC = DF = 7 cm e o ângulo A mede 60° assim como o ângulo D. Com base nessas informações, podemos afirmar que os triângulos são congruentes pelo caso:",
+        "alternativas": [
+            "LAL (Lado, Ângulo, Lado)",
+            "ALA (Ângulo, Lado, Ângulo)",
+            "LLL (Lado, Lado, Lado)",
+            "LAAo (Lado, Ângulo, Ângulo Oposto)",
+            "Caso especial de triângulos retângulos"
+        ],
+        "correta": "LAL (Lado, Ângulo, Lado)",
+        "comentario": "Temos dois lados iguais e o ângulo entre eles correspondente igual. Isso configura a congruência pelo caso Lado-Ângulo-Lado (LAL)."
+    },
+    {
+        "id": 15,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "medio",
+        "enunciado": "Uma figura sofre uma reflexão em relação a uma reta vertical r e, em seguida, a imagem obtida sofre uma nova reflexão em relação a outra reta vertical s, paralela à primeira. O resultado dessa dupla reflexão equivale a qual transformação única?",
+        "alternativas": [
+            "Uma translação na direção horizontal",
+            "Uma rotação de 90 graus",
+            "Uma nova reflexão em relação a um eixo horizontal",
+            "Uma ampliação de escala",
+            "A figura retorna exatamente à posição inicial sem deslocamento"
+        ],
+        "correta": "Uma translação na direção horizontal",
+        "comentario": "A composição de duas reflexões em relação a eixos paralelos equivale a uma translação na direção perpendicular aos eixos, com distância igual ao dobro da distância entre as retas."
+    },
+    {
+        "id": 16,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "medio",
+        "enunciado": "Sabendo que o triângulo ABC é congruente ao triângulo MNP, e que os vértices A, B e C correspondem aos vértices M, N e P, respectivamente. Se o ângulo B mede 45° e o ângulo P mede 75°, quanto mede o ângulo A?",
+        "alternativas": [
+            "60°",
+            "45°",
+            "75°",
+            "120°",
+            "180°"
+        ],
+        "correta": "60°",
+        "comentario": "Como os triângulos são congruentes, seus ângulos correspondentes são iguais. Portanto, o ângulo N = B = 45° e o ângulo P = C = 75°. Como a soma dos ângulos internos de um triângulo é 180°, o ângulo A = 180° - (45° + 75°) = 60°."
+    },
+    {
+        "id": 17,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "medio",
+        "enunciado": "Um ponto R(5, 3) é refletido em relação à reta bissetriz do primeiro quadrante (y = x). Quais são as coordenadas da imagem refletida R'?",
+        "alternativas": [
+            "R'(3, 5)",
+            "R'(-5, -3)",
+            "R'(-5, 3)",
+            "R'(5, -3)",
+            "R'(-3, -5)"
+        ],
+        "correta": "R'(3, 5)",
+        "comentario": "Na reflexão em relação à reta y = x, trocam-se as posições das coordenadas x e y do ponto. Portanto, R'(5, 3) torna-se R'(3, 5)."
+    },
+    {
+        "id": 18,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "medio",
+        "enunciado": "Um triângulo equilátero possui simetria rotacional. Qual é o menor ângulo positivo (menor que 360°) pelo qual podemos girar um triângulo equilátero em torno do seu centro para que ele coincida com sua posição original?",
+        "alternativas": [
+            "120°",
+            "60°",
+            "90°",
+            "180°",
+            "240°"
+        ],
+        "correta": "120°",
+        "comentario": "A simetria rotacional de um polígono regular de n lados é dada por 360°/n. Para um triângulo equilátero (n=3), o menor ângulo é 360°/3 = 120°."
+    },
+    {
+        "id": 19,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "medio",
+        "enunciado": "O caso de congruência LAAo (Lado, Ângulo, Ângulo Oposto) estabelece a congruência entre dois triângulos quando são conhecidos respectivamente iguais:",
+        "alternativas": [
+            "Um lado, um ângulo adjacente a esse lado e o ângulo oposto a esse mesmo lado",
+            "Dois lados e o ângulo agudo adjacente a um deles",
+            "Dois ângulos e um lado situado entre eles",
+            "Três ângulos consecutivos e nenhum lado",
+            "Três lados de medidas quaisquer proporcionais"
+        ],
+        "correta": "Um lado, um ângulo adjacente a esse lado e o ângulo oposto a esse mesmo lado",
+        "comentario": "O caso LAAo indica que conhecendo um lado, o ângulo adjacente a ele e o ângulo oposto a esse lado respectivamente congruentes aos de outro triângulo, os dois são congruentes."
+    },
+    {
+        "id": 20,
+        "materia": "Geometria N2",
+        "assunto": "Isometrias",
+        "nivel": "medio",
+        "enunciado": "Entre as transformações geométricas estudadas (Translação, Rotação e Reflexão), qual delas altera a orientação (sentido de leitura dos vértices, ex: de horário para anti-horário) da figura geométrica?",
+        "alternativas": [
+            "Apenas a Reflexão",
+            "Apenas a Translação",
+            "Apenas a Rotação",
+            "A Translação e a Rotação",
+            "Todas as três transformações"
+        ],
+        "correta": "Apenas a Reflexão",
+        "comentario": "A reflexão é uma isometria indireta porque inverte a orientação da figura (espelhamento). A translação e a rotação são isometrias diretas, preservando a orientação."
+    },
+    {
+        "id": 21,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "dificil",
+        "enunciado": "Uma figura sofre uma rotação de 90° no sentido anti-horário em torno de um ponto A e, em seguida, sofre outra rotação de 90° no sentido horário em torno de um ponto B (distinto de A). A transformação resultante do conjunto dessas duas rotações equivale a:",
+        "alternativas": [
+            "Uma translação pura no plano",
+            "Uma rotação pura de 180 graus",
+            "Uma reflexão em relação a um ponto médio",
+            "Uma reflexão deslizante",
+            "Nenhuma transformação, a figura não se altera"
+        ],
+        "correta": "Uma translação pura no plano",
+        "comentario": "Como os ângulos de rotação somam zero (+90° e -90°), as componentes rotacionais se anulam, restando apenas um deslocamento linear, caracterizando uma translação pura."
+    },
+    {
+        "id": 22,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "dificil",
+        "enunciado": "Um caso particular de congruência de triângulos retângulos (Caso HC) afirma que dois triângulos retângulos são congruentes se:",
+        "alternativas": [
+            "A hipotenusa e um dos catetos de um forem respectivamente iguais aos do outro",
+            "Eles possuírem apenas os dois catetos de medidas iguais",
+            "A soma dos ângulos agudos for igual a 90 graus em ambos",
+            "Eles compartilharem a mesma hipotenusa e um ângulo qualquer",
+            "Possuírem a hipotenusa igual à metade de um dos catetos"
+        ],
+        "correta": "A hipotenusa e um dos catetos de um forem respectivamente iguais aos do outro",
+        "comentario": "O caso HC é um caso especial de congruência para triângulos retângulos. Se a hipotenusa e um cateto forem congruentes, o terceiro lado (cateto) também será igual pelo Teorema de Pitágoras, caindo no caso LLL."
+    },
+    {
+        "id": 23,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "dificil",
+        "enunciado": "Um ponto P(5, 2) é rotacionado em 90 graus no sentido anti-horário em torno do centro C(2, 2). Quais serão as coordenadas da imagem resultante P'?",
+        "alternativas": [
+            "P'(2, 5)",
+            "P'(2, -1)",
+            "P'(-1, 2)",
+            "P'(5, 5)",
+            "P'(2, 3)"
+        ],
+        "correta": "P'(2, 5)",
+        "comentario": "Primeiro, trasladamos o centro para a origem: P - C = (5-2, 2-2) = (3, 0). Rotacionamos (3, 0) em 90° anti-horário, obtendo (0, 3). Por fim, desfazemos a translação somando C: (0+2, 3+2) = (2, 5)."
+    },
+    {
+        "id": 24,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "dificil",
+        "enunciado": "Dois triângulos congruentes ABC e XYZ possuem perímetros iguais. Sabe-se que AB = 3x - 5, XY = x + 3, BC = 2y - 1 e YZ = y + 2. Se AC correspondente a XZ mede 10 cm, quais são os valores de x e y?",
+        "alternativas": [
+            "x = 4 e y = 3",
+            "x = 3 e y = 4",
+            "x = 2 e y = 5",
+            "x = 5 e y = 2",
+            "x = 4 e y = 4"
+        ],
+        "correta": "x = 4 e y = 3",
+        "comentario": "Como os triângulos são congruentes, lados correspondentes são iguais. AB = XY => 3x - 5 = x + 3 => 2x = 8 => x = 4. BC = YZ => 2y - 1 = y + 2 => y = 3."
+    },
+    {
+        "id": 25,
+        "materia": "Geometria N2",
+        "assunto": "Simetria",
+        "nivel": "dificil",
+        "enunciado": "Um polígono regular possui exatamente n lados. Quantos eixos de simetria de reflexão distintos esse polígono possui no plano?",
+        "alternativas": [
+            "Exatamente n eixos de simetria",
+            "Exatamente n/2 eixos de simetria",
+            "Exatamente 2n eixos de simetria",
+            "Sempre 2 eixos de simetria",
+            "Não possui nenhum eixo de simetria"
+        ],
+        "correta": "Exatamente n eixos de simetria",
+        "comentario": "Todo polígono regular com n lados possui exatamente n eixos de simetria de reflexão (se n for ímpar, os eixos ligam os vértices ao ponto médio do lado oposto; se n for par, ligam vértices opostos ou pontos médios opostos)."
+    },
+    {
+        "id": 26,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão",
+        "nivel": "dificil",
+        "enunciado": "Se uma figura geométrica sofre uma reflexão em relação a uma reta r e, em seguida, a imagem sofre nova reflexão em relação a uma reta s que intersecta r formando um ângulo agudo de 30°, a transformação equivalente resultante é:",
+        "alternativas": [
+            "Uma rotação de 60 graus em torno do ponto de interseção das retas",
+            "Uma rotação de 30 graus em torno da origem do plano",
+            "Uma translação de distância proporcional à distância entre as retas",
+            "Uma reflexão deslizante com vetor nulo",
+            "Uma nova reflexão em relação a uma reta perpendicular a r e s"
+        ],
+        "correta": "Uma rotação de 60 graus em torno do ponto de interseção das retas",
+        "comentario": "A composição de duas reflexões em relação a eixos concorrentes que se cruzam formando um ângulo A é equivalente a uma rotação cujo centro é o ponto de interseção das retas e o ângulo de giro é 2A (duas vezes o ângulo entre as retas). Portanto, 2 * 30° = 60°."
+    },
+    {
+        "id": 27,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "dificil",
+        "enunciado": "Em um paralelogramo ABCD, traçamos a diagonal AC. Que caso de congruência de triângulos garante que os triângulos ABC e CDA gerados são idênticos (congruentes)?",
+        "alternativas": [
+            "Caso LAL ou ALA, devido às propriedades de lados e ângulos alternos internos",
+            "Caso LLL apenas, se o paralelogramo for um quadrado regular",
+            "Nenhum caso, pois diagonais de paralelogramos dividem a figura em triângulos semelhantes mas não congruentes",
+            "Caso especial de semelhança AA",
+            "Caso Hipotenusa-Cateto apenas"
+        ],
+        "correta": "Caso LAL ou ALA, devido às propriedades de lados e ângulos alternos internos",
+        "comentario": "Como os lados opostos são paralelos, os ângulos alternos internos formados pela diagonal transversal AC são iguais (BAC = ACD e BCA = CAD) e AC é um lado comum, caindo no caso ALA ou LAL."
+    },
+    {
+        "id": 28,
+        "materia": "Geometria N2",
+        "assunto": "Reflexão Deslizante",
+        "nivel": "dificil",
+        "enunciado": "Como é chamada a transformação geométrica que combina uma reflexão em relação a uma reta com uma translação paralela a essa mesma reta?",
+        "alternativas": [
+            "Reflexão deslizante",
+            "Translação oblíqua",
+            "Rotação transladada",
+            "Isometria composta reversa",
+            "Reflexão concêntrica"
+        ],
+        "correta": "Reflexão deslizante",
+        "comentario": "A reflexão deslizante é a única isometria no plano que não possui pontos fixos e inverte a orientação, combinando reflexão e translação paralela ao eixo."
+    },
+    {
+        "id": 29,
+        "materia": "Geometria N2",
+        "assunto": "Congruência de Triângulos",
+        "nivel": "dificil",
+        "enunciado": "Em um triângulo isósceles ABC com AB = AC, traça-se a mediana AD relativa à base BC. Mostra-se que os triângulos ABD e ACD são congruentes. Qual a principal consequência geométrica direta dessa congruência?",
+        "alternativas": [
+            "A mediana AD também é a altura e a bissetriz do ângulo A no triângulo ABC",
+            "A base BC tem exatamente o dobro da medida da altura AD",
+            "O triângulo ABC é obrigatoriamente um triângulo equilátero",
+            "Os ângulos internos B e C são complementares e medem 45°",
+            "A área do triângulo ABD é o dobro da área de ACD"
+        ],
+        "correta": "A mediana AD também é a altura e a bissetriz do ângulo A no triângulo ABC",
+        "comentario": "Devido à congruência dos triângulos ABD e ACD (caso LLL), os ângulos correspondentes BAD e CAD são iguais (logo AD é bissetriz) e os ângulos BDA e CDA são iguais e suplementares (logo medem 90° e AD é altura)."
+    },
+    {
+        "id": 30,
+        "materia": "Geometria N2",
+        "assunto": "Rotação",
+        "nivel": "dificil",
+        "enunciado": "Uma rotação de 270 degrees no sentido horário em torno da origem (0,0) é matematicamente equivalente a qual outra rotação no plano cartesiano?",
+        "alternativas": [
+            "Uma rotação de 90 graus no sentido anti-horário",
+            "Uma rotação de 90 graus no sentido horário",
+            "Uma rotação de 180 graus em qualquer sentido",
+            "Uma translação de 270 unidades na diagonal principal",
+            "Uma reflexão em relação à origem do sistema"
+        ],
+        "correta": "Uma rotação de 90 graus no sentido anti-horário",
+        "comentario": "A rotação de 270° no sentido horário percorre o círculo no sentido oposto, restando 360° - 270° = 90° para completar a volta no sentido anti-horário. Portanto, os dois giros chegam ao mesmo ponto final."
+    }
+]
