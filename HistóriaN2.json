@@ -1,0 +1,803 @@
+[
+    {
+        "id": 1,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "facil",
+        "enunciado": "A colonização inglesa na América do Norte teve início no século XVII. Qual fator político e social ocorrido na Inglaterra contribuiu diretamente para a fuga de puritanos e a consequente colonização da América?",
+        "alternativas": [
+            "A Guerra Civil Inglesa e as perseguições religiosas",
+            "A assinatura do Tratado de Tordesilhas",
+            "A invasão da Inglaterra pelos franceses",
+            "O apoio inglês à expansão marítima espanhola",
+            "A unificação da coroa britânica com a portuguesa"
+        ],
+        "correta": "A Guerra Civil Inglesa e as perseguições religiosas",
+        "comentario": "A instabilidade política e a intensa perseguição religiosa contra os puritanos durante o período da Guerra Civil Inglesa motivaram milhares de ingleses a buscar refúgio e uma nova vida na América do Norte."
+    },
+    {
+        "id": 2,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "facil",
+        "enunciado": "Para financiar e organizar as primeiras expedições de colonização na América do Norte, a Coroa Inglesa utilizou qual modelo de organização privada?",
+        "alternativas": [
+            "Companhias de comércio privadas",
+            "Ordens religiosas de jesuítas",
+            "Feitorias estatais militarizadas",
+            "Capitanias hereditárias cedidas à nobreza",
+            "Monopólios papais sob a Igreja Católica"
+        ],
+        "correta": "Companhias de comércio privadas",
+        "comentario": "A Coroa Inglesa delegou a colonização a companhias de comércio privadas (sociedades por ações), como a Companhia de Londres e a de Plymouth, que assumiam os custos e lucros da colonização."
+    },
+    {
+        "id": 3,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "facil",
+        "enunciado": "Além das companhias de comércio, algumas colônias inglesas foram fundadas por nobres ou investidores que recebiam terras diretamente do rei. Como eram conhecidos esses indivíduos na colonização inglesa?",
+        "alternativas": [
+            "Proprietários particulares",
+            "Donatários reais",
+            "Ouvidores-mores",
+            "Vice-reis espanhóis",
+            "Adiantados coloniais"
+        ],
+        "correta": "Proprietários particulares",
+        "comentario": "As colônias de proprietários eram terras concedidas pelo rei da Inglaterra a indivíduos particulares (nobres ou aliados políticos), que tinham o direito de governar e explorar o território."
+    },
+    {
+        "id": 4,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "facil",
+        "enunciado": "A colonização francesa na América foi motivada por interesses econômicos e pela busca de liberdade religiosa por parte de um grupo protestante perseguido na França. Qual era o nome dado a esses protestantes franceses?",
+        "alternativas": [
+            "Huguenotes",
+            "Anglicanos",
+            "Luteranos",
+            "Jesuítas",
+            "Puritanos"
+        ],
+        "correta": "Huguenotes",
+        "comentario": "Os calvinistas franceses eram conhecidos como huguenotes. Eles sofreram intensa perseguição religiosa na França católica e viram na América uma oportunidade de refúgio espiritual."
+    },
+    {
+        "id": 5,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "facil",
+        "enunciado": "Em 1555, os franceses invadiram a Baía de Guanabara, no atual Rio de Janeiro, com o objetivo de criar uma colônia. Qual nome foi dado a esse projeto colonial francês no sul do Brasil?",
+        "alternativas": [
+            "França Antártica",
+            "França Equatorial",
+            "Nova França",
+            "França Litorânea",
+            "Pernambuco Francês"
+        ],
+        "correta": "França Antártica",
+        "comentario": "A França Antártica foi a colônia estabelecida pelos franceses liderados por Nicolas Durand de Villegaignon na Baía de Guanabara (Rio de Janeiro) entre 1555 e 1567."
+    },
+    {
+        "id": 6,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "facil",
+        "enunciado": "Anos após a expulsão do Rio de Janeiro, os franceses realizaram uma nova tentativa de colonização no Brasil, desta vez no norte, fundando um forte que deu origem à atual cidade de São Luís. Como ficou conhecida essa colônia?",
+        "alternativas": [
+            "França Equatorial",
+            "França Antártica",
+            "Nova Orleans",
+            "França Setentrional",
+            "Maranhão Francês"
+        ],
+        "correta": "França Equatorial",
+        "comentario": "A França Equatorial foi a colônia estabelecida pelos franceses no Maranhão no início do século XVII (1612), onde fundaram o Forte de São Luís."
+    },
+    {
+        "id": 7,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "facil",
+        "enunciado": "A colonização francesa não se limitou ao continente sul-americano. Na região do Caribe, os franceses colonizaram e disputaram várias ilhas. Qual ilha caribenha dividida com os ingleses é símbolo das primeiras ocupações francesas na região?",
+        "alternativas": [
+            "São Cristóvão",
+            "Cuba",
+            "Jamaica",
+            "Porto Rico",
+            "Bahamas"
+        ],
+        "correta": "São Cristóvão",
+        "comentario": "A ilha de São Cristóvão (Saint Kitts) foi dividida amigavelmente no início do século XVII entre colonizadores ingleses e franceses, servindo de base para a expansão de ambas as nações no Caribe."
+    },
+    {
+        "id": 8,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "facil",
+        "enunciado": "Durante o período Pré-Colonial brasileiro (1500-1530), a Coroa Portuguesa concentrou seus esforços econômicos na exploração de qual recurso natural na costa do Brasil?",
+        "alternativas": [
+            "Pau-brasil",
+            "Ouro de aluvião",
+            "Cana-de-açúcar",
+            "Especiarias como a canela",
+            "Café"
+        ],
+        "correta": "Pau-brasil",
+        "comentario": "No período Pré-Colonial, a exploração econômica limitou-se ao corte e transporte do pau-brasil, cuja resina vermelha era muito cobiçada na Europa para tingir tecidos."
+    },
+    {
+        "id": 9,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "facil",
+        "enunciado": "A extração do pau-brasil no período pré-colonial era baseada em um sistema de troca com os povos indígenas. Os nativos cortavam e transportavam a madeira em troca de utensílios de metal e espelhos. Qual é o nome dessa prática comercial?",
+        "alternativas": [
+            "Escambo",
+            "Monopólio",
+            "Sesmaria",
+            "Tráfico negreiro",
+            "Mita"
+        ],
+        "correta": "Escambo",
+        "comentario": "O escambo era o sistema de trocas diretas (sem uso de dinheiro) realizado entre portugueses e indígenas, onde o trabalho de extração do pau-brasil era trocado por ferramentas, tecidos e quinquilharias."
+    },
+    {
+        "id": 10,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "facil",
+        "enunciado": "Por que Portugal não iniciou a colonização efetiva do Brasil logo em 1500, preferindo manter apenas feitorias na costa por três décadas?",
+        "alternativas": [
+            "Porque os portugueses estavam lucrando muito com o comércio de especiarias nas Índias",
+            "Porque os tratados de paz proibiam a colonização de terras americanas",
+            "Porque a Coroa Portuguesa acreditava que o território pertencia à Espanha",
+            "Porque os indígenas expulsaram os primeiros colonos portugueses em 1501",
+            "Porque não havia terra cultivável disponível na costa brasileira"
+        ],
+        "correta": "Porque os portugueses estavam lucrando muito com o comércio de especiarias nas Índias",
+        "comentario": "Nas primeiras décadas do século XVI, o comércio de especiarias do Oriente (Índias) era muito mais lucrativo e atraente para a Coroa Portuguesa do que a exploração da costa brasileira."
+    },
+    {
+        "id": 11,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "facil",
+        "enunciado": "Para combater o contrabando de pau-brasil e as constantes invasões estrangeiras (principalmente francesas) na costa brasileira, a Coroa Portuguesa enviou quais tipos de expedições?",
+        "alternativas": [
+            "Expedições guarda-costas",
+            "Expedições de bandeiras",
+            "Expedições jesuíticas",
+            "Expedições de entradas para o sertão",
+            "Frotas mercantis das Índias"
+        ],
+        "correta": "Expedições guarda-costas",
+        "comentario": "As expedições guarda-costas, comandadas por nomes como Cristóvão Jacques, tinham o caráter militar de patrulhar o litoral e expulsar navios contrabandistas franceses."
+    },
+    {
+        "id": 12,
+        "materia": "História N2",
+        "assunto": "Período Colonial",
+        "nivel": "facil",
+        "enunciado": "A partir de 1530, com o declínio do comércio nas Índias e a ameaça de perda das terras americanas para outros países europeus, Portugal mudou sua estratégia. O que marcou a transição do período Pré-Colonial para o Colonial?",
+        "alternativas": [
+            "O início do processo de colonização efetiva com o plantio de cana-de-açúcar",
+            "A abolição imediata da escravidão indígena",
+            "A declaração de independência da colônia brasileira",
+            "O abandono total do território pelos portugueses",
+            "A venda do território brasileiro para a França"
+        ],
+        "correta": "O início do processo de colonização efetiva com o plantio de cana-de-açúcar",
+        "comentario": "A crise nas especiarias orientais e a ameaça de invasão francesa forçaram a coroa portuguesa a enviar Martim Afonso de Sousa em 1530 para dar início à colonização e ao cultivo de cana-de-açúcar."
+    },
+    {
+        "id": 13,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "facil",
+        "enunciado": "O primeiro sistema de colonização e administração do Brasil adotado por Portugal a partir de 1534 dividiu a colônia em grandes lotes horizontais de terra. Como ficou conhecido esse sistema?",
+        "alternativas": [
+            "Capitanias hereditárias",
+            "Governo geral",
+            "Vice-reinos",
+            "Sesmarias reais",
+            "Pactos coloniais"
+        ],
+        "correta": "Capitanias hereditárias",
+        "comentario": "O sistema de capitanias hereditárias dividiu o território brasileiro em 15 grandes faixas horizontais de terra que se estendiam do litoral até a linha do Tratado de Tordesilhas, entregues a nobres (donatários)."
+    },
+    {
+        "id": 14,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "facil",
+        "enunciado": "Qual era o principal objetivo da Coroa Portuguesa ao implementar o sistema de Capitanias Hereditárias no Brasil colonial?",
+        "alternativas": [
+            "Colonizar e proteger o território contra invasões estrangeiras, dividindo os custos com particulares",
+            "Proteger o território contra os espanhóis criando fortalezas exclusivamente estatais",
+            "Expandir a extração de pau-brasil sem a necessidade de fixar moradores",
+            "Transformar a colônia em uma república independente governada pela nobreza",
+            "Transferir a corte real portuguesa imediatamente para a América"
+        ],
+        "correta": "Colonizar e proteger o território contra invasões estrangeiras, dividindo os custos com particulares",
+        "comentario": "As capitanias foram criadas para povoar e proteger o território das ameaças de invasão sem que a Coroa Portuguesa precisasse gastar seus próprios recursos, transferindo o custo da colonização para os donatários."
+    },
+    {
+        "id": 15,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "facil",
+        "enunciado": "A maioria das Capitanias Hereditárias fracassou por falta de recursos e pelos ataques de grupos indígenas locais. Quais foram as duas únicas capitanias que prosperaram financeiramente?",
+        "alternativas": [
+            "Pernambuco e São Vicente",
+            "Bahia e Rio de Janeiro",
+            "Maranhão e Ceará",
+            "Santo Amaro e Rio Grande",
+            "Ilhéus e Porto Seguro"
+        ],
+        "correta": "Pernambuco e São Vicente",
+        "comentario": "Pernambuco e São Vicente foram as únicas capitanias que prosperaram no início da colonização, impulsionadas pelo sucesso do plantio da cana-de-açúcar e pela liderança de seus donatários."
+    },
+    {
+        "id": 16,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "facil",
+        "enunciado": "Diante do fracasso da maioria das capitanias hereditárias, a Coroa Portuguesa decidiu criar uma nova estrutura administrativa em 1548 para centralizar o poder na colônia. Qual é o nome dessa estrutura?",
+        "alternativas": [
+            "Governo Geral",
+            "Vice-reinado da América",
+            "Confederação de Salvador",
+            "Conselho Ultramarino",
+            "Junta Comercial Colonial"
+        ],
+        "correta": "Governo Geral",
+        "comentario": "O Governo Geral foi criado em 1548 para centralizar a administração e a defesa da colônia brasileira, unificando as capitanias sob uma única autoridade que representava o rei."
+    },
+    {
+        "id": 17,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "facil",
+        "enunciado": "Quem foi o primeiro Governador-Geral do Brasil, enviado por Portugal em 1549 para fundar a capital colonial e centralizar a administração?",
+        "alternativas": [
+            "Tomé de Sousa",
+            "Duarte da Costa",
+            "Mem de Sá",
+            "Martim Afonso de Sousa",
+            "Pedro Álvares Cabral"
+        ],
+        "correta": "Tomé de Sousa",
+        "comentario": "Tomé de Sousa chegou ao Brasil em 1549 como o primeiro Governador-Geral, trazendo colonos, soldados e os primeiros padres jesuítas."
+    },
+    {
+        "id": 18,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "facil",
+        "enunciado": "Qual cidade foi fundada em 1549 para servir como a primeira capital e sede político-administrativa do Brasil colonial?",
+        "alternativas": [
+            "Salvador",
+            "Rio de Janeiro",
+            "São Vicente",
+            "Recife",
+            "Olinda"
+        ],
+        "correta": "Salvador",
+        "comentation": "No script vamos usar comentario",
+        "comentario": "A cidade de Salvador, fundada por Tomé de Sousa na Capitania da Bahia de Todos os Santos, foi a primeira capital do Brasil, estrategicamente posicionada para gerenciar a colônia."
+    },
+    {
+        "id": 19,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "facil",
+        "enunciado": "A chegada do Governo Geral ao Brasil em 1549 trouxe também representantes de uma importante ordem religiosa encarregada de fundar escolas e catequizar os indígenas. Qual era essa ordem?",
+        "alternativas": [
+            "Jesuítas (Companhia de Jesus)",
+            "Franciscanos",
+            "Beneditinos",
+            "Dominicanos",
+            "Carmelitas"
+        ],
+        "correta": "Jesuítas (Companhia de Jesus)",
+        "comentario": "Os jesuítas, sob a liderança do Padre Manuel da Nóbrega, chegaram na comitiva de Tomé de Sousa com o objetivo de converter os indígenas ao catolicismo e fundar os primeiros colégios."
+    },
+    {
+        "id": 20,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "facil",
+        "enunciado": "O Governador-Geral era auxiliado por três cargos principais na administração colonial. Qual deles era responsável pela cobrança de impostos e administração das finanças da colônia?",
+        "alternativas": [
+            "Provedor-mor",
+            "Ouvidor-mor",
+            "Capitão-mor",
+            "Donatário",
+            "Alcaide-mor"
+        ],
+        "correta": "Provedor-mor",
+        "comentario": "O Provedor-mor era o cargo encarregado da cobrança de impostos, da fiscalização econômica e da arrecadação financeira do Governo Geral."
+    },
+    {
+        "id": 21,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "medio",
+        "enunciado": "A eclosão da Guerra Civil Inglesa (1642-1651) provocou uma profunda crise política e religiosa na metrópole. Como esse evento repercutiu na colonização da América do Norte?",
+        "alternativas": [
+            "Acelerou o fluxo migratório de puritanos em direção ao norte (Nova Inglaterra), fugindo das perseguições e do absolutismo monárquico",
+            "Paralisou totalmente o comércio colonial por cinquenta anos, levando ao abandono das 13 colônias",
+            "Forçou a Inglaterra a vender suas terras coloniais na América para a coroa espanhola",
+            "Causou a invasão imediata das colônias inglesas por exércitos franceses vindos do Canadá",
+            "Levou as colônias inglesas a se submeterem ao controle da Igreja Católica de Roma"
+        ],
+        "correta": "Acelerou o fluxo migratório de puritanos em direção ao norte (Nova Inglaterra), fugindo das perseguições e do absolutismo monárquico",
+        "comentario": "Durante o período turbulento da Guerra Civil Inglesa e o conflito entre o Parlamento e o Rei Carlos I, a migração de puritanos para as colônias do norte (Nova Inglaterra) intensificou-se, pois buscavam criar comunidades baseadas em seus princípios religiosos longe das pressões monárquicas."
+    },
+    {
+        "id": 22,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "medio",
+        "enunciado": "Diferente das colônias de exploração do sul, as colônias inglesas do norte (Nova Inglaterra) desenvolveram características socioeconômicas peculiares. Qual alternativa caracteriza o modelo colonial do norte?",
+        "alternativas": [
+            "Pequena propriedade familiar, policultura, trabalho livre e produção voltada para o mercado interno",
+            "Grande latifúndio monocultor, trabalho escravizado e exportação de algodão",
+            "Mineração de ouro sob rígido controle e fiscalização estatal da coroa",
+            "Comércio exclusivo de pau-brasil e escambo de ferramentas metálicas com os nativos",
+            "Trabalho assalariado obrigatório em grandes plantações de cana-de-açúcar"
+        ],
+        "correta": "Pequena propriedade familiar, policultura, trabalho livre e produção voltada para o mercado interno",
+        "comentario": "As colônias do norte (Nova Inglaterra) desenvolveram propriedades familiares menores, focado na policultura de subsistência, no comércio interno e marítimo e no trabalho majoritariamente livre, ao contrário do sul monocultor baseado no plantation escravista."
+    },
+    {
+        "id": 23,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "medio",
+        "enunciado": "As companhias de comércio inglesas, como a Virginia Company, obtinham 'cartas de patente' (charters) da coroa inglesa. O que esses documentos garantiam a essas empresas colonizadoras?",
+        "alternativas": [
+            "O monopólio comercial, o direito de posse de terras e autonomia para administrar e defender a área colonizada",
+            "A permissão para escravizar qualquer cidadão europeu em território colonial",
+            "O envio de tropas do exército real inglês financiadas inteiramente pelo rei",
+            "A isenção total de qualquer pagamento de tributos ou taxas futuras à metrópole",
+            "O direito de anexar colônias espanholas vizinhas de forma legal"
+        ],
+        "correta": "O monopólio comercial, o direito de posse de terras e autonomia para administrar e defender a área colonizada",
+        "comentario": "As cartas de patente concedidas pela coroa davam às companhias de comércio o direito legal de explorar o solo, organizar a defesa militar das fronteiras coloniais e governar a população local respeitando as leis gerais da Inglaterra."
+    },
+    {
+        "id": 24,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "medio",
+        "enunciado": "Durante a invasão francesa que deu origem à França Antártica (1555-1567), os franceses souberam aproveitar as rivalidades tribais locais para consolidar sua presença. A qual importante coalizão indígena eles se aliaram contra os portugueses?",
+        "alternativas": [
+            "Confederação dos Tamoios",
+            "Confederação dos Cariris",
+            "Tribo dos Tupiniquins",
+            "Guerreiros Guaranis",
+            "Nações Aimorés"
+        ],
+        "correta": "Confederação dos Tamoios",
+        "comentario": "Os franceses aliaram-se à Confederação dos Tamoios (composta por tupinambás e outras tribos), que lutava contra a escravização promovida pelos colonos portugueses na região do atual Rio de Janeiro."
+    },
+    {
+        "id": 25,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "medio",
+        "enunciado": "Na França Equatorial (1612), os colonizadores franceses liderados por Daniel de La Touche fundaram o Forte de São Luís. Qual era o principal objetivo geopolítico dos franceses ao se instalarem na região do atual Maranhão?",
+        "alternativas": [
+            "Estabelecer um ponto de apoio para comerciar peles e pau-brasil e expandir seu império colonial na América do Sul",
+            "Encontrar minas de prata semelhantes às descobertas pelos espanhóis no Peru",
+            "Apoiar militarmente o rei de Portugal nas guerras contra a Holanda",
+            "Criar uma base de refúgio para jesuítas expulsos de território católico europeu",
+            "Monopolizar a rota marítima que contornava o Estreito de Magalhães"
+        ],
+        "correta": "Estabelecer um ponto de apoio para comerciar peles e pau-brasil e expandir seu império colonial na América do Sul",
+        "comentario": "O objetivo francês no Maranhão (França Equatorial) era consolidar uma colônia agrícola e comercial duradoura no norte da colônia portuguesa, explorando riquezas e estabelecendo alianças com os povos indígenas locais."
+    },
+    {
+        "id": 26,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "medio",
+        "enunciado": "Antes de fundar colônias fixas no Brasil, os franceses atuavam de forma intensa na costa da colônia por meio da pirataria e do comércio ilegal de madeira. Como os franceses justificavam essas incursões na América, desconsiderando o Tratado de Tordesilhas?",
+        "alternativas": [
+            "Alegavam que a partilha da terra só era válida se houvesse ocupação efetiva física, e contestavam a herança papal que dividiu o mundo entre Portugal e Espanha",
+            "Afirmavam que tinham autorização secreta da Coroa Espanhola para saquear portos portugueses",
+            "Declaravam que a costa do Brasil estava completamente desabitada por seres humanos",
+            "Compravam licenças de exploração diretamente dos donatários portugueses falidos",
+            "Argumentavam que os povos indígenas haviam assinado um tratado formal de vassalagem à França"
+        ],
+        "correta": "Alegavam que a partilha da terra só era válida se houvesse ocupação efetiva física, e contestavam a herança papal que dividiu o mundo entre Portugal e Espanha",
+        "comentario": "O rei francês Francisco I contestava o Tratado de Tordesilhas, ironizando que gostaria de ver o 'testamento de Adão' que dividia o mundo apenas entre Portugal e Espanha, e defendia que a soberania sobre novas terras dependia da ocupação física (princípio da posse efetiva)."
+    },
+    {
+        "id": 27,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "medio",
+        "enunciado": "Por volta de 1530, a Coroa Portuguesa percebeu a necessidade urgente de substituir a exploração extrativista superficial da costa brasileira por uma colonização sistemática. Qual fator econômico determinou essa transição?",
+        "alternativas": [
+            "A perda do monopólio português no comércio de especiarias no Oriente e o aumento das ameaças de invasão da costa brasileira",
+            "A descoberta imediata de gigantescas minas de ouro e prata no interior de Minas Gerais",
+            "A pressão da Igreja Católica para escravizar os indígenas da colônia",
+            "A assinatura de um novo tratado de paz comercial definitivo com os franceses",
+            "A revolta generalizada dos donatários que exigiam a criação do açúcar no Brasil"
+        ],
+        "correta": "A perda do monopólio português no comércio de especiarias no Oriente e o aumento das ameaças de invasão da costa brasileira",
+        "comentario": "O comércio de especiarias nas Índias entrou em declínio devido à concorrência e custos elevados, e as constantes invasões de contrabandistas franceses na costa do Brasil forçaram Portugal a colonizar as terras americanas para não perdê-las."
+    },
+    {
+        "id": 28,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "medio",
+        "enunciado": "Os donatários das Capitanias Hereditárias recebiam o direito de administrar e explorar suas terras, mas não se tornavam proprietários plenos de todo o lote. Como funcionava a posse jurídica das capitanias?",
+        "alternativas": [
+            "As terras continuavam sob propriedade da Coroa Portuguesa, restando ao donatário apenas o usufruto, a concessão de sesmarias e a administração local",
+            "O donatário podia vender livremente a capitania para outras nações como a Espanha",
+            "A capitania pertencia diretamente à Igreja Católica, que cobrava aluguéis dos donatários",
+            "As terras eram de propriedade coletiva dos colonos portugueses que nela residiam",
+            "Os donatários eram funcionários assalariados temporários sem direitos de herança"
+        ],
+        "correta": "As terras continuavam sob propriedade da Coroa Portuguesa, restando ao donatário apenas o usufruto, a concessão de sesmarias e a administração local",
+        "comentario": "As capitanias continuavam pertencendo à Coroa Portuguesa. O donatário detinha a posse e o direito de repassar a terra como herança a seus filhos (daí 'hereditárias') e de distribuir pequenos lotes chamados 'sesmarias' a terceiros, mas não de vender a capitania em si."
+    },
+    {
+        "id": 29,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "medio",
+        "enunciado": "A relação jurídica entre o rei de Portugal e o capitão-donatário era estabelecida por dois documentos fundamentais. Quais eram eles e suas respectivas funções?",
+        "alternativas": [
+            "A Carta de Doação (que concedia a posse da terra) e o Foral (que definia tributos, direitos e deveres do donatário)",
+            "A Bula Intercoetera (que dividia o mundo) e a Lei das Sesmarias (que organizava a agricultura)",
+            "O Tratado de Tordesilhas (que fixava fronteiras) e o Regimento de Tomé de Sousa (que criava o Governo Geral)",
+            "A Carta de Caminha (que descrevia a terra) e as Ordenações Filipinas (que regulavam as leis penais)",
+            "A Carta de Alforria (que libertava nativos) e a Lei de Terras (que definia a propriedade agrária)"
+        ],
+        "correta": "A Carta de Doação (que concedia a posse da terra) e o Foral (que definia tributos, direitos e deveres do donatário)",
+        "comentario": "A Carta de Doação entregava a posse da capitania ao donatário, enquanto o Foral atuava como um regulamento ou minicódigo tributário, detalhando as taxas a pagar ao rei e os direitos de exploração econômica do donatário."
+    },
+    {
+        "id": 30,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "medio",
+        "enunciado": "O fracasso generalizado das Capitanias Hereditárias no Brasil ocorreu devido a múltiplos fatores geográficos e humanos. Qual alternativa explica o insucesso do sistema?",
+        "alternativas": [
+            "A grande distância da metrópole, falta de recursos financeiros dos donatários e resistência armada dos grupos indígenas locais",
+            "A descoberta tardia de metais preciosos que atraiu os colonos apenas para o interior desabitado",
+            "A proibição do plantio de cana-de-açúcar nas regiões litorâneas determinada pelo Papa",
+            "A ausência total de água potável no litoral brasileiro que impediu a fixação de núcleos urbanos",
+            "A intervenção direta do exército espanhol que invadiu sistematicamente todas as capitanias"
+        ],
+        "correta": "A grande distância da metrópole, falta de recursos financeiros dos donatários e resistência armada dos grupos indígenas locais",
+        "comentario": "A imensidão do litoral brasileiro, a dificuldade de comunicação com Lisboa, o alto custo para instalar engenhos de açúcar e a forte reação de tribos indígenas que defendiam suas terras inviabilizaram a maioria das capitanias."
+    },
+    {
+        "id": 31,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "medio",
+        "enunciado": "A criação do Governo Geral em 1548 não extinguiu as Capitanias Hereditárias. Qual foi a principal mudança na organização administrativa do Brasil?",
+        "alternativas": [
+            "As capitanias perderam a autonomia política absoluta e passaram a responder à autoridade central do Governador-Geral",
+            "Os donatários foram expulsos da colônia e substituídos por governadores indígenas",
+            "A colônia foi dividida em dois países independentes: Brasil do Norte e Brasil do Sul",
+            "Os donatários tornaram-se vassalos diretos do Império Espanhol durante a União Ibérica",
+            "A Coroa Portuguesa passou a comprar todas as capitanias para transformá-las em propriedades de ordens religiosas"
+        ],
+        "correta": "As capitanias perderam a autonomia política absoluta e passaram a responder à autoridade central do Governador-Geral",
+        "comentario": "O Governo Geral atuou como um nível de autoridade superior para unificar a defesa, aplicar a justiça e centralizar a cobrança de impostos, tirando o poder descentralizado e absoluto que os donatários possuíam em suas capitanias."
+    },
+    {
+        "id": 32,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "medio",
+        "enunciado": "O segundo governador-geral do Brasil foi Duarte da Costa (1553-1558). O seu governo foi marcado por severas crises internas. Quais foram os principais conflitos enfrentados por ele?",
+        "alternativas": [
+            "Conflitos com o bispo D. Pero Fernandes Sardinha e a invasão francesa que fundou a França Antártica",
+            "A revolta dos jesuítas liderados por Anchieta contra a fundação da cidade de Salvador",
+            "A invasão holandesa em Pernambuco e a destruição total da capitania de São Vicente",
+            "A Guerra dos Emboabas e a expulsão dos bandeirantes paulistas do sertão",
+            "A rebelião dos donatários de Pernambuco contra o plantio de cana-de-açúcar"
+        ],
+        "correta": "Conflitos com o bispo D. Pero Fernandes Sardinha e a invasão francesa que fundou a França Antártica",
+        "comentario": "O governo de Duarte da Costa foi conturbado devido às desavenças com o bispo D. Pero Fernandes Sardinha (crítico do comportamento do filho do governador) e pela invasão dos franceses no Rio de Janeiro (Baía de Guanabara) em 1555."
+    },
+    {
+        "id": 33,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "medio",
+        "enunciado": "Mem de Sá foi o terceiro governador-geral do Brasil (1558-1572) e seu governo é considerado um período de consolidação e estabilização colonial. Qual feito militar destaca-se em sua administração?",
+        "alternativas": [
+            "A expulsão definitiva dos franceses da Baía de Guanabara e a fundação da cidade de São Sebastião do Rio de Janeiro",
+            "A conquista de territórios espanhóis além da linha de Tordesilhas na Amazônia",
+            "A derrota militar total dos holandeses que invadiram a Bahia de Todos os Santos",
+            "A assinatura de um tratado de paz perpétua com todas as confederações indígenas",
+            "O fechamento das capitanias do sul para evitar o contrabando de ouro"
+        ],
+        "correta": "A expulsão definitiva dos franceses da Baía de Guanabara e a fundação da cidade de São Sebastião do Rio de Janeiro",
+        "comentario": "Mem de Sá organizou tropas luso-indígenas e contou com o auxílio de seu sobrinho, Estácio de Sá, para derrotar e expulsar os franceses da Baía de Guanabara, fundando a cidade do Rio de Janeiro em 1565 para garantir a defesa do local."
+    },
+    {
+        "id": 34,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "medio",
+        "enunciado": "Durante o período Pré-Colonial, o litoral brasileiro abrigava feitorias portuguesas. Que estruturas eram essas e quais eram suas principais utilidades?",
+        "alternativas": [
+            "Entrepostos comerciais fortificados que serviam para armazenar o pau-brasil recolhido e proteger o litoral contra invasões",
+            "Grandes engenhos de açúcar instalados para produzir melaço para exportação",
+            "Cidades planejadas com prefeituras destinadas a abrigar colonos agricultores",
+            "Missões religiosas destinadas exclusivamente ao batismo em massa de indígenas",
+            "Minas de exploração subterrânea de carvão e ferro na costa do Nordeste"
+        ],
+        "correta": "Entrepostos comerciais fortificados que serviam para armazenar o pau-brasil recolhido e proteger o litoral contra invasões",
+        "comentario": "As feitorias eram armazéns fortificados simples instalados em pontos estratégicos da costa. Serviam para estocar as toras de pau-brasil trazidas pelos indígenas até a chegada das caravelas e oferecer abrigo básico contra piratas."
+    },
+    {
+        "id": 35,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "medio",
+        "enunciado": "A intolerância religiosa que assolava a Europa no século XVI refletiu-se nos planos coloniais da França Antártica. Por que a colônia no Rio de Janeiro atraiu o interesse de reformadores protestantes como João Calvino?",
+        "alternativas": [
+            "Porque viram na colônia a chance de estabelecer um refúgio seguro para os huguenotes calvinistas perseguidos na França",
+            "Porque desejavam fundar uma teocracia protestante militar para invadir Portugal",
+            "Porque pretendiam converter todos os padres jesuítas da América ao protestantismo",
+            "Porque buscavam terras livres da influência da Inquisição espanhola instalada em São Vicente",
+            "Porque queriam confiscar o dízimo pago pelos indígenas à Igreja Católica em Salvador"
+        ],
+        "correta": "Porque viram na colônia a chance de estabelecer um refúgio seguro para os huguenotes calvinistas perseguidos na França",
+        "comentario": "A colônia da França Antártica recebeu o apoio de líderes protestantes franceses e do próprio João Calvino, que enviaram pastores calvinistas para a Baía de Guanabara a fim de estabelecer um asilo religioso seguro na América."
+    },
+    {
+        "id": 36,
+        "materia": "História N2",
+        "assunto": "Período Colonial",
+        "nivel": "medio",
+        "enunciado": "Para iniciar a colonização efetiva do Brasil, Portugal precisava introduzir uma atividade econômica altamente lucrativa e viável. Qual foi o produto escolhido e por qual motivo?",
+        "alternativas": [
+            "O açúcar, pois o solo e clima do Nordeste eram ideais (massapê) e o mercado europeu pagava altos valores pelo produto",
+            "O café, já que a metrópole enfrentava uma escassez de bebidas estimulantes",
+            "O algodão, para atender às crescentes indústrias têxteis fundadas em Lisboa",
+            "A mineração de diamantes, para financiar a marinha de guerra portuguesa no Atlântico",
+            "A soja, devido ao conhecimento milenar dos indígenas sobre o plantio de grãos"
+        ],
+        "correta": "O açúcar, pois o solo e clima do Nordeste eram ideais (massapê) e o mercado europeu pagava altos valores pelo produto",
+        "comentario": "O açúcar foi escolhido por ser um produto de luxo muito valorizado na Europa e por se adaptar perfeitamente ao solo fértil de massapê e ao clima quente e úmido do Nordeste brasileiro, além de contar com a experiência de produção portuguesa nas ilhas do Atlântico."
+    },
+    {
+        "id": 37,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "medio",
+        "enunciado": "As expedições guarda-costas comandadas por Cristóvão Jacques na década de 1520 alcançaram resultados limitados no patrulhamento da costa. Por que essas expedições não conseguiram conter totalmente o contrabando estrangeiro?",
+        "alternativas": [
+            "Porque a costa brasileira era vasta demais e as caravelas de patrulha eram poucas para cobrir todo o território",
+            "Porque os piratas franceses possuíam navios movidos a vapor muito mais velozes",
+            "Porque o rei de Portugal proibiu o uso de canhões e armas de fogo nos combates marítimos",
+            "Porque os jesuítas defendiam o direito de livre comércio dos indígenas com os franceses",
+            "Porque a Espanha cedeu frotas militares gigantescas para escoltar os navios franceses"
+        ],
+        "correta": "Porque a costa brasileira era vasta demais e as caravelas de patrulha eram poucas para cobrir todo o território",
+        "comentario": "A enorme extensão do litoral brasileiro tornava impossível que apenas duas ou três expedições militares avistassem e capturassem todos os navios contrabandistas franceses, evidenciando que a proteção física da terra exigia o seu povoamento."
+    },
+    {
+        "id": 38,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "medio",
+        "enunciado": "Diferente da rígida centralização da colonização espanhola e portuguesa, a colonização inglesa na Nova Inglaterra desenvolveu uma prática política conhecida como 'Negligência Salutar'. O que essa expressão representa?",
+        "alternativas": [
+            "A relativa autonomia política e comercial concedida pela metrópole inglesa às colônias, permitindo o autogoverno local",
+            "O abandono total dos feridos e doentes nas colônias sem nenhuma assistência médica",
+            "A proibição papal de cobrança de qualquer imposto sob a produção agrícola colonial",
+            "A obrigação das colônias de comerciar apenas com a França e a Holanda",
+            "A atitude agressiva de expulsar qualquer colono que não fosse membro da nobreza"
+        ],
+        "correta": "A relativa autonomia política e comercial concedida pela metrópole inglesa às colônias, permitindo o autogoverno local",
+        "comentario": "A 'Negligência Salutar' refere-se à política informal da coroa inglesa que, ocupada com problemas internos (como revoluções e guerras), deixou as colônias americanas com ampla liberdade administrativa e comercial nas primeiras décadas de colonização."
+    },
+    {
+        "id": 39,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "medio",
+        "enunciado": "Em 1554, os jesuítas José de Anchieta e Manuel da Nóbrega fundaram um colégio no planalto de Piratininga, no interior da capitania de São Vicente. Qual importante metrópole brasileira originou-se a partir desse colégio?",
+        "alternativas": [
+            "São Paulo",
+            "Rio de Janeiro",
+            "Santos",
+            "Campinas",
+            "Belo Horizonte"
+        ],
+        "correta": "São Paulo",
+        "comentario": "A fundação do Colégio de São Paulo de Piratininga em 25 de janeiro de 1554 por padres jesuítas deu início ao povoado que, séculos depois, tornou-se a cidade de São Paulo."
+    },
+    {
+        "id": 40,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "medio",
+        "enunciado": "Os franceses ocuparam diversas ilhas no Caribe, como Guadalupe e Martinica, e a porção ocidental de São Domingos (atual Haiti). Qual era a base da economia açucareira nessas colônias caribenhas francesas?",
+        "alternativas": [
+            "Grande plantation latifundiário monocultor baseado no trabalho escravizado de africanos",
+            "Pequena propriedade familiar baseada no trabalho livre assalariado",
+            "Cooperativas agrícolas autônomas organizadas pelos povos indígenas nativos",
+            "Exploração exclusiva de jazidas de ouro com operários vindos da Europa",
+            "Monopólio estatal da exploração florestal e extrativismo de madeiras raras"
+        ],
+        "correta": "Grande plantation latifundiário monocultor baseado no trabalho escravizado de africanos",
+        "comentario": "Assim como os portugueses no Brasil, os franceses implementaram no Caribe o sistema de plantation (latifúndio, monocultura e exportação de açúcar), utilizando maciçamente o trabalho forçado e desumano de escravizados africanos."
+    },
+    {
+        "id": 41,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "dificil",
+        "enunciado": "Na transição da Idade Média para a Moderna, a Inglaterra passou pelo processo de 'Cercamento dos Campos' (enclosure). Como esse fenômeno socioeconômico inglês influenciou a colonização na América do Norte?",
+        "alternativas": [
+            "Privatizou as terras comunais para a criação de ovelhas, expulsando camponeses que, sem trabalho na metrópole, migraram para a América sob contratos de servidão temporária",
+            "Aumentou a produção de trigo na Inglaterra, desestimulando completamente qualquer viagem comercial transatlântica",
+            "Provocou a falência das companhias de comércio inglesas que dependiam exclusivamente da lã das colônias",
+            "Forçou os camponeses expulsos a se alistarem na marinha de guerra espanhola para combater os franceses",
+            "Reduziu a população urbana inglesa a ponto de faltarem colonos voluntários para povoar as 13 colônias"
+        ],
+        "correta": "Privatizou as terras comunais para a criação de ovelhas, expulsando camponeses que, sem trabalho na metrópole, migraram para a América sob contratos de servidão temporária",
+        "comentario": "O cercamento transformou terras de uso comum em pastos privados para a produção de lã. O consequente êxodo rural gerou uma massa de despossuídos urbanos na Inglaterra. Muitos deles assinaram contratos de 'servidão por contrato' (indentured servitude) para pagar suas passagens para a América em troca de alguns anos de trabalho forçado."
+    },
+    {
+        "id": 42,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "dificil",
+        "enunciado": "A colônia da França Antártica no Rio de Janeiro (1555-1567) enfrentou sérias dissensões teológicas e sociais internas entre seus próprios colonos. Qual episódio de conflito teológico enfraqueceu e dividiu a liderança francesa na ilha de Sergipe (atual ilha de Villegagnon)?",
+        "alternativas": [
+            "As disputas teológicas sobre a Eucaristia e a predestinação entre o católico Villegaignon e os pastores calvinistas vindos de Genebra",
+            "A rebelião dos jesuítas franceses contra a escravização de mulheres indígenas promovida por calvinistas",
+            "O conflito entre huguenotes e marinheiros franceses pelo controle do dízimo das missões luteranas",
+            "A heresia professada por colonos católicos que defendiam a poligamia e o abandono das doutrinas papais",
+            "A disputa sobre o direito de coroação de um rei protestante próprio para a colônia americana"
+        ],
+        "correta": "As disputas teológicas sobre a Eucaristia e a predestinação entre o católico Villegaignon e os pastores calvinistas vindos de Genebra",
+        "comentario": "A colônia começou a se desintegrar internamente devido a divergências religiosas intensas sobre a doutrina da Ceia e da predestinação. O líder Nicolas de Villegaignon, de postura rígida e oscilando entre o catolicismo e o protestantismo, rompeu com os ministros calvinistas enviados por João Calvino, expulsando-os da ilha."
+    },
+    {
+        "id": 43,
+        "materia": "História N2",
+        "assunto": "Capitanias Hereditárias",
+        "nivel": "dificil",
+        "enunciado": "A análise jurídica do Foral, um dos documentos fundacionais das Capitanias Hereditárias, revela a complexidade da divisão de tributos entre o rei e o donatário. De acordo com as regras do Foral, qual direito econômico era reservado exclusivamente à Coroa Portuguesa (Monopólio Real)?",
+        "alternativas": [
+            "A exploração das drogas do sertão, pau-brasil, metais preciosos e a cobrança da dízima sobre a produção colonial",
+            "O direito de cobrar taxas sobre o casamento e sepultamento de colonos livres",
+            "O controle absoluto de todos os engenhos de açúcar instalados nas capitanias",
+            "A venda de sesmarias aos colonos que desejassem cultivar a terra",
+            "A cobrança de tarifas aduaneiras nos portos locais de donatários vizinhos"
+        ],
+        "correta": "A exploração das drogas do sertão, pau-brasil, metais preciosos e a cobrança da dízima sobre a produção colonial",
+        "comentario": "O Foral definia que certas riquezas eram de monopólio exclusivo do rei (reguengos), como a extração do pau-brasil, especiarias raras, a posse de minas de ouro/prata e a cobrança do imposto da dízima (10% sobre toda a produção)."
+    },
+    {
+        "id": 44,
+        "materia": "História N2",
+        "assunto": "Período Colonial",
+        "nivel": "dificil",
+        "enunciado": "A transição do modelo extrativista do pau-brasil para a economia açucareira exigiu profundas transformações estruturais na colônia brasileira. Qual alternativa descreve corretamente essa mudança estrutural?",
+        "alternativas": [
+            "A substituição do trabalho indígena baseado no escambo temporário pelo latifúndio agroexportador com exploração de trabalho forçado",
+            "O fim da exploração agrícola do litoral e a interiorização imediata baseada na pecuária leiteira",
+            "A substituição do monopólio real pelo livre comércio aberto a nações asiáticas e africanas",
+            "A proibição do tráfico transatlântico de escravizados no século XVI determinada pelo rei de Portugal",
+            "O declínio absoluto da Igreja Católica e a ascensão de ordens religiosas pagãs protegidas por donatários"
+        ],
+        "correta": "A substituição do trabalho indígena baseado no escambo temporário pelo latifúndio agroexportador com exploração de trabalho forçado",
+        "comentario": "A exploração do pau-brasil não exigia fixação na terra ou grandes plantações, operando pelo escambo com nativos livres. A economia açucareira demandou a fixação de vilas, a apropriação de grandes latifúndios (plantations) e a substituição do escambo pela coerção violenta e escravização de indígenas e, posteriormente, de africanos."
+    },
+    {
+        "id": 45,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "dificil",
+        "enunciado": "O fracasso militar de capitanias como a da Bahia de Todos os Santos (onde o donatário Francisco Pereira Coutinho foi morto por tupinambás) motivou a criação do Governo Geral. Qual foi o papel do primeiro Governador-Geral na reestruturação da defesa colonial brasileira?",
+        "alternativas": [
+            "A compra da capitania da Bahia para transformá-la em território da coroa (capitania real), servindo de base militar e administrativa centralizada",
+            "A assinatura do Tratado de Madri que unificou as forças de defesa espanholas e portuguesas",
+            "A proibição de que donatários mantivessem milícias particulares e exércitos próprios na colônia",
+            "O alistamento obrigatório de todos os indígenas catequizados na marinha portuguesa",
+            "A construção de muralhas de pedra em toda a extensão do meridiano de Tordesilhas"
+        ],
+        "correta": "A compra da capitania da Bahia para transformá-la em território da coroa (capitania real), servindo de base militar e administrativa centralizada",
+        "comentario": "Para instalar o Governo Geral com segurança, a Coroa Portuguesa adquiriu dos herdeiros do falecido donatário a capitania da Bahia de Todos os Santos, transformando-a em capitania real. Isso permitiu a centralização militar das forças portuguesas para reprimir as rebeliões indígenas e expulsar piratas franceses."
+    },
+    {
+        "id": 46,
+        "materia": "História N2",
+        "assunto": "Colonização Inglesa",
+        "nivel": "dificil",
+        "enunciado": "A colonização inglesa na América do Norte apresentou três modelos jurídicos distintos de colônias: corporativas (charter), proprietárias (proprietary) e reais (royal). Qual fator diferenciava a colônia proprietária da corporativa?",
+        "alternativas": [
+            "A colônia proprietária pertencia a um indivíduo ou grupo de donos nomeados pela coroa, enquanto a corporativa era autoadministrada por uma companhia de comércio por ações",
+            "A colônia proprietária utilizava apenas mão de obra livre assalariada, enquanto a corporativa usava escravizados africanos",
+            "A colônia proprietária era submetida diretamente à autoridade do Papa, ao contrário da corporativa",
+            "A colônia proprietária foi criada por franceses que juraram lealdade ao rei inglês Henrique VIII",
+            "A colônia proprietária localizava-se exclusivamente nas ilhas caribenhas produtoras de especiarias"
+        ],
+        "correta": "A colônia proprietária pertencia a um indivíduo ou grupo de donos nomeados pela coroa, enquanto a corporativa era autoadministrada por uma companhia de comércio por ações",
+        "comentario": "Colônias de corporação (como a Virgínia inicial) eram empresas organizadas por acionistas que visavam lucros mercantis. Colônias proprietárias (como Maryland concedida a Lord Baltimore) eram dadas a um dono (proprietário), que recebia amplos poderes senhoriais para colonizar e ditar leis locais."
+    },
+    {
+        "id": 47,
+        "materia": "História N2",
+        "assunto": "Colonização Francesa",
+        "nivel": "dificil",
+        "enunciado": "A pirataria francesa na América colonial operava sob o conceito geopolítico de 'Nenhuma paz além da linha' (no peace beyond the line). Qual o significado prático dessa máxima no século XVI?",
+        "alternativas": [
+            "Tratados assinados pelas potências na Europa não se aplicavam aos territórios coloniais das Américas, permitindo pilhagens mesmo em tempos de paz europeia",
+            "Qualquer acordo de trégua assinado entre os reis católicos na Europa devia ser ignorado pelos governadores americanos",
+            "A proibição papal de qualquer contato comercial ou diplomático com os povos indígenas pagãos da América",
+            "A ordem militar de que navios protestantes franceses deviam afundar navios de refugiados católicos franceses",
+            "O estabelecimento de uma linha de demarcação exclusiva para comércio de peles de castor no Canadá"
+        ],
+        "correta": "Tratados assinados pelas potências na Europa não se aplicavam aos territórios coloniais das Américas, permitindo pilhagens mesmo em tempos de paz europeia",
+        "comentario": "A doutrina de 'nenhuma paz além da linha' significava que os conflitos e pilhagens cometidos no Novo Mundo (além dos meridianos europeus) não violavam formalmente as pazes declaradas e assinadas pelos monarcas na Europa, mantendo a costa da América como uma zona permanente de guerra."
+    },
+    {
+        "id": 48,
+        "materia": "História N2",
+        "assunto": "Governo Geral",
+        "nivel": "dificil",
+        "enunciado": "O Regimento de 1548 (ou Regimento de Tomé de Sousa) foi um documento de extrema relevância jurídica para a formação administrativa do Brasil colonial. O que esse regimento determinava em relação à justiça colonial e ao trato com os indígenas aliados?",
+        "alternativas": [
+            "A centralização da justiça civil e criminal sob o Ouvidor-mor e a proibição de hostilizar e escravizar os indígenas aliados ('gentio')",
+            "A descentralização absoluta da justiça, deixando julgamentos nas mãos exclusivas de donatários e padres",
+            "A escravização imediata de qualquer tribo indígena que habitasse o litoral da Bahia",
+            "A obrigatoriedade de aplicar a lei islâmica para punir roubos e contrabando de pau-brasil",
+            "A criação de tribunais de inquisição geridos de forma conjunta por jesuítas e pajés nativos"
+        ],
+        "correta": "A centralização da justiça civil e criminal sob o Ouvidor-mor e a proibição de hostilizar e escravizar os indígenas aliados ('gentio')",
+        "comentario": "O Regimento de 1548 estruturou a justiça sob o cargo do Ouvidor-mor e tentou impor limites aos colonos, protegendo os indígenas pacificados e aliados dos jesuítas contra cativeiros ilegais, embora permitisse a 'guerra justa' contra grupos hostis."
+    },
+    {
+        "id": 49,
+        "materia": "História N2",
+        "assunto": "Período Colonial",
+        "nivel": "dificil",
+        "enunciado": "A 'Confederação dos Tamoios' (1554-1567) reuniu diversas tribos sob a liderança dos Tupinambás contra a colonização portuguesa. Qual foi o principal estopim social dessa articulação militar indígena?",
+        "alternativas": [
+            "A escravização sistemática e violenta realizada pelos colonos portugueses de São Vicente e Santo Amaro para obter mão de obra para os engenhos",
+            "A disputa pela posse das árvores de pau-brasil que eram sagradas para os nativos",
+            "A proibição do escambo decretada pela Igreja Católica de Salvador",
+            "A recusa dos jesuítas em batizar os filhos dos chefes indígenas locais",
+            "O apoio militar francês que forneceu caravelas de guerra para os chefes indígenas navegarem até Lisboa"
+        ],
+        "correta": "A escravização sistemática e violenta realizada pelos colonos portugueses de São Vicente e Santo Amaro para obter mão de obra para os engenhos",
+        "comentario": "A Confederação dos Tamoios foi uma revolta contra a escravidão indígena imposta pelos colonizadores do litoral de São Paulo e Rio de Janeiro. Liderados por chefes como Cunhambebe, os tamoios aliaram-se aos franceses para combater a ameaça escravista portuguesa."
+    },
+    {
+        "id": 50,
+        "materia": "História N2",
+        "assunto": "Período Pré-Colonial",
+        "nivel": "dificil",
+        "enunciado": "Historiadores apontam que a decadência do comércio ultramarino português nas Índias após 1530 esteve ligada à geopolítica europeia e ao encarecimento da rota do Cabo. Como esse cenário externo provocou o surgimento da economia açucareira na América portuguesa?",
+        "alternativas": [
+            "A perda dos mercados de especiarias forçou Portugal a buscar novas fontes de receita tributária na produção agrícola colonial, estimulando investidores genoveses e flamengos a financiar o açúcar brasileiro",
+            "O fechamento das rotas asiáticas obrigou o rei de Portugal a consumir o açúcar produzido exclusivamente pelos indígenas nativos",
+            "A invasão da rota do Oriente pelos exércitos de camponeses sem-terra da Inglaterra desregulou os portos de Goa",
+            "O papa decretou que as Índias orientais passariam a ser exploradas apenas pela coroa espanhola",
+            "O rei de Portugal perdeu todas as suas caravelas nas tempestades do Índico e optou por colonizar o Brasil a pé"
+        ],
+        "correta": "A perda dos mercados de especiarias forçou Portugal a buscar novas fontes de receita tributária na produção agrícola colonial, estimulando investidores genoveses e flamengos a financiar o açúcar brasileiro",
+        "comentario": "A quebra no monopólio de especiarias nas Índias drenou as finanças da Coroa Portuguesa. Para reerguer o erário real e salvaguardar a colônia americana das invasões francesas, Portugal utilizou a agroindústria do açúcar no Brasil, valendo-se do financiamento de mercadores holandeses, genoveses e flamengos para erguer os primeiros engenhos."
+    }
+]
