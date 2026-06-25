@@ -139,7 +139,7 @@ async function listarArquivosGithub() {
 
 async function carregarBancosPadrao() {
     // Lista padrão local (fallback caso esteja offline ou localmente)
-    let arquivosPadrao = ['Geografia N2.json', 'Biologia N2.json', 'Geometria N2.json'];
+    let arquivosPadrao = ['HistóriaN2.json', 'Geografia N2.json', 'Biologia N2.json', 'Geometria N2.json'];
     
     // Tenta obter dinamicamente os arquivos do repositório no GitHub
     const arquivosGithub = await listarArquivosGithub();
